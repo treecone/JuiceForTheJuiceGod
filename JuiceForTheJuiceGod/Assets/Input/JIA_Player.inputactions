@@ -1,0 +1,34 @@
+{
+    "name": "JIA_Player",
+    "maps": [
+        {
+            "name": "MainActionMap",
+            "id": "9aeebddf-58b7-4950-b57c-d919ba77a6a5",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "5a203ee0-08c2-4a7d-9784-df4f5465d807",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "687ddd78-5f2e-45a9-a8d0-aeb85bdbd649",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
