@@ -19,7 +19,10 @@ public class JS_Player : MonoBehaviour
     private Rigidbody rb;
 
     private GameObject hammer;
+    //Input from the spacebar to tell player to smash
     private bool smashNow;
+    //Locking bool so the smash damage is only applied once 
+    private bool smashLock;
 
     // Start is called before the first frame update
     void Start()
@@ -27,35 +30,62 @@ public class JS_Player : MonoBehaviour
         attributes = GetComponent<JS_PlayerAttributes>();
         hammer = gameObject.transform.Find("Hammer").gameObject;
         rb = gameObject.GetComponent<Rigidbody>();
+        smashLock = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Combat();
+        Smashing();
         Movement();
     }
 
-    void Combat()
+    void Smashing()
     {
         smashNow = smashRefrence.action.ReadValue<float>() > 0.9f;
-        if(smashNow)
+        float hammerYInWorldSpace = hammer.transform.TransformPoint(Vector3.zero).y;
+
+        if (smashNow)
         {
+            //Holding Space
+
             Vector3 currentGroundPos = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
-            float hammerYInWorldSpace = hammer.transform.TransformPoint(Vector3.zero).y;
-            if(hammerYInWorldSpace > 0)
+            if(hammerYInWorldSpace > 0.05f)
             {
                 hammer.transform.Translate(Vector3.down * attributes.hammerFallSpeed);
             }
             else
             {
                 hammer.transform.position = currentGroundPos;
+                if(!smashLock)
+                {
+                    Combat();
+                    smashLock = true;
+                }
+                AbsorbJuice();
             }
         }
         else
         {
+            //Not Holding Space
+
             hammer.transform.position = Vector3.Lerp(hammer.transform.position, gameObject.transform.position, Time.deltaTime * attributes.hammerRecoverySpeed);
+            if(smashLock)
+            {
+                //1.0f is the y axis reset range for another smash
+                if (hammerYInWorldSpace > transform.position.y - 1.0f)
+                {
+                    smashLock = false;
+                }
+            }
         }
+    }
+
+    void Combat()
+    {
+        //Function called once when smash
+
+        Debug.Log("Dealing Damage");
     }
 
     void Movement()
@@ -79,5 +109,10 @@ public class JS_Player : MonoBehaviour
         {
             gameObject.transform.Translate(movementVector * attributes.speed * Time.deltaTime);
         }
+    }
+
+    void AbsorbJuice()
+    {
+
     }
 }
