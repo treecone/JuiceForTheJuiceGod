@@ -132,6 +132,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTarget: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraSpeed: 0.2
-  followPlayer: 0
+  cameraOffset: {x: 0, y: 4, z: -15}
+  cameraSpeed: 3
+  followPlayer: 1

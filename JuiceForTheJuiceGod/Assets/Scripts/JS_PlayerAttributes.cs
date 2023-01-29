@@ -17,4 +17,6 @@ public class JS_PlayerAttributes : MonoBehaviour
     public int cupDamage;
     public float absorbtionRadius;
     public float absorbtionSpeed;
+    public float hammerRecoverySpeed;
+    public float hammerFallSpeed;
 }
