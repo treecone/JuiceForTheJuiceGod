@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BANANA_1_SFX = 970812453U;
+        static const AkUniqueID PLAY_DROP = 2007351433U;
     } // namespace EVENTS
 
     namespace BANKS

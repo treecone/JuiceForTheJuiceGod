@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="play_drop" ID="{E146DF43-33E9-48D7-853B-18A208C63963}">
+					<ChildrenList>
+						<Action Name="" ID="{A1F1D13A-6950-49BA-B0BA-6A0C94ADEECD}" ShortID="844392035">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dash_final" ID="{3754679A-71AF-413F-92C3-D04D5B305F9C}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 22bb7963347e4c4382f8e43755c18752
     GuidInternal: 
-    m_lastTime: -8585264913706156622
+    m_lastTime: -8585264898883702826
     List:
     - name: MainoundBank
       guid: c9da966ea913c1418f41aafa0a5446c8
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a12b9103b6bd5d45847a0f86f512267b
     GuidInternal: 
-    m_lastTime: -8585264913706226641
+    m_lastTime: -8585264898883782843
     List:
     - name: Play_banana_1_sfx
       guid: 51a5459253a0fc45b7823042db12d11d
@@ -113,6 +113,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.666667
       minDuration: 2.666667
+    - name: play_drop
+      guid: 43df46e1e933d748853b18a208c63963
+      id: 2007351433
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: play_drop
+        ObjectType: 3
+        guid: 43df46e1e933d748853b18a208c63963
+      Path: Events\Default Work Unit\play_drop
+      maxAttenuation: 0
+      maxDuration: 0.46692
+      minDuration: 0.46692
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

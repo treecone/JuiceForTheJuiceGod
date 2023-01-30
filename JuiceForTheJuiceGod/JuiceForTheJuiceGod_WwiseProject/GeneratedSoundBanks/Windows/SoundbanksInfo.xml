@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="114138346" Language="SFX" Hash="1417300962">
+		<SoundBank Id="114138346" Language="SFX" Hash="3564126544">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainoundBank</ObjectPath>
 			<ShortName>MainoundBank</ShortName>
 			<Path>MainoundBank.bnk</Path>
@@ -21,6 +21,14 @@
 						<File Id="845192073" Language="SFX">
 							<ShortName>banana 1 sfx.wav</ShortName>
 							<Path>SFX\banana 1 sfx_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2007351433" Name="play_drop" ObjectPath="\Events\Default Work Unit\play_drop" DurationType="OneShot" DurationMin="0.46692" DurationMax="0.46692">
+					<IncludedMemoryFiles>
+						<File Id="196310345" Language="SFX">
+							<ShortName>dash_final.wav</ShortName>
+							<Path>SFX\dash_final_EEB1C770.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

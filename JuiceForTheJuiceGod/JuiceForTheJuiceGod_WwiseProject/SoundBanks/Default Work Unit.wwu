@@ -4,7 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{6379BB22-7E34-434C-82F8-E43755C18752}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="MainoundBank" ID="{6E96DAC9-13A9-41C1-8F41-AAFA0A5446C8}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_banana_1_sfx" ID="{9245A551-A053-45FC-B782-3042DB12D11D}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_drop" ID="{E146DF43-33E9-48D7-853B-18A208C63963}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
