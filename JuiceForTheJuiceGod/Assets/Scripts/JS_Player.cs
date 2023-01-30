@@ -142,4 +142,15 @@ public class JS_Player : MonoBehaviour
     {
         //foreach()
     }
+
+    void OnDrawGizmosSelected()
+    {
+        if(smashLock)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(hammer.transform.position, attributes.damageRadiusSquared);
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(hammer.transform.position, attributes.absorbtionRadius);
+        }
+    }
 }
