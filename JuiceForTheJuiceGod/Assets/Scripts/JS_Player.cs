@@ -24,6 +24,8 @@ public class JS_Player : MonoBehaviour
     //Locking bool so the smash damage is only applied once 
     private bool smashLock;
 
+    private Transform enemySpawner;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,8 @@ public class JS_Player : MonoBehaviour
         hammer = gameObject.transform.Find("Hammer").gameObject;
         rb = gameObject.GetComponent<Rigidbody>();
         smashLock = false;
+        enemySpawner = GameObject.Find("EnemySpawner").transform;
+        attributes.invincibility = true;
     }
 
     // Update is called once per frame
@@ -44,6 +48,15 @@ public class JS_Player : MonoBehaviour
     {
         smashNow = smashRefrence.action.ReadValue<float>() > 0.9f;
         float hammerYInWorldSpace = hammer.transform.TransformPoint(Vector3.zero).y;
+
+        if(!attributes.invincibility)
+        {
+            if(hammer.transform.localPosition.y >= -1f)
+            {
+                Debug.Log("Player invincibility enabled");
+                attributes.invincibility = true;
+            }
+        }
 
         if (smashNow)
         {
@@ -59,6 +72,7 @@ public class JS_Player : MonoBehaviour
                 hammer.transform.position = currentGroundPos;
                 if(!smashLock)
                 {
+                    StartCoroutine(invincibilityTimer());
                     Combat();
                     smashLock = true;
                 }
@@ -84,7 +98,13 @@ public class JS_Player : MonoBehaviour
     void Combat()
     {
         //Function called once when smash
-
+        foreach(Transform child in enemySpawner)
+        {
+            if((child.position - hammer.transform.position).sqrMagnitude < attributes.damageRadiusSquared)
+            {
+                child.gameObject.GetComponent<JS_EnemyBase>().Death();
+            }
+        }
         Debug.Log("Dealing Damage");
     }
 
@@ -111,8 +131,15 @@ public class JS_Player : MonoBehaviour
         }
     }
 
+    IEnumerator invincibilityTimer()
+    {
+        yield return new WaitForSeconds(attributes.invincibilityTime);
+        Debug.Log("Player invincibility disabled");
+        attributes.invincibility = false;
+    }
+
     void AbsorbJuice()
     {
-
+        //foreach()
     }
 }

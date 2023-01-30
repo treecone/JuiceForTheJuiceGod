@@ -15,8 +15,12 @@ public class JS_PlayerAttributes : MonoBehaviour
     [Header("Combat")]
 
     public int cupDamage;
+    public float damageRadiusSquared;
     public float absorbtionRadius;
     public float absorbtionSpeed;
     public float hammerRecoverySpeed;
     public float hammerFallSpeed;
+    public float invincibilityTime;
+    public bool invincibility;
+
 }

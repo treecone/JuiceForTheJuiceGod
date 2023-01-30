@@ -10,12 +10,13 @@ public class JS_EnemyBase : MonoBehaviour
     protected GameObject playerRef;
 
     protected bool hostile;
+    protected JS_PlayerAttributes playerAttributes;
 
     [Space]
     [Header("Stats")]
     public float speed;
     public int damage;
-    public float damageDistance;
+    public float damageDistanceSquared;
     public float timeBetweenDamage;
 
     protected void Start()
@@ -23,6 +24,7 @@ public class JS_EnemyBase : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         playerRef = GameObject.Find("Player");
         hostile = true;
+        playerAttributes = playerRef.GetComponent<JS_PlayerAttributes>();
     }
 
     protected void Update()
@@ -52,12 +54,17 @@ public class JS_EnemyBase : MonoBehaviour
 
     protected virtual void DealDamage()
     {
-        if(playerRef.transform.GetChild(0).transform.TransformPoint(Vector3.zero).y < 1)
+        if(!hostile || playerAttributes.invincibility)
+        {
+            return;
+        }
+
+        if(playerRef.transform.Find("Hammer").transform.TransformPoint(Vector3.zero).y < 1)
         {
             //If the player hammer is currently down
-            if((playerRef.transform.GetChild(0).position - gameObject.transform.position).sqrMagnitude <= damageDistance && hostile)
+            if ((playerRef.transform.Find("Hammer").position - gameObject.transform.position).sqrMagnitude <= damageDistanceSquared)
             {
-                playerRef.GetComponent<JS_PlayerAttributes>().durability -= damage;
+                playerAttributes.durability -= damage;
                 Debug.Log(gameObject.name + gameObject.GetInstanceID() + " dealt damage!");
                 StartCoroutine(EnemyTimeOut());
             }
@@ -69,5 +76,10 @@ public class JS_EnemyBase : MonoBehaviour
         hostile = false;
         yield return new WaitForSeconds(timeBetweenDamage);
         hostile = true;
+    }
+
+    public void Death()
+    {
+        Destroy(gameObject);
     }
 }
