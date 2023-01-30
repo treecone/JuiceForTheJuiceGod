@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 22bb7963347e4c4382f8e43755c18752
     GuidInternal: 
-    m_lastTime: -8585264937696132693
-    List: []
+    m_lastTime: -8585264913706156622
+    List:
+    - name: MainoundBank
+      guid: c9da966ea913c1418f41aafa0a5446c8
+      id: 114138346
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 22bb7963347e4c4382f8e43755c18752
+      - ElementName: MainoundBank
+        ObjectType: 7
+        guid: c9da966ea913c1418f41aafa0a5446c8
+      Path: SoundBanks\Default Work Unit\MainoundBank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a12b9103b6bd5d45847a0f86f512267b
     GuidInternal: 
-    m_lastTime: -8585264937696312738
-    List: []
+    m_lastTime: -8585264913706226641
+    List:
+    - name: Play_banana_1_sfx
+      guid: 51a5459253a0fc45b7823042db12d11d
+      id: 970812453
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_banana_1_sfx
+        ObjectType: 3
+        guid: 51a5459253a0fc45b7823042db12d11d
+      Path: Events\Default Work Unit\Play_banana_1_sfx
+      maxAttenuation: 0
+      maxDuration: 2.666667
+      minDuration: 2.666667
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +170,7 @@ MonoBehaviour:
     m_lastTime: -8585264937695892647
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000b0000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

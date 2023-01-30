@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	970812453	Play_banana_1_sfx			\Default Work Unit\Play_banana_1_sfx	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	845192073	banana 1 sfx	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\banana 1 sfx_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test Sound\banana 1 sfx		470464
+

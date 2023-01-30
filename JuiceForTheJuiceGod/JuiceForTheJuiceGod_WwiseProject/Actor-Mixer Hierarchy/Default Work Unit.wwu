@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C41BC25B-3135-4276-B821-4B5A94A78085}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{C41BC25B-3135-4276-B821-4B5A94A78085}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C41BC25B-3135-4276-B821-4B5A94A78085}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Test Sound" ID="{1786CB6B-ED7E-4A05-8030-A25C3F0AE0B0}" ShortID="130701320">
+					<ChildrenList>
+						<Sound Name="banana 1 sfx" ID="{A904A2CE-0CFC-44A2-A210-303CD470F62C}" ShortID="235201255">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="banana 1 sfx" ID="{029BD839-929F-4BF0-B064-424DEB79DAD8}">
+									<Language>SFX</Language>
+									<AudioFile>banana 1 sfx.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="845192073"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="banana 1 sfx" ID="{029BD839-929F-4BF0-B064-424DEB79DAD8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

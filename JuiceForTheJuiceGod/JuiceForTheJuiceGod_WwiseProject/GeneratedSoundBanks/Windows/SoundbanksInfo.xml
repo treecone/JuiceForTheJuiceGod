@@ -11,10 +11,20 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="114138346" Language="SFX" Hash="4095698786">
+		<SoundBank Id="114138346" Language="SFX" Hash="1417300962">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainoundBank</ObjectPath>
 			<ShortName>MainoundBank</ShortName>
 			<Path>MainoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="970812453" Name="Play_banana_1_sfx" ObjectPath="\Events\Default Work Unit\Play_banana_1_sfx" DurationType="OneShot" DurationMin="2.666667" DurationMax="2.666667">
+					<IncludedMemoryFiles>
+						<File Id="845192073" Language="SFX">
+							<ShortName>banana 1 sfx.wav</ShortName>
+							<Path>SFX\banana 1 sfx_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
 			<ObjectPath>Init</ObjectPath>
