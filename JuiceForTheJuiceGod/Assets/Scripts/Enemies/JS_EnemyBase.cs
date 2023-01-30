@@ -19,6 +19,10 @@ public class JS_EnemyBase : MonoBehaviour
     public float damageDistanceSquared;
     public float timeBetweenDamage;
 
+    public Color juiceColor;
+    [SerializeField]
+    private GameObject juicePrefab;
+
     protected void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -74,12 +78,15 @@ public class JS_EnemyBase : MonoBehaviour
     IEnumerator EnemyTimeOut ()
     {
         hostile = false;
+        rb.velocity *= 0;
         yield return new WaitForSeconds(timeBetweenDamage);
         hostile = true;
     }
 
     public void Death()
     {
+        GameObject juice = Instantiate(juicePrefab, new Vector3(gameObject.transform.position.x, 0.05f, gameObject.transform.position.z), Quaternion.identity) as GameObject;
+        juice.GetComponent<Material>().SetColor("_MainColor", juiceColor);
         Destroy(gameObject);
     }
 }
