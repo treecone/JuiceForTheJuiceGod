@@ -34,12 +34,13 @@ public class JS_Juice : MonoBehaviour
 
         if(amountToRetreve <= juice)
         {
-            juiceRenderer.material.SetFloat("_Capacity", Mathf.Lerp(0, 1.1f, (juice / maxJuice)));
+            if(juiceRenderer != null)
+                juiceRenderer.material.SetFloat("_Capacity", Mathf.Lerp(0, 1.1f, (juice / maxJuice)));
             float newScale = Mathf.Lerp(maxScale-1, maxScale, juice / maxJuice);
             gameObject.transform.localScale = new Vector3(newScale, newScale, newScale);
             juice -= amountToRetreve;
 
-            Debug.Log("Slurping: " + amountToRetreve);
+            //Debug.Log("Slurping: " + amountToRetreve);
             return amountToRetreve;
         }
         else

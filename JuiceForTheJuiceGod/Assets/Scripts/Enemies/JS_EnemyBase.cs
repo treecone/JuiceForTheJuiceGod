@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class JS_EnemyBase : MonoBehaviour
 {
-    [SerializeField]
-    protected bool usePhysics;
     protected Rigidbody rb;
     protected GameObject playerRef;
 
@@ -19,15 +17,16 @@ public class JS_EnemyBase : MonoBehaviour
     public float damageDistanceSquared;
     public float timeBetweenDamage;
 
+    [Space]
     [SerializeField]
-    private Color juiceColor;
+    protected Color juiceColor;
     [SerializeField]
-    private JUICE_TYPES juiceType;
+    protected JUICE_TYPES juiceType;
 
     [SerializeField]
-    private GameObject juicePrefab;
+    protected GameObject juicePrefab;
 
-    protected void Start()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody>();
         playerRef = GameObject.Find("Player");
@@ -35,7 +34,7 @@ public class JS_EnemyBase : MonoBehaviour
         playerAttributes = playerRef.GetComponent<JS_PlayerAttributes>();
     }
 
-    protected void Update()
+    protected virtual void Update()
     {
         Movement();
         DealDamage();
@@ -50,14 +49,7 @@ public class JS_EnemyBase : MonoBehaviour
         dir.y = 0;
         dir = dir.normalized;
 
-        if(usePhysics)
-        {
-            rb.AddForce(dir * speed);
-        }
-        else
-        {
-            gameObject.transform.Translate(dir * speed * Time.deltaTime);
-        }
+        gameObject.transform.Translate(dir * speed * Time.deltaTime);
     }
 
     protected virtual void DealDamage()
@@ -79,7 +71,7 @@ public class JS_EnemyBase : MonoBehaviour
         }
     }
 
-    IEnumerator EnemyTimeOut ()
+    protected IEnumerator EnemyTimeOut ()
     {
         hostile = false;
         rb.velocity *= 0;

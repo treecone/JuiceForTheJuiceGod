@@ -101,7 +101,7 @@ public class JS_Player : MonoBehaviour
                     nearbyJuices.Clear();
                     foreach(Transform child in allJuices)
                     {
-                        Debug.Log((child.position - hammer.transform.position).sqrMagnitude + "," + attributes.absorbtionRadiusSquared);
+                        //Debug.Log((child.position - hammer.transform.position).sqrMagnitude + "," + attributes.absorbtionRadiusSquared);
                         if((child.position - hammer.transform.position).sqrMagnitude <= attributes.absorbtionRadiusSquared)
                         {
                             nearbyJuices.Add(child.gameObject);
@@ -212,7 +212,7 @@ public class JS_Player : MonoBehaviour
 
     }
 
-    void OnDrawGizmosSelected()
+    void OnDrawGizmos()
     {
         if(smashLock)
         {

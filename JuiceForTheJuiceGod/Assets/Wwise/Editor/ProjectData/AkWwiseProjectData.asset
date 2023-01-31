@@ -12,14 +12,282 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b6628f42249ff42adeb59b0230d5ca, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e4b89a390caa2746ac623cf5b4574949
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: e4b89a390caa2746ac623cf5b4574949
+    GuidInternal: 
+    m_lastTime: -8585264924065588525
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ebae84b39011aa468a911c56181b8262
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: ebae84b39011aa468a911c56181b8262
+    GuidInternal: 
+    m_lastTime: -8585264115485372066
+    List:
+    - name: CUP SFX
+      guid: 41b6414ed75c094aad658deb36bc86f0
+      id: 814668642
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebae84b39011aa468a911c56181b8262
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: CUP SFX
+        ObjectType: 2
+        guid: 41b6414ed75c094aad658deb36bc86f0
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\CUP SFX
+    - name: CUP VOX
+      guid: ae7e4707acfb9544b1b845e7b29c2535
+      id: 698063984
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebae84b39011aa468a911c56181b8262
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: CUP VOX
+        ObjectType: 2
+        guid: ae7e4707acfb9544b1b845e7b29c2535
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\CUP VOX
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebae84b39011aa468a911c56181b8262
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 22bb7963347e4c4382f8e43755c18752
+    ParentPath: SoundBanks\Default Work Unit
+    guid: 22bb7963347e4c4382f8e43755c18752
+    GuidInternal: 
+    m_lastTime: -8585264115483776068
+    List:
+    - name: MainoundBank
+      guid: c9da966ea913c1418f41aafa0a5446c8
+      id: 114138346
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 22bb7963347e4c4382f8e43755c18752
+      - ElementName: MainoundBank
+        ObjectType: 7
+        guid: c9da966ea913c1418f41aafa0a5446c8
+      Path: SoundBanks\Default Work Unit\MainoundBank
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: a12b9103b6bd5d45847a0f86f512267b
+    ParentPath: Events\Default Work Unit
+    guid: a12b9103b6bd5d45847a0f86f512267b
+    GuidInternal: 
+    m_lastTime: -8585264115486784745
+    List:
+    - name: Play_banana_1_sfx
+      guid: 51a5459253a0fc45b7823042db12d11d
+      id: 970812453
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_banana_1_sfx
+        ObjectType: 3
+        guid: 51a5459253a0fc45b7823042db12d11d
+      Path: Events\Default Work Unit\Play_banana_1_sfx
+      maxAttenuation: 0
+      maxDuration: 2.666667
+      minDuration: 2.666667
+    - name: Play_CupSlam
+      guid: e239546afa7a6941aaff9971840bf1dd
+      id: 2280282337
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_CupSlam
+        ObjectType: 3
+        guid: e239546afa7a6941aaff9971840bf1dd
+      Path: Events\Default Work Unit\Play_CupSlam
+      maxAttenuation: 0
+      maxDuration: 0.564352
+      minDuration: 0.502563
+    - name: play_drop
+      guid: 43df46e1e933d748853b18a208c63963
+      id: 2007351433
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: play_drop
+        ObjectType: 3
+        guid: 43df46e1e933d748853b18a208c63963
+      Path: Events\Default Work Unit\play_drop
+      maxAttenuation: 0
+      maxDuration: 0.46692
+      minDuration: 0.46692
+    - name: Play_FruitSquish
+      guid: b4e3ef059add174d8f9b53634c4b9cae
+      id: 2798565183
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_FruitSquish
+        ObjectType: 3
+        guid: b4e3ef059add174d8f9b53634c4b9cae
+      Path: Events\Default Work Unit\Play_FruitSquish
+      maxAttenuation: 0
+      maxDuration: 2.125679
+      minDuration: 1.683259
+    - name: Play_PlaceholderTrack
+      guid: d1b9388b840f884581c5acbede9c5842
+      id: 289943158
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_PlaceholderTrack
+        ObjectType: 3
+        guid: d1b9388b840f884581c5acbede9c5842
+      Path: Events\Default Work Unit\Play_PlaceholderTrack
+      maxAttenuation: 0
+      maxDuration: 104.304
+      minDuration: 104.304
+    - name: STOP_FriutSquish
+      guid: 4d0e0c681652b2419e2ebca239d55dbf
+      id: 3402561057
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: STOP_FriutSquish
+        ObjectType: 3
+        guid: 4d0e0c681652b2419e2ebca239d55dbf
+      Path: Events\Default Work Unit\STOP_FriutSquish
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e2f8e91f9b0da049bdf230bdd9945cc8
+    ParentPath: Game Parameters\Default Work Unit
+    guid: e2f8e91f9b0da049bdf230bdd9945cc8
+    GuidInternal: 
+    m_lastTime: -8585264924065703329
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 9f124c64c3e40548b594198be1b67410
+    ParentPath: States\Default Work Unit
+    guid: 9f124c64c3e40548b594198be1b67410
+    GuidInternal: 
+    m_lastTime: -8585264924065598366
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 500df6c7ea6e0d4ba64cc35bfbe5059c
+    ParentPath: Switches\Default Work Unit
+    guid: 500df6c7ea6e0d4ba64cc35bfbe5059c
+    GuidInternal: 
+    m_lastTime: -8585264924065588525
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 729a56c1a72cab40accbc75106c76f47
+    ParentPath: Triggers\Default Work Unit
+    guid: 729a56c1a72cab40accbc75106c76f47
+    GuidInternal: 
+    m_lastTime: -8585264924065588525
+    List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
