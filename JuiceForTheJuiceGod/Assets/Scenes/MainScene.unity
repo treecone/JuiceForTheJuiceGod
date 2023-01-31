@@ -302,7 +302,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317493656}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57900c94d7dbe154fbf846d70d66087b, type: 3}
   m_Name: 
@@ -315,7 +315,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c1b055deaedc0fc44baa6feae026f6cf, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 663e47d9884b4ea479ecb00e7fd4ef90, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -631,7 +631,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2072967999
 GameObject:
@@ -802,6 +802,14 @@ PrefabInstance:
       propertyPath: usePhysics
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5577702888578073262, guid: d93c29bf420079741b8098d03da19255, type: 3}
+      propertyPath: SuckSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ea0fb0fa3cdbf54da2194b98b255f48, type: 2}
+    - target: {fileID: 5577702888578073262, guid: d93c29bf420079741b8098d03da19255, type: 3}
+      propertyPath: StopSuckSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8fe924328e25be14597c48039613c342, type: 2}
     - target: {fileID: 6095037133618675770, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: m_Name
       value: Player
@@ -911,5 +919,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCamera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1317493657, guid: 1c6252931dbe2d3499df293c4c95d6c5, type: 3}
+    - {fileID: 1317493658, guid: 1c6252931dbe2d3499df293c4c95d6c5, type: 3}
+    - {fileID: 1317493663, guid: 1c6252931dbe2d3499df293c4c95d6c5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1c6252931dbe2d3499df293c4c95d6c5, type: 3}

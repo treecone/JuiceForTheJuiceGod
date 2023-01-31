@@ -92,6 +92,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_suck_1" ID="{48D0E41E-1A69-4E80-A2F0-2787A7DAC780}">
+					<ChildrenList>
+						<Action Name="" ID="{786A098B-EDE0-44E6-968B-70935DC5C3E1}" ShortID="7694459">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="suck 1" ID="{BF3C7DF3-4FE2-42FD-97C1-C3DEDC26258D}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_suck_1" ID="{1E1E23DE-9504-40AA-9069-6237912DF554}">
+					<ChildrenList>
+						<Action Name="" ID="{4A4F3E12-126B-46A9-BC23-69F1B0F84933}" ShortID="119897074">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="suck 1" ID="{BF3C7DF3-4FE2-42FD-97C1-C3DEDC26258D}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

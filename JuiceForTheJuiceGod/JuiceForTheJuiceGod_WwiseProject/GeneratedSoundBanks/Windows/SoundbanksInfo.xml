@@ -11,11 +11,19 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="114138346" Language="SFX" Hash="3261960382">
+		<SoundBank Id="114138346" Language="SFX" Hash="2284174450">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainoundBank</ObjectPath>
 			<ShortName>MainoundBank</ShortName>
 			<Path>MainoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1254914371" Name="Play_013123_jeus4thejuicegod_theme_1" ObjectPath="\Events\Default Work Unit\Play_013123_jeus4thejuicegod_theme_1" DurationType="OneShot" DurationMin="46.58823" DurationMax="46.58823">
+					<IncludedMemoryFiles>
+						<File Id="375501643" Language="SFX">
+							<ShortName>013123 jeus4thejuicegod theme_1.wav</ShortName>
+							<Path>SFX\013123 jeus4thejuicegod theme_1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="970812453" Name="Play_banana_1_sfx" ObjectPath="\Events\Default Work Unit\Play_banana_1_sfx" DurationType="OneShot" DurationMin="2.666667" DurationMax="2.666667">
 					<IncludedMemoryFiles>
 						<File Id="845192073" Language="SFX">
@@ -88,7 +96,16 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2273358256" Name="Play_suck_1" ObjectPath="\Events\Default Work Unit\Play_suck_1" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1015502824" Language="SFX">
+							<ShortName>suck 1.wav</ShortName>
+							<Path>SFX\suck 1_8C45AFBD.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3402561057" Name="STOP_FriutSquish" ObjectPath="\Events\Default Work Unit\STOP_FriutSquish" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1787510310" Name="Stop_suck_1" ObjectPath="\Events\Default Work Unit\Stop_suck_1" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="1040272897">

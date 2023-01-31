@@ -13,12 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_013123_JEUS4THEJUICEGOD_THEME_1 = 1254914371U;
         static const AkUniqueID PLAY_BANANA_1_SFX = 970812453U;
         static const AkUniqueID PLAY_CUPSLAM = 2280282337U;
         static const AkUniqueID PLAY_DROP = 2007351433U;
         static const AkUniqueID PLAY_FRUITSQUISH = 2798565183U;
         static const AkUniqueID PLAY_PLACEHOLDERTRACK = 289943158U;
+        static const AkUniqueID PLAY_SUCK_1 = 2273358256U;
         static const AkUniqueID STOP_FRIUTSQUISH = 3402561057U;
+        static const AkUniqueID STOP_SUCK_1 = 1787510310U;
     } // namespace EVENTS
 
     namespace BANKS

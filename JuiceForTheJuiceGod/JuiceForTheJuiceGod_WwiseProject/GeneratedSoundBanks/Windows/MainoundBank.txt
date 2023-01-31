@@ -1,14 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
 	289943158	Play_PlaceholderTrack			\Default Work Unit\Play_PlaceholderTrack	
 	970812453	Play_banana_1_sfx			\Default Work Unit\Play_banana_1_sfx	
+	1254914371	Play_013123_jeus4thejuicegod_theme_1			\Default Work Unit\Play_013123_jeus4thejuicegod_theme_1	
+	1787510310	Stop_suck_1			\Default Work Unit\Stop_suck_1	
 	2007351433	play_drop			\Default Work Unit\play_drop	
+	2273358256	Play_suck_1			\Default Work Unit\Play_suck_1	
 	2280282337	Play_CupSlam			\Default Work Unit\Play_CupSlam	
 	2798565183	Play_FruitSquish			\Default Work Unit\Play_FruitSquish	
 	3402561057	STOP_FriutSquish			\Default Work Unit\STOP_FriutSquish	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	196310345	dash_final	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\dash_final_3C962B23.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test Sounds\dash_final		82428
-	349970575	012423 brj2023 boss music 2_3	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\012423 brj2023 boss music 2_3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PlaceholderTrack\012423 brj2023 boss music 2_3\012423 brj2023 boss music 2_3		20026432
+	349970575	012423 brj2023 boss music 2_3	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\012423 brj2023 boss music 2_3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PlaceholderTracks\012423 brj2023 boss music 2_3\012423 brj2023 boss music 2_3		20026432
+	375501643	013123 jeus4thejuicegod theme_1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\013123 jeus4thejuicegod theme_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PlaceholderTracks\013123 jeus4thejuicegod theme_1\013123 jeus4thejuicegod theme_1		8945004
 	390646825	cupsmash3	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\cupsmash3_1567D427.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP IMPACT\cupsmash3		83932
 	436562420	grunt 4	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 4_D1FA77A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 4		68056
 	540864188	grunt 1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 1_85FD0251.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 1		52884
@@ -20,4 +24,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	845192073	banana 1 sfx	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\banana 1 sfx_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test Sounds\banana 1 sfx		470464
 	1006196699	grunt 2	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 2_1C6425E5.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 2		78156
 	1010988461	fruitspill1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\fruitspill1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SQUISHES\fruitspill1		353784
+	1015502824	suck 1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\suck 1_8C45AFBD.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SUCKS\suck 1		803904
 
