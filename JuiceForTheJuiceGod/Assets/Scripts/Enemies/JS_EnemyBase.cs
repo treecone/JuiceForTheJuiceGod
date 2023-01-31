@@ -67,6 +67,8 @@ public class JS_EnemyBase : MonoBehaviour
                 playerAttributes.durability -= damage;
                 Debug.Log(gameObject.name + gameObject.GetInstanceID() + " dealt damage!");
                 StartCoroutine(EnemyTimeOut());
+                AkSoundEngine.PostEvent("EnemyDealtDamage", this.gameObject);
+
             }
         }
     }
