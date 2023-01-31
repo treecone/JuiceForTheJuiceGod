@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="PlaceholderTrack" ID="{BD0F5BE2-4675-4712-8853-054CDBA0CE00}" ShortID="1040392692">
+				<Folder Name="PlaceholderTracks" ID="{BD0F5BE2-4675-4712-8853-054CDBA0CE00}" ShortID="1040392692">
 					<ChildrenList>
 						<MusicSegment Name="012423 brj2023 boss music 2_3" ID="{B549436B-7FBC-4399-9A61-FFDAE096F0E3}" ShortID="327802993">
 							<PropertyList>

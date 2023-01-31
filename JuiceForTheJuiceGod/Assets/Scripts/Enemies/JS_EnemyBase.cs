@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class JS_EnemyBase : MonoBehaviour
 {
+    public AK.Wwise.Event FruitSquish;
     protected Rigidbody rb;
     protected GameObject playerRef;
 
@@ -88,6 +89,8 @@ public class JS_EnemyBase : MonoBehaviour
         juice.GetComponent<SpriteRenderer>().color = juiceColor;
         juice.GetComponent<JS_Juice>().SetJuiceType(juiceType);
         juice.transform.SetParent(GameObject.Find("AllJuices").transform);
+
+        FruitSquish.Post(gameObject);
 
         var main = juice.GetComponent<ParticleSystem>().main;
         main.startColor = juiceColor;

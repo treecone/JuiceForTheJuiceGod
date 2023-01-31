@@ -62,7 +62,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f5bef0c39819d8469860ddf007cd4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usePhysics: 1
+  FruitSquish:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b6183dc1bc5f1cf4088bc7dbcce137f1, type: 2}
   speed: 2
   damage: 1
   damageDistanceSquared: 2
