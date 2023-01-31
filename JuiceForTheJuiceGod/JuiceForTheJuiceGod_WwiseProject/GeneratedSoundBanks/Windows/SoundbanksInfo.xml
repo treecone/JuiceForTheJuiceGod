@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="114138346" Language="SFX" Hash="4231851747">
+		<SoundBank Id="114138346" Language="SFX" Hash="3261960382">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainoundBank</ObjectPath>
 			<ShortName>MainoundBank</ShortName>
 			<Path>MainoundBank.bnk</Path>
@@ -28,23 +28,23 @@
 					<IncludedMemoryFiles>
 						<File Id="390646825" Language="SFX">
 							<ShortName>cupsmash3.wav</ShortName>
-							<Path>SFX\cupsmash3_89935F74.wem</Path>
+							<Path>SFX\cupsmash3_1567D427.wem</Path>
 						</File>
 						<File Id="436562420" Language="SFX">
 							<ShortName>grunt 4.wav</ShortName>
-							<Path>SFX\grunt 4_733D0DD5.wem</Path>
+							<Path>SFX\grunt 4_D1FA77A0.wem</Path>
 						</File>
 						<File Id="540864188" Language="SFX">
 							<ShortName>grunt 1.wav</ShortName>
-							<Path>SFX\grunt 1_51B82FA0.wem</Path>
+							<Path>SFX\grunt 1_85FD0251.wem</Path>
 						</File>
 						<File Id="543854623" Language="SFX">
 							<ShortName>cupsmash1.wav</ShortName>
-							<Path>SFX\cupsmash1_749D64AE.wem</Path>
+							<Path>SFX\cupsmash1_D59056C8.wem</Path>
 						</File>
 						<File Id="607069172" Language="SFX">
 							<ShortName>cupsmash2.wav</ShortName>
-							<Path>SFX\cupsmash2_9F4CB072.wem</Path>
+							<Path>SFX\cupsmash2_DC8DD594.wem</Path>
 						</File>
 						<File Id="703880753" Language="SFX">
 							<ShortName>woosh 1.wav</ShortName>
@@ -52,7 +52,7 @@
 						</File>
 						<File Id="712122082" Language="SFX">
 							<ShortName>grunt 3.wav</ShortName>
-							<Path>SFX\grunt 3_99AED9EF.wem</Path>
+							<Path>SFX\grunt 3_B7E2872B.wem</Path>
 						</File>
 						<File Id="794543473" Language="SFX">
 							<ShortName>woosh 2.wav</ShortName>
@@ -60,7 +60,7 @@
 						</File>
 						<File Id="1006196699" Language="SFX">
 							<ShortName>grunt 2.wav</ShortName>
-							<Path>SFX\grunt 2_8BDAAAEB.wem</Path>
+							<Path>SFX\grunt 2_1C6425E5.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
