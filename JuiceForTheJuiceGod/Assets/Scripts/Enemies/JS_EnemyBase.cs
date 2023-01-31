@@ -19,7 +19,11 @@ public class JS_EnemyBase : MonoBehaviour
     public float damageDistanceSquared;
     public float timeBetweenDamage;
 
-    public Color juiceColor;
+    [SerializeField]
+    private Color juiceColor;
+    [SerializeField]
+    private JUICE_TYPES juiceType;
+
     [SerializeField]
     private GameObject juicePrefab;
 
@@ -85,8 +89,15 @@ public class JS_EnemyBase : MonoBehaviour
 
     public void Death()
     {
-        GameObject juice = Instantiate(juicePrefab, new Vector3(gameObject.transform.position.x, 0.05f, gameObject.transform.position.z), Quaternion.identity) as GameObject;
-        juice.GetComponent<Material>().SetColor("_MainColor", juiceColor);
+        GameObject juice = Instantiate(juicePrefab) as GameObject;
+        juice.transform.position = new Vector3(gameObject.transform.position.x, 0.05f, gameObject.transform.position.z);
+        juice.GetComponent<SpriteRenderer>().color = juiceColor;
+        juice.GetComponent<JS_Juice>().SetJuiceType(juiceType);
+        juice.transform.SetParent(GameObject.Find("AllJuices").transform);
+
+        var main = juice.GetComponent<ParticleSystem>().main;
+        main.startColor = juiceColor;
+
         Destroy(gameObject);
     }
 }

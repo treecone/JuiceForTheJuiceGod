@@ -3,6 +3,18 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.HID;
+
+public enum JUICE_TYPES
+{
+    Oranges = 0,
+    Strawberries = 1,
+    Grapes = 2,
+    StickyFruit = 3,
+    Durians = 4, 
+    Pomegranates = 5,
+
+};
 
 public class JS_Player : MonoBehaviour
 {
@@ -14,17 +26,21 @@ public class JS_Player : MonoBehaviour
     private InputActionReference movementRefrence;
     [SerializeField]
     private InputActionReference smashRefrence;
+    [SerializeField]
+    private float[] juiceStored;
 
     private JS_PlayerAttributes attributes;
     private Rigidbody rb;
 
     private GameObject hammer;
     //Input from the spacebar to tell player to smash
-    private bool smashNow;
+    private bool holdingSpace;
     //Locking bool so the smash damage is only applied once 
     private bool smashLock;
 
     private Transform enemySpawner;
+    private Transform allJuices;
+    public List<GameObject> nearbyJuices;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +48,15 @@ public class JS_Player : MonoBehaviour
         attributes = GetComponent<JS_PlayerAttributes>();
         hammer = gameObject.transform.Find("Hammer").gameObject;
         rb = gameObject.GetComponent<Rigidbody>();
-        smashLock = false;
+
         enemySpawner = GameObject.Find("EnemySpawner").transform;
+        allJuices = GameObject.Find("AllJuices").transform;
+
         attributes.invincibility = true;
+        smashLock = false;
+
+        juiceStored = new float[5];
+        nearbyJuices = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -46,7 +68,7 @@ public class JS_Player : MonoBehaviour
 
     void Smashing()
     {
-        smashNow = smashRefrence.action.ReadValue<float>() > 0.9f;
+        holdingSpace = smashRefrence.action.ReadValue<float>() > 0.9f;
         float hammerYInWorldSpace = hammer.transform.TransformPoint(Vector3.zero).y;
 
         if(!attributes.invincibility)
@@ -58,7 +80,7 @@ public class JS_Player : MonoBehaviour
             }
         }
 
-        if (smashNow)
+        if (holdingSpace)
         {
             //Holding Space
 
@@ -74,9 +96,28 @@ public class JS_Player : MonoBehaviour
                 {
                     StartCoroutine(invincibilityTimer());
                     Combat();
+
+                    //Get all nearby juices
+                    nearbyJuices.Clear();
+                    foreach(Transform child in allJuices)
+                    {
+                        Debug.Log((child.position - hammer.transform.position).sqrMagnitude + "," + attributes.absorbtionRadiusSquared);
+                        if((child.position - hammer.transform.position).sqrMagnitude <= attributes.absorbtionRadiusSquared)
+                        {
+                            nearbyJuices.Add(child.gameObject);
+                            child.GetComponent<ParticleSystem>().Play();
+                            var emission = child.GetComponent<ParticleSystem>().emission;
+                            emission.rateOverTime = 5.0f;
+                        }
+                    }
+
                     smashLock = true;
                 }
-                AbsorbJuice();
+
+                if (!attributes.invincibility && nearbyJuices.Count > 0)
+                {
+                    AbsorbJuice();
+                }
             }
         }
         else
@@ -87,10 +128,21 @@ public class JS_Player : MonoBehaviour
             if(smashLock)
             {
                 //1.0f is the y axis reset range for another smash
-                if (hammerYInWorldSpace > transform.position.y - 1.0f)
+                if (hammerYInWorldSpace > transform.position.y - 5.0f)
                 {
                     smashLock = false;
                 }
+            }
+
+            if(nearbyJuices.Count > 0)
+            {
+                //Reset juice on ground
+                foreach (GameObject j in nearbyJuices)
+                {
+                    var emission = j.GetComponent<ParticleSystem>().emission;
+                    emission.rateOverTime = 0f;
+                }
+                nearbyJuices.Clear();
             }
         }
     }
@@ -110,7 +162,7 @@ public class JS_Player : MonoBehaviour
 
     void Movement()
     {
-        if (smashNow)
+        if (holdingSpace)
         {
             if(usePhysics)
                 rb.velocity = Vector3.zero;
@@ -140,7 +192,24 @@ public class JS_Player : MonoBehaviour
 
     void AbsorbJuice()
     {
-        //foreach()
+        float amountToYoinkTotal = 0;
+        for(int i = 0; i < nearbyJuices.Count; i++)
+        {
+            float yoinked = nearbyJuices[i].GetComponent<JS_Juice>().RetreveJuice(attributes.absorbtionSpeed);
+
+            if (yoinked == 0)
+            {
+                nearbyJuices.RemoveRange(i, 1);
+                continue;
+            }
+            amountToYoinkTotal += yoinked;
+            juiceStored[(int)nearbyJuices[i].GetComponent<JS_Juice>().GetJuiceType()] += yoinked;
+        }
+
+        attributes.juicefulness += amountToYoinkTotal;
+
+        //Change UI
+
     }
 
     void OnDrawGizmosSelected()
@@ -150,7 +219,7 @@ public class JS_Player : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(hammer.transform.position, attributes.damageRadiusSquared);
             Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(hammer.transform.position, attributes.absorbtionRadius);
+            Gizmos.DrawWireSphere(hammer.transform.position, Mathf.Sqrt(attributes.absorbtionRadiusSquared));
         }
     }
 }
