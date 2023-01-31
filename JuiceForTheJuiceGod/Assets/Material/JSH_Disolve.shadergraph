@@ -238,9 +238,9 @@
     "m_Guid": {
         "m_GuidSerialized": "cb71f3a3-5b36-46c7-bc9f-6fad92ac11b2"
     },
-    "m_Name": "MainColor",
+    "m_Name": "_MainColor",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "MainColor",
+    "m_RefNameGeneratedByDisplayName": "_MainColor",
     "m_DefaultReferenceName": "_MainColor",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -387,7 +387,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "29f9ff7bb7664866987c7cebdde8575c",
     "m_Id": 0,
-    "m_DisplayName": "DisolveScale",
+    "m_DisplayName": "_DisolveScale",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -487,9 +487,9 @@
     "m_Guid": {
         "m_GuidSerialized": "a8ac5e04-6590-4b87-aac5-764aea99e34b"
     },
-    "m_Name": "DisolveScale",
+    "m_Name": "_DisolveScale",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "DisolveScale",
+    "m_RefNameGeneratedByDisplayName": "_DisolveScale",
     "m_DefaultReferenceName": "_DisolveScale",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -552,7 +552,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "4e28d1b54dba4fd9a1020aa82ff79a60",
     "m_Id": 0,
-    "m_DisplayName": "Capacity",
+    "m_DisplayName": "_Capacity",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -646,9 +646,9 @@
     "m_Guid": {
         "m_GuidSerialized": "5e26f9c7-7049-48a2-b5f3-e74c7d1934b9"
     },
-    "m_Name": "Capacity",
+    "m_Name": "_Capacity",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Capacity",
+    "m_RefNameGeneratedByDisplayName": "_Capacity",
     "m_DefaultReferenceName": "_Capacity",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -659,7 +659,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": 2.0,
-    "m_FloatType": 1,
+    "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
         "y": 2.0
@@ -865,7 +865,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "6d0617bf58d0455f97211362f376933c",
     "m_Id": 0,
-    "m_DisplayName": "MainColor",
+    "m_DisplayName": "_MainColor",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",

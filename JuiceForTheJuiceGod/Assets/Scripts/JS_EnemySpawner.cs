@@ -5,11 +5,13 @@ using UnityEngine;
 public class JS_EnemySpawner : MonoBehaviour
 {
     public List<GameObject> enemyPrefabs;
+    //Seconds
+    public float spawnRate;
     public float xzSize;
 
     void Start()
     {
-        InvokeRepeating("SpawnRandomly", 2f, 1f);
+        InvokeRepeating("SpawnRandomly", 2f, spawnRate);
     }
 
     void Update()

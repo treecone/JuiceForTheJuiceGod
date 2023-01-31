@@ -67,6 +67,9 @@ MonoBehaviour:
   damage: 1
   damageDistanceSquared: 2
   timeBetweenDamage: 2
+  juiceColor: {r: 1, g: 0, b: 0, a: 1}
+  juiceType: 0
+  juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
 --- !u!1 &5202870514932256342
 GameObject:
   m_ObjectHideFlags: 0

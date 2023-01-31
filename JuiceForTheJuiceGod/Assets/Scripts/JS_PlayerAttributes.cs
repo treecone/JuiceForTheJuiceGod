@@ -5,7 +5,7 @@ using UnityEngine;
 public class JS_PlayerAttributes : MonoBehaviour
 {
     [Header("Player Stats")]
-    public int juicefulness;
+    public float juicefulness;
     public int durability;
 
     public float speed;
@@ -16,7 +16,8 @@ public class JS_PlayerAttributes : MonoBehaviour
 
     public int cupDamage;
     public float damageRadiusSquared;
-    public float absorbtionRadius;
+    public float absorbtionRadiusSquared;
+    //Juice absorbed per frame
     public float absorbtionSpeed;
     public float hammerRecoverySpeed;
     public float hammerFallSpeed;
