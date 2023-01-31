@@ -20,6 +20,10 @@ public class JS_Player : MonoBehaviour
 {
     public bool usePhysics;
 
+    public AK.Wwise.Event SuckSound;
+    public AK.Wwise.Event StopSuckSound;
+
+
     [Space]
     [Header("Input")]
     [SerializeField]
@@ -42,6 +46,8 @@ public class JS_Player : MonoBehaviour
     private Transform allJuices;
     public List<GameObject> nearbyJuices;
 
+    private bool absorbLock;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +63,8 @@ public class JS_Player : MonoBehaviour
 
         juiceStored = new float[5];
         nearbyJuices = new List<GameObject>();
+
+        absorbLock = false;
     }
 
     // Update is called once per frame
@@ -123,6 +131,11 @@ public class JS_Player : MonoBehaviour
         else
         {
             //Not Holding Space
+            if(!absorbLock)
+            {
+                StopSuckSound.Post(gameObject);
+                absorbLock = false;
+            }
 
             hammer.transform.position = Vector3.Lerp(hammer.transform.position, gameObject.transform.position, Time.deltaTime * attributes.hammerRecoverySpeed);
             if(smashLock)
@@ -192,6 +205,12 @@ public class JS_Player : MonoBehaviour
 
     void AbsorbJuice()
     {
+        if(!absorbLock)
+        {
+            absorbLock = true;
+            SuckSound.Post(gameObject);
+        }
+
         float amountToYoinkTotal = 0;
         for(int i = 0; i < nearbyJuices.Count; i++)
         {
