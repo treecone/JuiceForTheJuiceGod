@@ -14,7 +14,11 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BANANA_1_SFX = 970812453U;
+        static const AkUniqueID PLAY_CUPSLAM = 2280282337U;
         static const AkUniqueID PLAY_DROP = 2007351433U;
+        static const AkUniqueID PLAY_FRUITSQUISH = 2798565183U;
+        static const AkUniqueID PLAY_PLACEHOLDERTRACK = 289943158U;
+        static const AkUniqueID STOP_FRIUTSQUISH = 3402561057U;
     } // namespace EVENTS
 
     namespace BANKS
@@ -25,6 +29,8 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID CUP_SFX = 814668642U;
+        static const AkUniqueID CUP_VOX = 698063984U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
 

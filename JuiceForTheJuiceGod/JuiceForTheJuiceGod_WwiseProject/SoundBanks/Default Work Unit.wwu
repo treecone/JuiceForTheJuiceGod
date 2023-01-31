@@ -5,8 +5,12 @@
 			<ChildrenList>
 				<SoundBank Name="MainoundBank" ID="{6E96DAC9-13A9-41C1-8F41-AAFA0A5446C8}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_CupSlam" ID="{6A5439E2-7AFA-4169-AAFF-9971840BF1DD}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="STOP_FriutSquish" ID="{680C0E4D-5216-41B2-9E2E-BCA239D55DBF}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlaceholderTrack" ID="{8B38B9D1-0F84-4588-81C5-ACBEDE9C5842}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_banana_1_sfx" ID="{9245A551-A053-45FC-B782-3042DB12D11D}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_drop" ID="{E146DF43-33E9-48D7-853B-18A208C63963}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FruitSquish" ID="{05EFE3B4-DD9A-4D17-8F9B-53634C4B9CAE}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

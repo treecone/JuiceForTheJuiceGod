@@ -1,4 +1,6 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	698063984	CUP VOX			\Default Work Unit\Master Audio Bus\CUP VOX	
+	814668642	CUP SFX			\Default Work Unit\Master Audio Bus\CUP SFX	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

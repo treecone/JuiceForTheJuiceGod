@@ -9,6 +9,32 @@
 							<ObjectRef Name="System" ID="{12C6E71A-62A3-45B3-B4CD-9D57509AA03E}" WorkUnitID="{F39BBFD3-ED8D-4629-8D8E-AE106FAC8E0C}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="CUP SFX" ID="{4E41B641-5CD7-4A09-AD65-8DEB36BC86F0}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="CUP VOX" ID="{07477EAE-FBAC-4495-B1B8-45E7B29C2535}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists/>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="CUP SFX" ID="{4E41B641-5CD7-4A09-AD65-8DEB36BC86F0}"/>
+									<DuckingParam>
+										<Volume>-7</Volume>
+										<FadeInTime>0.400000005960464</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

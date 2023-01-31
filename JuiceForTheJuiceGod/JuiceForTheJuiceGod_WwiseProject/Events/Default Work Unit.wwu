@@ -25,6 +25,73 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_CupSlam" ID="{6A5439E2-7AFA-4169-AAFF-9971840BF1DD}">
+					<ChildrenList>
+						<Action Name="" ID="{10CB2FD3-4190-47BB-A860-D4D772907579}" ShortID="787764023">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.079"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CUP IMPACT" ID="{91359E87-6C63-42E8-AF13-10938F314D6F}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{08E6ACE0-6AEE-49E7-98A7-7D1523C08105}" ShortID="779244998">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AIR SWOOPS" ID="{85E58D3D-A686-4F5A-BE0F-176B1C1B8803}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C8D4BC18-B149-4B5A-BDBA-3702CAE68AC6}" ShortID="806358355">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.088"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CUP GRUNTS" ID="{6A3C57E1-CD16-4926-A8E3-482EB303E770}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlaceholderTrack" ID="{8B38B9D1-0F84-4588-81C5-ACBEDE9C5842}">
+					<ChildrenList>
+						<Action Name="" ID="{6F293C14-3A89-426A-8716-23F8F485CF52}" ShortID="1060570538">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="012423 brj2023 boss music 2_3" ID="{B549436B-7FBC-4399-9A61-FFDAE096F0E3}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FruitSquish" ID="{05EFE3B4-DD9A-4D17-8F9B-53634C4B9CAE}">
+					<ChildrenList>
+						<Action Name="" ID="{0404B960-C1FD-421F-BA26-0AA767DFCB13}" ShortID="382792399">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fruitspill1" ID="{A9BB85E8-4214-449F-89D2-CB55E6DC9F72}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STOP_FriutSquish" ID="{680C0E4D-5216-41B2-9E2E-BCA239D55DBF}">
+					<ChildrenList>
+						<Action Name="" ID="{641B5B7D-1EA3-44B5-AE91-0346A3E106D7}" ShortID="186107107">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fruitspill1" ID="{A9BB85E8-4214-449F-89D2-CB55E6DC9F72}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

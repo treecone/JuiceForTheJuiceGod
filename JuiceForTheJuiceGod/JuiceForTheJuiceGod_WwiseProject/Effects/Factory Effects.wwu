@@ -1354,6 +1354,7 @@
 									<PropertyList>
 										<Property Name="DecayTime" Type="Real32" Value="5.8"/>
 										<Property Name="Density" Type="Real32" Value="70"/>
+										<Property Name="DryLevel" Type="Real32" Value="-7.3"/>
 										<Property Name="ERLevel" Type="Real32" Value="-28"/>
 										<Property Name="ERPattern" Type="int32" Value="9"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="490"/>

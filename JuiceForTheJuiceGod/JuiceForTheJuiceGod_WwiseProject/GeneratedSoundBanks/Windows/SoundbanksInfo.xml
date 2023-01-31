@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="114138346" Language="SFX" Hash="3564126544">
+		<SoundBank Id="114138346" Language="SFX" Hash="4231851747">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainoundBank</ObjectPath>
 			<ShortName>MainoundBank</ShortName>
 			<Path>MainoundBank.bnk</Path>
@@ -24,17 +24,74 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2280282337" Name="Play_CupSlam" ObjectPath="\Events\Default Work Unit\Play_CupSlam" DurationType="OneShot" DurationMin="0.502563" DurationMax="0.564352">
+					<IncludedMemoryFiles>
+						<File Id="390646825" Language="SFX">
+							<ShortName>cupsmash3.wav</ShortName>
+							<Path>SFX\cupsmash3_89935F74.wem</Path>
+						</File>
+						<File Id="436562420" Language="SFX">
+							<ShortName>grunt 4.wav</ShortName>
+							<Path>SFX\grunt 4_733D0DD5.wem</Path>
+						</File>
+						<File Id="540864188" Language="SFX">
+							<ShortName>grunt 1.wav</ShortName>
+							<Path>SFX\grunt 1_51B82FA0.wem</Path>
+						</File>
+						<File Id="543854623" Language="SFX">
+							<ShortName>cupsmash1.wav</ShortName>
+							<Path>SFX\cupsmash1_749D64AE.wem</Path>
+						</File>
+						<File Id="607069172" Language="SFX">
+							<ShortName>cupsmash2.wav</ShortName>
+							<Path>SFX\cupsmash2_9F4CB072.wem</Path>
+						</File>
+						<File Id="703880753" Language="SFX">
+							<ShortName>woosh 1.wav</ShortName>
+							<Path>SFX\woosh 1_11BFACA6.wem</Path>
+						</File>
+						<File Id="712122082" Language="SFX">
+							<ShortName>grunt 3.wav</ShortName>
+							<Path>SFX\grunt 3_99AED9EF.wem</Path>
+						</File>
+						<File Id="794543473" Language="SFX">
+							<ShortName>woosh 2.wav</ShortName>
+							<Path>SFX\woosh 2_64C260C1.wem</Path>
+						</File>
+						<File Id="1006196699" Language="SFX">
+							<ShortName>grunt 2.wav</ShortName>
+							<Path>SFX\grunt 2_8BDAAAEB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2007351433" Name="play_drop" ObjectPath="\Events\Default Work Unit\play_drop" DurationType="OneShot" DurationMin="0.46692" DurationMax="0.46692">
 					<IncludedMemoryFiles>
 						<File Id="196310345" Language="SFX">
 							<ShortName>dash_final.wav</ShortName>
-							<Path>SFX\dash_final_EEB1C770.wem</Path>
+							<Path>SFX\dash_final_3C962B23.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2798565183" Name="Play_FruitSquish" ObjectPath="\Events\Default Work Unit\Play_FruitSquish" DurationType="OneShot" DurationMin="1.683259" DurationMax="2.125679">
+					<IncludedMemoryFiles>
+						<File Id="1010988461" Language="SFX">
+							<ShortName>fruitspill1.wav</ShortName>
+							<Path>SFX\fruitspill1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="289943158" Name="Play_PlaceholderTrack" ObjectPath="\Events\Default Work Unit\Play_PlaceholderTrack" DurationType="OneShot" DurationMin="104.304001" DurationMax="104.304001">
+					<IncludedMemoryFiles>
+						<File Id="349970575" Language="SFX">
+							<ShortName>012423 brj2023 boss music 2_3.wav</ShortName>
+							<Path>SFX\012423 brj2023 boss music 2_3_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3402561057" Name="STOP_FriutSquish" ObjectPath="\Events\Default Work Unit\STOP_FriutSquish" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1040272897">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

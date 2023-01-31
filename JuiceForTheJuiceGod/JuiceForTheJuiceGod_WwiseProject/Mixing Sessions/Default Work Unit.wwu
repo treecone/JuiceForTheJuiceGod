@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{83B95257-2235-4E23-B2E2-116CC6DC04D3}" SchemaVersion="103">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{83B95257-2235-4E23-B2E2-116CC6DC04D3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{83B95257-2235-4E23-B2E2-116CC6DC04D3}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Main1" ID="{44F0E17B-C1F2-4F39-A730-9C86DF9A74C2}">
+					<ObjectList>
+						<ObjectRef Name="CUP IMPACT" ID="{91359E87-6C63-42E8-AF13-10938F314D6F}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+						<ObjectRef Name="AIR SWOOPS" ID="{85E58D3D-A686-4F5A-BE0F-176B1C1B8803}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+						<ObjectRef Name="CUP SFX" ID="{4E41B641-5CD7-4A09-AD65-8DEB36BC86F0}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+						<ObjectRef Name="CUP VOX" ID="{07477EAE-FBAC-4495-B1B8-45E7B29C2535}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>
