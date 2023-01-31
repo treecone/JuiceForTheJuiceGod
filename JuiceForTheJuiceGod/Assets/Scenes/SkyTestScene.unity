@@ -290,83 +290,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1317493656 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5345048354868749406, guid: 1c6252931dbe2d3499df293c4c95d6c5, type: 3}
-  m_PrefabInstance: {fileID: 7328120790153329399}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1317493657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317493656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57900c94d7dbe154fbf846d70d66087b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 71d36ec1f253cc94fb21d741fe79903c, type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions:
-  - {fileID: 0}
-  multiPositionArray: []
---- !u!114 &1317493658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317493656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 788547a511d50e14a9ec168370ede91e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList:
-    - {fileID: 1317493663}
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
---- !u!114 &1317493663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317493656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fbc5dff66fd7604e95fc4ef59880d55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!1 &1520234797 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1520234797, guid: d93c29bf420079741b8098d03da19255, type: 3}
@@ -628,14 +551,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner
       objectReference: {fileID: 0}
-    - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
-      propertyPath: xzSize
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
-      propertyPath: spawnRate
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 99081450861754171, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -750,30 +665,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 484466681}
-    - target: {fileID: 943615160, guid: d93c29bf420079741b8098d03da19255, type: 3}
-      propertyPath: durability
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 943615160, guid: d93c29bf420079741b8098d03da19255, type: 3}
-      propertyPath: absorbtionSpeed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 943615160, guid: d93c29bf420079741b8098d03da19255, type: 3}
-      propertyPath: invincibilityTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 943615160, guid: d93c29bf420079741b8098d03da19255, type: 3}
-      propertyPath: damageRadiusSquared
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 943615160, guid: d93c29bf420079741b8098d03da19255, type: 3}
-      propertyPath: absorbtionRadiusSquared
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 5577702888578073262, guid: d93c29bf420079741b8098d03da19255, type: 3}
-      propertyPath: usePhysics
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6095037133618675770, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: m_Name
       value: Player

@@ -128,7 +128,7 @@ public class JS_Player : MonoBehaviour
             if(smashLock)
             {
                 //1.0f is the y axis reset range for another smash
-                if (hammerYInWorldSpace > transform.position.y - 5.0f)
+                if (hammerYInWorldSpace > 1.0f)
                 {
                     smashLock = false;
                 }

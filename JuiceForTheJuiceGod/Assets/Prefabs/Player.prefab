@@ -164,9 +164,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f5433be51a04f04f99739a250f2a9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usePhysics: 0
+  usePhysics: 1
   movementRefrence: {fileID: 5281268938277611236, guid: 844cc8123782cb14a927eab2461a349a, type: 3}
   smashRefrence: {fileID: 8546717223889599597, guid: 844cc8123782cb14a927eab2461a349a, type: 3}
+  juiceStored: []
+  nearbyJuices: []
 --- !u!114 &-7930583276440560084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,14 +232,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   juicefulness: 50
-  durability: 100
+  durability: 50
   speed: 5
   vision: 5
   cupDamage: 1
-  absorbtionRadius: 5
-  absorbtionSpeed: 1
+  damageRadiusSquared: 2
+  absorbtionRadiusSquared: 32
+  absorbtionSpeed: 0.1
   hammerRecoverySpeed: 3
   hammerFallSpeed: 0.4
+  invincibilityTime: 1
+  invincibility: 0
 --- !u!54 &943615162
 Rigidbody:
   m_ObjectHideFlags: 0
