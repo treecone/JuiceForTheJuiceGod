@@ -131,7 +131,7 @@ public class JS_Player : MonoBehaviour
         else
         {
             //Not Holding Space
-            if(!absorbLock)
+            if(absorbLock)
             {
                 StopSuckSound.Post(gameObject);
                 absorbLock = false;
