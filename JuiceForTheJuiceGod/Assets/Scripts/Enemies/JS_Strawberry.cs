@@ -21,7 +21,7 @@ public class JS_Strawberry : JS_EnemyBase
         base.Update();
         waveTimer += Time.deltaTime;
     }
-
+    /*
     protected override void Movement()
     {
         if (!hostile)
@@ -45,4 +45,5 @@ public class JS_Strawberry : JS_EnemyBase
         gameObject.transform.Translate(dir + ((Mathf.Sin(waveTimer * sinWaveSpeed) * sinWaveForce) * perpDir) * speed);
         //rb.AddForce(dir + ((Mathf.Sin(waveTimer * sinWaveSpeed) * sinWaveForce) * perpDir) * speed);
     }
+    */
 }
