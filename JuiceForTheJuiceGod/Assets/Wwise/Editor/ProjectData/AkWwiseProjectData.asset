@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: e4b89a390caa2746ac623cf5b4574949
     GuidInternal: 
-    m_lastTime: -8585264924065588525
+    m_lastTime: -8585264937695422539
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ebae84b39011aa468a911c56181b8262
     GuidInternal: 
-    m_lastTime: -8585264115485372066
+    m_lastTime: -8585264572749952256
     List:
     - name: CUP SFX
       guid: 41b6414ed75c094aad658deb36bc86f0
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 22bb7963347e4c4382f8e43755c18752
     GuidInternal: 
-    m_lastTime: -8585264023569760566
+    m_lastTime: -8585263134752319368
     List:
     - name: MainoundBank
       guid: c9da966ea913c1418f41aafa0a5446c8
@@ -128,8 +128,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a12b9103b6bd5d45847a0f86f512267b
     GuidInternal: 
-    m_lastTime: -8585264023572770705
+    m_lastTime: -8585263139235824086
     List:
+    - name: Play_013123_jeus4thejuicegod_theme_1
+      guid: 4477fae80c6cb1419c9f4e262b543317
+      id: 1254914371
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_013123_jeus4thejuicegod_theme_1
+        ObjectType: 3
+        guid: 4477fae80c6cb1419c9f4e262b543317
+      Path: Events\Default Work Unit\Play_013123_jeus4thejuicegod_theme_1
+      maxAttenuation: 0
+      maxDuration: 45.17648
+      minDuration: 45.17648
     - name: Play_banana_1_sfx
       guid: 51a5459253a0fc45b7823042db12d11d
       id: 970812453
@@ -198,6 +215,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.125679
       minDuration: 1.683259
+    - name: Play_GREENSQUISH
+      guid: b288326a7001b0479ccb5006f6088b7c
+      id: 3970179632
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_GREENSQUISH
+        ObjectType: 3
+        guid: b288326a7001b0479ccb5006f6088b7c
+      Path: Events\Default Work Unit\Play_GREENSQUISH
+      maxAttenuation: 0
+      maxDuration: 1.387992
+      minDuration: 1.387992
+    - name: Play_OrangeSquish
+      guid: df67e9ee9be66840aa3062a5a70daa32
+      id: 428305283
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_OrangeSquish
+        ObjectType: 3
+        guid: df67e9ee9be66840aa3062a5a70daa32
+      Path: Events\Default Work Unit\Play_OrangeSquish
+      maxAttenuation: 0
+      maxDuration: 2.178797
+      minDuration: 2.178797
+    - name: Play_PinkSquish
+      guid: 85657add3a40d94d8be89afaf1c859f5
+      id: 3671528721
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_PinkSquish
+        ObjectType: 3
+        guid: 85657add3a40d94d8be89afaf1c859f5
+      Path: Events\Default Work Unit\Play_PinkSquish
+      maxAttenuation: 0
+      maxDuration: 1.990667
+      minDuration: 1.990667
     - name: Play_PlaceholderTrack
       guid: d1b9388b840f884581c5acbede9c5842
       id: 289943158
@@ -215,6 +283,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 104.304
       minDuration: 104.304
+    - name: Play_PurpleSquish
+      guid: ec5339fc4ac39749915b7e9dbe17a5a0
+      id: 2730169239
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_PurpleSquish
+        ObjectType: 3
+        guid: ec5339fc4ac39749915b7e9dbe17a5a0
+      Path: Events\Default Work Unit\Play_PurpleSquish
+      maxAttenuation: 0
+      maxDuration: 1.237627
+      minDuration: 1.237627
+    - name: Play_RedSquish
+      guid: e13e7e88bc729545a89c28ce766888a5
+      id: 618688860
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_RedSquish
+        ObjectType: 3
+        guid: e13e7e88bc729545a89c28ce766888a5
+      Path: Events\Default Work Unit\Play_RedSquish
+      maxAttenuation: 0
+      maxDuration: 2.469333
+      minDuration: 2.469333
     - name: Play_suck_1
       guid: 1ee4d048691a804ea2f02787a7dac780
       id: 2273358256
@@ -232,6 +334,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_suck_2
+      guid: 6b8086b093ab9b4d8c96dad10b3e9724
+      id: 2273358259
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_suck_2
+        ObjectType: 3
+        guid: 6b8086b093ab9b4d8c96dad10b3e9724
+      Path: Events\Default Work Unit\Play_suck_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_TealSquish
+      guid: e97d2848dc3de345a3bd444b0c18875d
+      id: 1970764015
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_TealSquish
+        ObjectType: 3
+        guid: e97d2848dc3de345a3bd444b0c18875d
+      Path: Events\Default Work Unit\Play_TealSquish
+      maxAttenuation: 0
+      maxDuration: 2.350667
+      minDuration: 2.350667
     - name: STOP_FriutSquish
       guid: 4d0e0c681652b2419e2ebca239d55dbf
       id: 3402561057
@@ -266,6 +402,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_suck_2
+      guid: 3843b4a54ff7084ca0f4602cafdbb6d7
+      id: 1787510309
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Stop_suck_2
+        ObjectType: 3
+        guid: 3843b4a54ff7084ca0f4602cafdbb6d7
+      Path: Events\Default Work Unit\Stop_suck_2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -278,7 +431,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: e2f8e91f9b0da049bdf230bdd9945cc8
     GuidInternal: 
-    m_lastTime: -8585264924065703329
+    m_lastTime: -8585264937695632585
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -292,7 +445,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 9f124c64c3e40548b594198be1b67410
     GuidInternal: 
-    m_lastTime: -8585264924065598366
+    m_lastTime: -8585264937696382748
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -306,7 +459,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 500df6c7ea6e0d4ba64cc35bfbe5059c
     GuidInternal: 
-    m_lastTime: -8585264924065588525
+    m_lastTime: -8585264937696262722
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -320,10 +473,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 729a56c1a72cab40accbc75106c76f47
     GuidInternal: 
-    m_lastTime: -8585264924065588525
+    m_lastTime: -8585264937695892647
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000007000000
+  ExpandedWaapiItemIds: 010000000600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

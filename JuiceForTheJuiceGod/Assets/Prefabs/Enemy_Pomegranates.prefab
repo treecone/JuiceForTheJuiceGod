@@ -66,7 +66,7 @@ MonoBehaviour:
   FruitSquish:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b6183dc1bc5f1cf4088bc7dbcce137f1, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 232430f652b622242889600368f33b5f, type: 2}
   speed: 2
   damage: 1
   damageDistanceSquared: 2

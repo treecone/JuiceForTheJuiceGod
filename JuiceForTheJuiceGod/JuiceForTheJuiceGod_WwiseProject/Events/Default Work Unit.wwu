@@ -117,6 +117,165 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_013123_jeus4thejuicegod_theme_1" ID="{E8FA7744-6C0C-41B1-9C9F-4E262B543317}">
+					<ChildrenList>
+						<Action Name="" ID="{12951B9F-235F-4DBD-9E7A-7B6523E35B6A}" ShortID="970358539">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="020123 jeus4thejuicegod theme sesh 2" ID="{477FDAE7-6005-485A-9E60-EA0B293DD890}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RedSquish" ID="{887E3EE1-72BC-4595-A89C-28CE766888A5}">
+					<ChildrenList>
+						<Action Name="" ID="{C02A99C6-6F67-4CB7-9C05-E516C60080BF}" ShortID="361576471">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="squish 1" ID="{0BB93828-8834-4637-B519-B6C3B14BD117}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{823166CA-5FFE-44C1-9DED-E561C1CB675E}" ShortID="165834168">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scream 2" ID="{660328B2-0782-4F84-9C35-6F7148CC09E0}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GREENSQUISH" ID="{6A3288B2-0170-47B0-9CCB-5006F6088B7C}">
+					<ChildrenList>
+						<Action Name="" ID="{34ABEB2C-52BB-49EE-8221-7B42946F7DBA}" ShortID="421222411">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.04"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="screams" ID="{802F31D8-B4EB-4328-8FC4-665BEE430831}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{44A6BE4D-34DB-437F-9143-DE28CCC36FA0}" ShortID="821902781">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fruitspill2" ID="{9ABB1033-D420-4684-A34F-4AD553AC69D3}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_suck_2" ID="{B086806B-AB93-4D9B-8C96-DAD10B3E9724}">
+					<ChildrenList>
+						<Action Name="" ID="{862F5AAB-351B-4D19-9FF4-EA353A772728}" ShortID="370409946">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="suck 2" ID="{21CA0DFE-7E64-4870-A9F5-C1B5291856EF}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_suck_2" ID="{A5B44338-F74F-4C08-A0F4-602CAFDBB6D7}">
+					<ChildrenList>
+						<Action Name="" ID="{72AEA6BE-A742-4890-9866-6D29098B9EA1}" ShortID="847740611">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="suck 2" ID="{21CA0DFE-7E64-4870-A9F5-C1B5291856EF}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OrangeSquish" ID="{EEE967DF-E69B-4068-AA30-62A5A70DAA32}">
+					<ChildrenList>
+						<Action Name="" ID="{276C9B54-9880-46FB-A1FD-E317FA32ABB3}" ShortID="527073161">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scream 3" ID="{B392C303-F27E-433D-9AE0-C6DFA434486E}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9E77D1AE-60B8-48EC-BFDF-2705E5ADE0E7}" ShortID="937189705">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fruitspill3" ID="{698BCA38-539E-4A94-8A7B-A2B0ECB7949C}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PurpleSquish" ID="{FC3953EC-C34A-4997-915B-7E9DBE17A5A0}">
+					<ChildrenList>
+						<Action Name="" ID="{E16A51AB-8AE0-428F-8B29-34C16168F4CC}" ShortID="200691116">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.09"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scream 4" ID="{F67BDD60-E5E6-4E48-9CA3-C3593DE5CC93}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0ADC6991-EED0-4259-B4F2-E9F91D6F1D10}" ShortID="12567777">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fruitspill3" ID="{698BCA38-539E-4A94-8A7B-A2B0ECB7949C}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PinkSquish" ID="{DD7A6585-403A-4DD9-8BE8-9AFAF1C859F5}">
+					<ChildrenList>
+						<Action Name="" ID="{2566CCAB-E4C1-4B47-9C55-35039B4D012C}" ShortID="972665684">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.06"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scream 6" ID="{855A82DA-07A6-4CF9-B805-22804AA9A901}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8FD77ECE-229E-43CB-BFB6-DE0A164429E7}" ShortID="660068183">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="squish 1" ID="{0BB93828-8834-4637-B519-B6C3B14BD117}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TealSquish" ID="{48287DE9-3DDC-45E3-A3BD-444B0C18875D}">
+					<ChildrenList>
+						<Action Name="" ID="{AEDEAC48-C0FF-4841-A751-C5A6EEDF2C77}" ShortID="8973434">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scream5" ID="{813E8B69-B49B-4EF4-9572-74EF7DE161D1}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0653B2DD-B658-401E-8A2E-E138CCF4DB5E}" ShortID="354922129">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fruitspill1" ID="{A9BB85E8-4214-449F-89D2-CB55E6DC9F72}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

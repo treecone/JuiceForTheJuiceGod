@@ -11,16 +11,16 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="114138346" Language="SFX" Hash="2284174450">
+		<SoundBank Id="114138346" Language="SFX" Hash="2832524933">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainoundBank</ObjectPath>
 			<ShortName>MainoundBank</ShortName>
 			<Path>MainoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1254914371" Name="Play_013123_jeus4thejuicegod_theme_1" ObjectPath="\Events\Default Work Unit\Play_013123_jeus4thejuicegod_theme_1" DurationType="OneShot" DurationMin="46.58823" DurationMax="46.58823">
+				<Event Id="1254914371" Name="Play_013123_jeus4thejuicegod_theme_1" ObjectPath="\Events\Default Work Unit\Play_013123_jeus4thejuicegod_theme_1" DurationType="OneShot" DurationMin="45.176479" DurationMax="45.176479">
 					<IncludedMemoryFiles>
-						<File Id="375501643" Language="SFX">
-							<ShortName>013123 jeus4thejuicegod theme_1.wav</ShortName>
-							<Path>SFX\013123 jeus4thejuicegod theme_1_D79FB2B7.wem</Path>
+						<File Id="20626422" Language="SFX">
+							<ShortName>020123 jeus4thejuicegod theme sesh 2.wav</ShortName>
+							<Path>SFX\020123 jeus4thejuicegod theme sesh 2_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -88,6 +88,42 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3970179632" Name="Play_GREENSQUISH" ObjectPath="\Events\Default Work Unit\Play_GREENSQUISH" DurationType="OneShot" DurationMin="1.387992" DurationMax="1.387992">
+					<IncludedMemoryFiles>
+						<File Id="53626642" Language="SFX">
+							<ShortName>screams.wav</ShortName>
+							<Path>SFX\screams_008C383E.wem</Path>
+						</File>
+						<File Id="451357906" Language="SFX">
+							<ShortName>fruitspill2.wav</ShortName>
+							<Path>SFX\fruitspill2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="428305283" Name="Play_OrangeSquish" ObjectPath="\Events\Default Work Unit\Play_OrangeSquish" DurationType="OneShot" DurationMin="2.178797" DurationMax="2.178797">
+					<IncludedMemoryFiles>
+						<File Id="467312185" Language="SFX">
+							<ShortName>fruitspill3.wav</ShortName>
+							<Path>SFX\fruitspill3_10C4C929.wem</Path>
+						</File>
+						<File Id="677987550" Language="SFX">
+							<ShortName>scream 3.wav</ShortName>
+							<Path>SFX\scream 3_1E415253.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3671528721" Name="Play_PinkSquish" ObjectPath="\Events\Default Work Unit\Play_PinkSquish" DurationType="OneShot" DurationMin="1.990667" DurationMax="1.990667">
+					<IncludedMemoryFiles>
+						<File Id="79908683" Language="SFX">
+							<ShortName>scream 6.wav</ShortName>
+							<Path>SFX\scream 6_10C4C929.wem</Path>
+						</File>
+						<File Id="640126864" Language="SFX">
+							<ShortName>squish 1.wav</ShortName>
+							<Path>SFX\squish 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="289943158" Name="Play_PlaceholderTrack" ObjectPath="\Events\Default Work Unit\Play_PlaceholderTrack" DurationType="OneShot" DurationMin="104.304001" DurationMax="104.304001">
 					<IncludedMemoryFiles>
 						<File Id="349970575" Language="SFX">
@@ -96,16 +132,61 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2730169239" Name="Play_PurpleSquish" ObjectPath="\Events\Default Work Unit\Play_PurpleSquish" DurationType="OneShot" DurationMin="1.237627" DurationMax="1.237627">
+					<IncludedMemoryFiles>
+						<File Id="467312185" Language="SFX">
+							<ShortName>fruitspill3.wav</ShortName>
+							<Path>SFX\fruitspill3_10C4C929.wem</Path>
+						</File>
+						<File Id="526944446" Language="SFX">
+							<ShortName>scream 4.wav</ShortName>
+							<Path>SFX\scream 4_D896F922.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="618688860" Name="Play_RedSquish" ObjectPath="\Events\Default Work Unit\Play_RedSquish" DurationType="OneShot" DurationMin="2.469333" DurationMax="2.469333">
+					<IncludedMemoryFiles>
+						<File Id="12688955" Language="SFX">
+							<ShortName>scream 2.wav</ShortName>
+							<Path>SFX\scream 2_10C4C929.wem</Path>
+						</File>
+						<File Id="640126864" Language="SFX">
+							<ShortName>squish 1.wav</ShortName>
+							<Path>SFX\squish 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2273358256" Name="Play_suck_1" ObjectPath="\Events\Default Work Unit\Play_suck_1" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1015502824" Language="SFX">
 							<ShortName>suck 1.wav</ShortName>
-							<Path>SFX\suck 1_8C45AFBD.wem</Path>
+							<Path>SFX\suck 1_20AC17CB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2273358259" Name="Play_suck_2" ObjectPath="\Events\Default Work Unit\Play_suck_2" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="264470518" Language="SFX">
+							<ShortName>suck 2.wav</ShortName>
+							<Path>SFX\suck 2_7F456792.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1970764015" Name="Play_TealSquish" ObjectPath="\Events\Default Work Unit\Play_TealSquish" DurationType="OneShot" DurationMin="2.350667" DurationMax="2.350667">
+					<IncludedMemoryFiles>
+						<File Id="178771599" Language="SFX">
+							<ShortName>scream5.wav</ShortName>
+							<Path>SFX\scream5_10C4C929.wem</Path>
+						</File>
+						<File Id="1010988461" Language="SFX">
+							<ShortName>fruitspill1.wav</ShortName>
+							<Path>SFX\fruitspill1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3402561057" Name="STOP_FriutSquish" ObjectPath="\Events\Default Work Unit\STOP_FriutSquish" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1787510310" Name="Stop_suck_1" ObjectPath="\Events\Default Work Unit\Stop_suck_1" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1787510309" Name="Stop_suck_2" ObjectPath="\Events\Default Work Unit\Stop_suck_2" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="1040272897">

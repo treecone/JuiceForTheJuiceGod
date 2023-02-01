@@ -62,10 +62,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f5bef0c39819d8469860ddf007cd4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  devotionMode: 0
   FruitSquish:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b6183dc1bc5f1cf4088bc7dbcce137f1, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 71d36ec1f253cc94fb21d741fe79903c, type: 2}
   speed: 2
   damage: 1
   damageDistanceSquared: 2
@@ -73,6 +74,7 @@ MonoBehaviour:
   juiceColor: {r: 1, g: 0, b: 0, a: 1}
   juiceType: 0
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
+  dir: {x: 0, y: 0, z: 0}
 --- !u!1 &5202870514932256342
 GameObject:
   m_ObjectHideFlags: 0

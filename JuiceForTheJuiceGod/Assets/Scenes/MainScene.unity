@@ -302,7 +302,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317493656}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57900c94d7dbe154fbf846d70d66087b, type: 3}
   m_Name: 
@@ -845,11 +845,11 @@ PrefabInstance:
     - target: {fileID: 5577702888578073262, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: SuckSound.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 9ea0fb0fa3cdbf54da2194b98b255f48, type: 2}
+      objectReference: {fileID: 11400000, guid: 2b22af8e0208af047a60b534c2f2e939, type: 2}
     - target: {fileID: 5577702888578073262, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: StopSuckSound.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 8fe924328e25be14597c48039613c342, type: 2}
+      objectReference: {fileID: 11400000, guid: 2a8935fec29ce6641917377d90480cf1, type: 2}
     - target: {fileID: 6095037133618675770, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: m_Name
       value: Player

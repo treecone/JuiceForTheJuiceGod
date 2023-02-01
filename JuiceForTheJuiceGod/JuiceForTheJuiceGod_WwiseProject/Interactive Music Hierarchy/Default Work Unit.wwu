@@ -94,6 +94,90 @@
 								</ObjectList>
 							</ObjectLists>
 						</MusicSegment>
+						<MusicSegment Name="020123 jeus4thejuicegod theme sesh 2" ID="{477FDAE7-6005-485A-9E60-EA0B293DD890}" ShortID="274826934">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="45176.4791666667"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="020123 jeus4thejuicegod theme sesh 2" ID="{44616AE1-1395-416F-905A-AA54D5603B86}" ShortID="872680926">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="020123 jeus4thejuicegod theme sesh 2" ID="{EA78CAF7-938C-49DF-A222-569CB6121F82}">
+											<Language>SFX</Language>
+											<AudioFile>020123 jeus4thejuicegod theme sesh 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="20626422"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{0066BDBF-ED90-4638-B97E-F3346995F80E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9106B297-51DD-4772-A2E8-E9B040D313DD}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="020123 jeus4thejuicegod theme sesh 2" ID="{8D655C7C-4D5C-4032-ABC8-9A31B21E85C0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="45176.4791666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="020123 jeus4thejuicegod theme sesh 2" ID="{EA78CAF7-938C-49DF-A222-569CB6121F82}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{B60EA2ED-CDF8-4B9B-B63F-2D3D7FEA48FE}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{202FB7F7-6025-4D00-9C5B-19454037C3E7}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="45176.4791666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
