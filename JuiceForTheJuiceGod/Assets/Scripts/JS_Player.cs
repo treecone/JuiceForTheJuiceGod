@@ -122,6 +122,12 @@ public class JS_Player : MonoBehaviour
                     smashLock = true;
                 }
 
+                if (nearbyJuices.Count == 0)
+                {
+                    absorbLock = false;
+                    StopSuckSound.Post(gameObject);
+                }
+
                 if (!attributes.invincibility && nearbyJuices.Count > 0)
                 {
                     AbsorbJuice();
@@ -130,7 +136,8 @@ public class JS_Player : MonoBehaviour
         }
         else
         {
-            //Not Holding Space
+            //Not Holding Space ---------------------------
+
             if(absorbLock)
             {
                 StopSuckSound.Post(gameObject);
@@ -141,7 +148,7 @@ public class JS_Player : MonoBehaviour
             if(smashLock)
             {
                 //1.0f is the y axis reset range for another smash
-                if (hammerYInWorldSpace > 1.0f)
+                if (hammerYInWorldSpace > 0.2f)
                 {
                     smashLock = false;
                 }
@@ -167,10 +174,10 @@ public class JS_Player : MonoBehaviour
         {
             if((child.position - hammer.transform.position).sqrMagnitude < attributes.damageRadiusSquared)
             {
+                Debug.Log("Dealing Damage to " + child.gameObject.name + child.gameObject.GetInstanceID());
                 child.gameObject.GetComponent<JS_EnemyBase>().Death();
             }
         }
-        Debug.Log("Dealing Damage");
     }
 
     void Movement()

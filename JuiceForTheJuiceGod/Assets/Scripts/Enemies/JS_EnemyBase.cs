@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class JS_EnemyBase : MonoBehaviour
 {
+    [SerializeField]
+    protected bool devotionMode;
+
     public AK.Wwise.Event FruitSquish;
     protected Rigidbody rb;
     protected GameObject playerRef;
@@ -26,6 +29,17 @@ public class JS_EnemyBase : MonoBehaviour
 
     [SerializeField]
     protected GameObject juicePrefab;
+    protected JS_EnemySpawner spawner;
+
+    [SerializeField]
+    protected Vector3 dir;
+
+    protected bool outOfBoundsLock;
+
+    public void SetSpawner(JS_EnemySpawner spawner)
+    {
+        this.spawner = spawner;
+    }
 
     protected virtual void Start()
     {
@@ -33,6 +47,10 @@ public class JS_EnemyBase : MonoBehaviour
         playerRef = GameObject.Find("Player");
         hostile = true;
         playerAttributes = playerRef.GetComponent<JS_PlayerAttributes>();
+        devotionMode = false;
+        dir = new Vector3(Random.Range(-5.0f, 5.0f), 0, Random.Range(-5.0f, 5.0f)).normalized;
+        rb.velocity = dir * speed;
+        outOfBoundsLock = false;
     }
 
     protected virtual void Update()
@@ -46,11 +64,42 @@ public class JS_EnemyBase : MonoBehaviour
         if (!hostile)
             return;
 
-        Vector3 dir = playerRef.transform.position - transform.position;
-        dir.y = 0;
-        dir = dir.normalized;
+        if(devotionMode)
+        {
+            dir = playerRef.transform.position - transform.position;
+            dir.y = 0;
+            dir = dir.normalized;       
+        }
+        else
+        {
+            KeepInBounds();
+        }
 
-        gameObject.transform.Translate(dir * speed * Time.deltaTime);
+        rb.AddForce(dir * speed);
+    }
+
+    protected void KeepInBounds()
+    {
+        Vector3 dirToSpawner = (spawner.gameObject.transform.position - transform.position);
+
+        if (dirToSpawner.sqrMagnitude >= spawner.enemyDistanceAllowedSqr)
+        {
+            if(!outOfBoundsLock)
+            {
+                dir *= -1;
+                dir += dirToSpawner;
+                dir.Normalize();
+                outOfBoundsLock = true;
+            }
+        }
+
+        if(outOfBoundsLock)
+        {
+            if (dirToSpawner.sqrMagnitude < spawner.enemyDistanceAllowedSqr)
+            {
+                outOfBoundsLock = false;
+            }
+        }
     }
 
     protected virtual void DealDamage()

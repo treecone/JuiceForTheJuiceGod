@@ -302,7 +302,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317493656}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57900c94d7dbe154fbf846d70d66087b, type: 3}
   m_Name: 
@@ -675,6 +675,22 @@ PrefabInstance:
     - target: {fileID: 99081450861754148, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: m_Name
       value: EnemySpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
+      propertyPath: spawnRate
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
+      propertyPath: enemyDistanceAllowedSqr
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 5202870513916933283, guid: 76b0cbb4ad65e834ca4ba4af056c4d3e, type: 3}
+    - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
+      propertyPath: enemyDistanceSquareWidthSqr
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 99081450861754171, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: m_RootOrder
