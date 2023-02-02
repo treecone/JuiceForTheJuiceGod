@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_DROP = 2007351433U;
         static const AkUniqueID PLAY_FRUITSQUISH = 2798565183U;
         static const AkUniqueID PLAY_GREENSQUISH = 3970179632U;
+        static const AkUniqueID PLAY_MASTERSQUISH = 2770527519U;
         static const AkUniqueID PLAY_ORANGESQUISH = 428305283U;
         static const AkUniqueID PLAY_PINKSQUISH = 3671528721U;
         static const AkUniqueID PLAY_PLACEHOLDERTRACK = 289943158U;

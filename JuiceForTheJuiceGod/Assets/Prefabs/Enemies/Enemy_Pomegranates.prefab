@@ -66,7 +66,7 @@ MonoBehaviour:
   FruitSquish:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 232430f652b622242889600368f33b5f, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 3ed14e175fab13642b02b9ac7167b8f5, type: 2}
   speed: 2
   damage: 1
   damageDistanceSquared: 2
@@ -74,9 +74,9 @@ MonoBehaviour:
   juiceColor: {r: 0, g: 1, b: 0.92549026, a: 1}
   juiceType: 5
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
-  dir: {x: 0, y: 0, z: 0}
   childFruit: 0
   pomPrefab: {fileID: 5202870513916933283}
+  fruitInvincibility: 0
 --- !u!1 &5202870514932256342
 GameObject:
   m_ObjectHideFlags: 0

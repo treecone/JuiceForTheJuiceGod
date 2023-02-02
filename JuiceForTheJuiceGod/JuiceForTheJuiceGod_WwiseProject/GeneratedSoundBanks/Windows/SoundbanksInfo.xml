@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="114138346" Language="SFX" Hash="2832524933">
+		<SoundBank Id="114138346" Language="SFX" Hash="2331785497">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainoundBank</ObjectPath>
 			<ShortName>MainoundBank</ShortName>
 			<Path>MainoundBank.bnk</Path>
@@ -92,11 +92,55 @@
 					<IncludedMemoryFiles>
 						<File Id="53626642" Language="SFX">
 							<ShortName>screams.wav</ShortName>
-							<Path>SFX\screams_008C383E.wem</Path>
+							<Path>SFX\screams_4913CAA1.wem</Path>
 						</File>
 						<File Id="451357906" Language="SFX">
 							<ShortName>fruitspill2.wav</ShortName>
 							<Path>SFX\fruitspill2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2770527519" Name="Play_MasterSquish" ObjectPath="\Events\Default Work Unit\Play_MasterSquish" DurationType="OneShot" DurationMin="1.37" DurationMax="2.559333">
+					<IncludedMemoryFiles>
+						<File Id="12688955" Language="SFX">
+							<ShortName>scream 2.wav</ShortName>
+							<Path>SFX\scream 2_10C4C929.wem</Path>
+						</File>
+						<File Id="53626642" Language="SFX">
+							<ShortName>screams.wav</ShortName>
+							<Path>SFX\screams_4913CAA1.wem</Path>
+						</File>
+						<File Id="79908683" Language="SFX">
+							<ShortName>scream 6.wav</ShortName>
+							<Path>SFX\scream 6_10C4C929.wem</Path>
+						</File>
+						<File Id="178771599" Language="SFX">
+							<ShortName>scream5.wav</ShortName>
+							<Path>SFX\scream5_10C4C929.wem</Path>
+						</File>
+						<File Id="451357906" Language="SFX">
+							<ShortName>fruitspill2.wav</ShortName>
+							<Path>SFX\fruitspill2_10C4C929.wem</Path>
+						</File>
+						<File Id="467312185" Language="SFX">
+							<ShortName>fruitspill3.wav</ShortName>
+							<Path>SFX\fruitspill3_10C4C929.wem</Path>
+						</File>
+						<File Id="640126864" Language="SFX">
+							<ShortName>squish 1.wav</ShortName>
+							<Path>SFX\squish 1_10C4C929.wem</Path>
+						</File>
+						<File Id="677987550" Language="SFX">
+							<ShortName>scream 3.wav</ShortName>
+							<Path>SFX\scream 3_10DCF641.wem</Path>
+						</File>
+						<File Id="737758218" Language="SFX">
+							<ShortName>scream 7.wav</ShortName>
+							<Path>SFX\scream 7_10C4C929.wem</Path>
+						</File>
+						<File Id="1010988461" Language="SFX">
+							<ShortName>fruitspill1.wav</ShortName>
+							<Path>SFX\fruitspill1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -108,7 +152,7 @@
 						</File>
 						<File Id="677987550" Language="SFX">
 							<ShortName>scream 3.wav</ShortName>
-							<Path>SFX\scream 3_1E415253.wem</Path>
+							<Path>SFX\scream 3_10DCF641.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -138,10 +182,6 @@
 							<ShortName>fruitspill3.wav</ShortName>
 							<Path>SFX\fruitspill3_10C4C929.wem</Path>
 						</File>
-						<File Id="526944446" Language="SFX">
-							<ShortName>scream 4.wav</ShortName>
-							<Path>SFX\scream 4_D896F922.wem</Path>
-						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="618688860" Name="Play_RedSquish" ObjectPath="\Events\Default Work Unit\Play_RedSquish" DurationType="OneShot" DurationMin="2.469333" DurationMax="2.469333">
@@ -168,7 +208,7 @@
 					<IncludedMemoryFiles>
 						<File Id="264470518" Language="SFX">
 							<ShortName>suck 2.wav</ShortName>
-							<Path>SFX\suck 2_7F456792.wem</Path>
+							<Path>SFX\suck 2_0375C87B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
