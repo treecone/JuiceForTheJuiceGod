@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5202870513916933280}
   - component: {fileID: 5202870513916933281}
-  - component: {fileID: 5202870513916933282}
+  - component: {fileID: -5866189070077758655}
   m_Layer: 0
   m_Name: Enemy_Grapes
   m_TagString: Untagged
@@ -50,7 +50,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5202870513916933282
+--- !u!114 &-5866189070077758655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5202870513916933283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f5bef0c39819d8469860ddf007cd4ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 61786ccd596438a4d9b44f028b7de307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   devotionMode: 0
@@ -71,10 +71,12 @@ MonoBehaviour:
   damage: 1
   damageDistanceSquared: 2
   timeBetweenDamage: 2
-  juiceColor: {r: 0.5046811, g: 0, b: 1, a: 1}
+  juiceColor: {r: 0.64463615, g: 0, b: 1, a: 1}
   juiceType: 2
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
   dir: {x: 0, y: 0, z: 0}
+  sinWaveSpeed: 5
+  sideSpeed: 1
 --- !u!1 &5202870514932256342
 GameObject:
   m_ObjectHideFlags: 0

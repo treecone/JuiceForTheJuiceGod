@@ -61,7 +61,7 @@ public class JS_Player : MonoBehaviour
         attributes.invincibility = true;
         smashLock = false;
 
-        juiceStored = new float[5];
+        juiceStored = new float[6];
         nearbyJuices = new List<GameObject>();
 
         absorbLock = false;
@@ -174,7 +174,7 @@ public class JS_Player : MonoBehaviour
         {
             if((child.position - hammer.transform.position).sqrMagnitude < attributes.damageRadiusSquared)
             {
-                Debug.Log("Dealing Damage to " + child.gameObject.name + child.gameObject.GetInstanceID());
+                //Debug.Log("Dealing Damage to " + child.gameObject.name + child.gameObject.GetInstanceID());
                 child.gameObject.GetComponent<JS_EnemyBase>().Death();
             }
         }

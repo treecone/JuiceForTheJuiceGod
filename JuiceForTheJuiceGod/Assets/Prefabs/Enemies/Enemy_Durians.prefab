@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5202870513916933280}
   - component: {fileID: 5202870513916933281}
-  - component: {fileID: 5202870513916933282}
+  - component: {fileID: -3332855544101040017}
   m_Layer: 0
-  m_Name: Enemy_StickyFruit
+  m_Name: Enemy_Durians
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5202870513916933282
+--- !u!114 &-3332855544101040017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,22 +59,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5202870513916933283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f5bef0c39819d8469860ddf007cd4ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 294fd2a044094bb4c92a7269e7f03744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  devotionMode: 0
+  devotionMode: 1
   FruitSquish:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9db0f1a906d73474a93b4a97768d785c, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 730e1b3359901a045aded4aec9a52a28, type: 2}
   speed: 2
   damage: 1
   damageDistanceSquared: 2
   timeBetweenDamage: 2
-  juiceColor: {r: 1, g: 0, b: 0.8258381, a: 1}
-  juiceType: 3
+  juiceColor: {r: 0.69803923, g: 1, b: 0, a: 1}
+  juiceType: 4
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
   dir: {x: 0, y: 0, z: 0}
+  timeInJump: 1.5
+  timeBetweenJumps: 6
 --- !u!1 &5202870514932256342
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +151,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 370677da2dcff534dbb86fd4c89a244c, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9716425, a: 1}
+  m_Color: {r: 0.69803923, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

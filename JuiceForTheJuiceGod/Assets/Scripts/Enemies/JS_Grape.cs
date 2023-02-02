@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JS_Strawberry : JS_EnemyBase
+public class JS_Grape : JS_EnemyBase
 {
+    private float waveTimer;
     [SerializeField]
     private float sinWaveSpeed;
     [SerializeField]
-    private float sinWaveForce;
-
-    private float waveTimer;
+    private float sideSpeed;
 
     protected override void Start()
     {
@@ -21,7 +20,7 @@ public class JS_Strawberry : JS_EnemyBase
         base.Update();
         waveTimer += Time.deltaTime;
     }
-    
+
     protected override void Movement()
     {
         if (!hostile)
@@ -42,9 +41,15 @@ public class JS_Strawberry : JS_EnemyBase
         Vector3 perpDir = new Vector3(a.x, 0, a.y);
 
         rb.AddForce(dir * speed);
-        float sinScaler = Mathf.Sin(sinWaveSpeed * waveTimer) * sinWaveForce;
+        float sinScaler = Mathf.Sin(sinWaveSpeed * waveTimer);
         //Debug.Log(sinScaler);
-        rb.AddForce((perpDir * sinScaler));
+        if(sinScaler > 0)
+        {
+            gameObject.transform.Translate(perpDir * sideSpeed * Time.deltaTime);
+        }
+        else
+        {
+            gameObject.transform.Translate(-1 * perpDir * sideSpeed * Time.deltaTime);
+        }
     }
-    
 }

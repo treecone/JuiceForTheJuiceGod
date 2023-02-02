@@ -31,10 +31,14 @@ public class JS_EnemyBase : MonoBehaviour
     protected GameObject juicePrefab;
     protected JS_EnemySpawner spawner;
 
-    [SerializeField]
     protected Vector3 dir;
 
     protected bool outOfBoundsLock;
+
+    public void SetDirection(Vector3 dir)
+    {
+        this.dir = dir;
+    }
 
     public void SetSpawner(JS_EnemySpawner spawner)
     {
@@ -47,7 +51,7 @@ public class JS_EnemyBase : MonoBehaviour
         playerRef = GameObject.Find("Player");
         hostile = true;
         playerAttributes = playerRef.GetComponent<JS_PlayerAttributes>();
-        devotionMode = false;
+        //devotionMode = false;
         dir = new Vector3(Random.Range(-5.0f, 5.0f), 0, Random.Range(-5.0f, 5.0f)).normalized;
         rb.velocity = dir * speed;
         outOfBoundsLock = false;
@@ -129,7 +133,7 @@ public class JS_EnemyBase : MonoBehaviour
         hostile = true;
     }
 
-    public void Death()
+    public virtual void Death()
     {
         GameObject juice = Instantiate(juicePrefab) as GameObject;
         juice.transform.position = new Vector3(gameObject.transform.position.x, 0.05f, gameObject.transform.position.z);
