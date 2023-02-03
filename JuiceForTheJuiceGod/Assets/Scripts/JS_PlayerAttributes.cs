@@ -5,7 +5,10 @@ using UnityEngine;
 public class JS_PlayerAttributes : MonoBehaviour
 {
     [Header("Player Stats")]
+    //Max is 100 for both
+    [Range(0, 100)]
     public float juicefulness;
+    [Range(0, 100)]
     public int durability;
 
     public float speed;
@@ -23,5 +26,7 @@ public class JS_PlayerAttributes : MonoBehaviour
     public float hammerFallSpeed;
     public float invincibilityTime;
     public bool invincibility;
+    public float height;
+    public float smashCost;
 
 }

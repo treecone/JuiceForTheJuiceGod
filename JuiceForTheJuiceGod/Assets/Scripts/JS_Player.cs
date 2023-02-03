@@ -23,7 +23,6 @@ public class JS_Player : MonoBehaviour
     public AK.Wwise.Event SuckSound;
     public AK.Wwise.Event StopSuckSound;
 
-
     [Space]
     [Header("Input")]
     [SerializeField]
@@ -47,6 +46,22 @@ public class JS_Player : MonoBehaviour
     public List<GameObject> nearbyJuices;
 
     private bool absorbLock;
+    private Vector3 ogCameraOffset;
+    private GameObject mainCamera;
+
+    [Space]
+    [Header("Attributes that change with fullness")]
+    [SerializeField]
+    private Vector2 heightDelta;
+    [SerializeField]
+    private Vector2 speedDelta;
+    [SerializeField]
+    private Vector2 smashCostDelta;
+    [SerializeField]
+    private Vector2 dragDelta;
+    [SerializeField]
+    private Vector2 viewDelta;
+
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +80,10 @@ public class JS_Player : MonoBehaviour
         nearbyJuices = new List<GameObject>();
 
         absorbLock = false;
+
+        //Camera 
+        mainCamera = GameObject.Find("MainCamera");
+        ogCameraOffset = mainCamera.GetComponent<JS_CameraScript>().cameraOffset;
     }
 
     // Update is called once per frame
@@ -72,6 +91,10 @@ public class JS_Player : MonoBehaviour
     {
         Smashing();
         Movement();
+        UpdateAttributesWithFullness();
+
+        gameObject.transform.position = new Vector3(transform.position.x, attributes.height, transform.position.z);
+        mainCamera.GetComponent<JS_CameraScript>().cameraOffset = ogCameraOffset * attributes.vision;
     }
 
     void Smashing()
@@ -236,6 +259,15 @@ public class JS_Player : MonoBehaviour
 
         //Change UI
 
+    }
+
+    void UpdateAttributesWithFullness()
+    {
+        attributes.height = Mathf.Lerp(heightDelta.x, heightDelta.y, attributes.juicefulness/100);
+        attributes.speed = Mathf.Lerp(speedDelta.x, speedDelta.y, attributes.juicefulness / 100);
+        attributes.smashCost = Mathf.Lerp(smashCostDelta.x, smashCostDelta.y, attributes.juicefulness / 100);
+        rb.drag = Mathf.Lerp(dragDelta.x, dragDelta.y, attributes.juicefulness / 100);
+        attributes.vision = Mathf.Lerp(viewDelta.x, viewDelta.y, attributes.juicefulness / 100);
     }
 
     void OnDrawGizmos()

@@ -71,6 +71,10 @@ public class JS_StickyFruit : JS_EnemyBase
 
         FruitSquish.Post(gameObject);
 
+        //Points
+        canvasRef.GetComponent<JS_CanvasScript>().pointsTotal += pointsForDeath;
+        canvasRef.GetComponent<JS_CanvasScript>().fruitsSmashed += 1;
+
         var main = juice.GetComponent<ParticleSystem>().main;
         main.startColor = juiceColor;
 

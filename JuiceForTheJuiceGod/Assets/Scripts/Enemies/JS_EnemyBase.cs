@@ -20,6 +20,7 @@ public class JS_EnemyBase : MonoBehaviour
     public int damage;
     public float damageDistanceSquared;
     public float timeBetweenDamage;
+    public int pointsForDeath;
 
     [Space]
     [SerializeField]
@@ -32,6 +33,7 @@ public class JS_EnemyBase : MonoBehaviour
     protected JS_EnemySpawner spawner;
     [SerializeField]
     protected GameObject hitParticleSystem;
+    protected GameObject canvasRef;
 
     protected Vector3 dir;
 
@@ -57,6 +59,7 @@ public class JS_EnemyBase : MonoBehaviour
         dir = new Vector3(Random.Range(-5.0f, 5.0f), 0, Random.Range(-5.0f, 5.0f)).normalized;
         rb.velocity = dir * speed;
         outOfBoundsLock = false;
+        canvasRef = GameObject.Find("MainCanvas");
     }
 
     protected virtual void Update()
@@ -152,6 +155,12 @@ public class JS_EnemyBase : MonoBehaviour
         juice.transform.SetParent(GameObject.Find("AllJuices").transform);
 
         FruitSquish.Post(gameObject);
+
+
+        //Points
+        canvasRef.GetComponent<JS_CanvasScript>().pointsTotal += pointsForDeath;
+        canvasRef.GetComponent<JS_CanvasScript>().fruitsSmashed += 1;
+
 
         var main = juice.GetComponent<ParticleSystem>().main;
         main.startColor = juiceColor;

@@ -46,6 +46,10 @@ public class JS_Pomegranates : JS_EnemyBase
             var main = juice.GetComponent<ParticleSystem>().main;
             main.startColor = juiceColor;
 
+            //Points
+            canvasRef.GetComponent<JS_CanvasScript>().pointsTotal += pointsForDeath;
+            canvasRef.GetComponent<JS_CanvasScript>().fruitsSmashed += 1;
+
             Destroy(gameObject);
         }
         else
