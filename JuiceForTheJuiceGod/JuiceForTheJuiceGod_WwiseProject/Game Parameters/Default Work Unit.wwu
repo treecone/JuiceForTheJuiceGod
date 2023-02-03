@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1FE9F8E2-0D9B-49A0-BDF2-30BDD9945CC8}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{1FE9F8E2-0D9B-49A0-BDF2-30BDD9945CC8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1FE9F8E2-0D9B-49A0-BDF2-30BDD9945CC8}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="CUP_FULLNESS" ID="{605CA569-D14B-418D-BC9E-038C6EF755EC}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

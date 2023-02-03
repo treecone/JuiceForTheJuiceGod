@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_PLACEHOLDERTRACK = 289943158U;
         static const AkUniqueID PLAY_PURPLESQUISH = 2730169239U;
         static const AkUniqueID PLAY_REDSQUISH = 618688860U;
+        static const AkUniqueID PLAY_SCREAMSRTPC = 2794084497U;
         static const AkUniqueID PLAY_SUCK_1 = 2273358256U;
         static const AkUniqueID PLAY_SUCK_2 = 2273358259U;
         static const AkUniqueID PLAY_TEALSQUISH = 1970764015U;
@@ -32,6 +33,11 @@ namespace AK
         static const AkUniqueID STOP_SUCK_1 = 1787510310U;
         static const AkUniqueID STOP_SUCK_2 = 1787510309U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID CUP_FULLNESS = 2995488532U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

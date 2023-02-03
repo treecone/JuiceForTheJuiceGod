@@ -278,7 +278,14 @@
 				</Event>
 				<Event Name="Play_MasterSquish" ID="{B410732D-41B8-4789-9BB1-6D4A2E5D6EE2}">
 					<ChildrenList>
-						<Action Name="" ID="{CF3DAC70-8FC0-4AA9-B5A0-1BA077ED690A}" ShortID="897252983">
+						<Action Name="" ID="{61588861-29CB-40CA-8E96-A51A9F0B74EA}" ShortID="520978503">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FRUIT SQUISHES" ID="{EE54BF7D-3114-4970-B6A6-3EBEF9CD5CFA}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8B57EFCF-F93E-4DCD-BE95-196F4372BC99}" ShortID="522957236">
 							<PropertyList>
 								<Property Name="Delay" Type="Real64" Value="0.09"/>
 							</PropertyList>
@@ -288,10 +295,25 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{61588861-29CB-40CA-8E96-A51A9F0B74EA}" ShortID="520978503">
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SCREAMS_BLEND" ID="{3B6C3C75-B864-4848-B4EB-259A117ECB4F}">
+					<ChildrenList>
+						<Action Name="" ID="{BB8CCB6F-76F3-489A-B043-01D65D85A136}" ShortID="656790035">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="FRUIT SQUISHES" ID="{EE54BF7D-3114-4970-B6A6-3EBEF9CD5CFA}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+									<ObjectRef Name="SCREAMS BLEND" ID="{C69D911A-D9F4-4009-9259-BC635696D2B8}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SCREAMSRTPC" ID="{3BC6B8D1-8489-43B9-B9DD-1D450C64B31C}">
+					<ChildrenList>
+						<Action Name="" ID="{54A4B862-0CEE-4EBB-9703-3654BFD08B6B}" ShortID="306846784">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SCREAMS" ID="{134D68FC-9149-4E08-9904-4C4F1A982DE0}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

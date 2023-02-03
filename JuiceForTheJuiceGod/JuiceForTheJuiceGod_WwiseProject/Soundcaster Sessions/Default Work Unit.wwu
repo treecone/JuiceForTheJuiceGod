@@ -6,11 +6,16 @@
 				<SoundcasterSession Name="MainSoundCaster" ID="{8B35AD9F-2905-4836-A26F-19DB86A55F60}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_CupSlam" ID="{6A5439E2-7AFA-4169-AAFF-9971840BF1DD}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}"/>
+							<ObjectRef Name="Play_SCREAMS_BLEND" ID="{3B6C3C75-B864-4848-B4EB-259A117ECB4F}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="CUP_FULLNESS" ID="{605CA569-D14B-418D-BC9E-038C6EF755EC}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

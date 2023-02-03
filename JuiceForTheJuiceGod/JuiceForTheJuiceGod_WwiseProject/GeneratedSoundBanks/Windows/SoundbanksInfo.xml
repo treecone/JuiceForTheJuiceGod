@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="114138346" Language="SFX" Hash="2331785497">
+		<SoundBank Id="114138346" Language="SFX" Hash="636663754">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainoundBank</ObjectPath>
 			<ShortName>MainoundBank</ShortName>
 			<Path>MainoundBank.bnk</Path>
@@ -100,7 +100,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2770527519" Name="Play_MasterSquish" ObjectPath="\Events\Default Work Unit\Play_MasterSquish" DurationType="OneShot" DurationMin="1.37" DurationMax="2.559333">
+				<Event Id="2770527519" Name="Play_MasterSquish" ObjectPath="\Events\Default Work Unit\Play_MasterSquish" DurationType="OneShot" DurationMin="0.972405" DurationMax="2.559333">
 					<IncludedMemoryFiles>
 						<File Id="12688955" Language="SFX">
 							<ShortName>scream 2.wav</ShortName>
@@ -114,9 +114,21 @@
 							<ShortName>scream 6.wav</ShortName>
 							<Path>SFX\scream 6_10C4C929.wem</Path>
 						</File>
+						<File Id="132753025" Language="SFX">
+							<ShortName>yee_falscream_forrest1.wav</ShortName>
+							<Path>SFX\yee_falscream_forrest1_B07FEFEB.wem</Path>
+						</File>
+						<File Id="174375810" Language="SFX">
+							<ShortName>yee_scream_forrest2.wav</ShortName>
+							<Path>SFX\yee_scream_forrest2_E9AA26AD.wem</Path>
+						</File>
 						<File Id="178771599" Language="SFX">
 							<ShortName>scream5.wav</ShortName>
 							<Path>SFX\scream5_10C4C929.wem</Path>
+						</File>
+						<File Id="261353177" Language="SFX">
+							<ShortName>yee_falscream_forrest2.wav</ShortName>
+							<Path>SFX\yee_falscream_forrest2_3EC62D94.wem</Path>
 						</File>
 						<File Id="451357906" Language="SFX">
 							<ShortName>fruitspill2.wav</ShortName>
@@ -125,6 +137,10 @@
 						<File Id="467312185" Language="SFX">
 							<ShortName>fruitspill3.wav</ShortName>
 							<Path>SFX\fruitspill3_10C4C929.wem</Path>
+						</File>
+						<File Id="526944446" Language="SFX">
+							<ShortName>scream 4.wav</ShortName>
+							<Path>SFX\scream 4_29883BBB.wem</Path>
 						</File>
 						<File Id="640126864" Language="SFX">
 							<ShortName>squish 1.wav</ShortName>
@@ -182,6 +198,10 @@
 							<ShortName>fruitspill3.wav</ShortName>
 							<Path>SFX\fruitspill3_10C4C929.wem</Path>
 						</File>
+						<File Id="526944446" Language="SFX">
+							<ShortName>scream 4.wav</ShortName>
+							<Path>SFX\scream 4_29883BBB.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="618688860" Name="Play_RedSquish" ObjectPath="\Events\Default Work Unit\Play_RedSquish" DurationType="OneShot" DurationMin="2.469333" DurationMax="2.469333">
@@ -193,6 +213,50 @@
 						<File Id="640126864" Language="SFX">
 							<ShortName>squish 1.wav</ShortName>
 							<Path>SFX\squish 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2794084497" Name="Play_SCREAMSRTPC" ObjectPath="\Events\Default Work Unit\Play_SCREAMSRTPC" DurationType="OneShot" DurationMin="0.882405" DurationMax="2.469333">
+					<IncludedMemoryFiles>
+						<File Id="12688955" Language="SFX">
+							<ShortName>scream 2.wav</ShortName>
+							<Path>SFX\scream 2_10C4C929.wem</Path>
+						</File>
+						<File Id="53626642" Language="SFX">
+							<ShortName>screams.wav</ShortName>
+							<Path>SFX\screams_4913CAA1.wem</Path>
+						</File>
+						<File Id="79908683" Language="SFX">
+							<ShortName>scream 6.wav</ShortName>
+							<Path>SFX\scream 6_10C4C929.wem</Path>
+						</File>
+						<File Id="132753025" Language="SFX">
+							<ShortName>yee_falscream_forrest1.wav</ShortName>
+							<Path>SFX\yee_falscream_forrest1_B07FEFEB.wem</Path>
+						</File>
+						<File Id="174375810" Language="SFX">
+							<ShortName>yee_scream_forrest2.wav</ShortName>
+							<Path>SFX\yee_scream_forrest2_E9AA26AD.wem</Path>
+						</File>
+						<File Id="178771599" Language="SFX">
+							<ShortName>scream5.wav</ShortName>
+							<Path>SFX\scream5_10C4C929.wem</Path>
+						</File>
+						<File Id="261353177" Language="SFX">
+							<ShortName>yee_falscream_forrest2.wav</ShortName>
+							<Path>SFX\yee_falscream_forrest2_3EC62D94.wem</Path>
+						</File>
+						<File Id="526944446" Language="SFX">
+							<ShortName>scream 4.wav</ShortName>
+							<Path>SFX\scream 4_29883BBB.wem</Path>
+						</File>
+						<File Id="677987550" Language="SFX">
+							<ShortName>scream 3.wav</ShortName>
+							<Path>SFX\scream 3_10DCF641.wem</Path>
+						</File>
+						<File Id="737758218" Language="SFX">
+							<ShortName>scream 7.wav</ShortName>
+							<Path>SFX\scream 7_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -228,8 +292,11 @@
 				<Event Id="1787510310" Name="Stop_suck_1" ObjectPath="\Events\Default Work Unit\Stop_suck_1" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1787510309" Name="Stop_suck_2" ObjectPath="\Events\Default Work Unit\Stop_suck_2" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="2995488532" Name="CUP_FULLNESS" ObjectPath="\Game Parameters\Default Work Unit\CUP_FULLNESS"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1040272897">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2066301981">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

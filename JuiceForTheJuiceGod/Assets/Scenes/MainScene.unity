@@ -340,7 +340,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &101168931
 PrefabInstance:
@@ -1074,7 +1074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856912451572864235, guid: 271f2c69a0bfdab4e9c706e06a6261d8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6856912451572864235, guid: 271f2c69a0bfdab4e9c706e06a6261d8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2405,6 +2405,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 943615160, guid: d93c29bf420079741b8098d03da19255, type: 3}
+      propertyPath: juicefulness
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 943615160, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: invincibilityTime
       value: 1
       objectReference: {fileID: 0}
@@ -2465,6 +2469,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 2b22af8e0208af047a60b534c2f2e939, type: 2}
     - target: {fileID: 5577702888578073262, guid: d93c29bf420079741b8098d03da19255, type: 3}
+      propertyPath: CupFullness.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 3348d6ce78fc5764892a919b466d1ae9, type: 2}
+    - target: {fileID: 5577702888578073262, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: StopSuckSound.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 2a8935fec29ce6641917377d90480cf1, type: 2}
@@ -2474,7 +2482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9020777057536001414, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9020777057536001414, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: m_LocalPosition.x
