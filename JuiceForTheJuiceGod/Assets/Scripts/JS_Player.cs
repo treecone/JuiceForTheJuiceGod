@@ -22,6 +22,7 @@ public class JS_Player : MonoBehaviour
 
     public AK.Wwise.Event SuckSound;
     public AK.Wwise.Event StopSuckSound;
+    public AK.Wwise.RTPC CupFullness;
 
     [Space]
     [Header("Input")]
@@ -268,6 +269,8 @@ public class JS_Player : MonoBehaviour
         attributes.smashCost = Mathf.Lerp(smashCostDelta.x, smashCostDelta.y, attributes.juicefulness / 100);
         rb.drag = Mathf.Lerp(dragDelta.x, dragDelta.y, attributes.juicefulness / 100);
         attributes.vision = Mathf.Lerp(viewDelta.x, viewDelta.y, attributes.juicefulness / 100);
+
+        CupFullness.SetGlobalValue(attributes.juicefulness);
     }
 
     void OnDrawGizmos()

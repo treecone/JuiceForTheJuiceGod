@@ -71,6 +71,7 @@ MonoBehaviour:
   damage: 1
   damageDistanceSquared: 2
   timeBetweenDamage: 2
+  pointsForDeath: 0
   juiceColor: {r: 0.64463615, g: 0, b: 1, a: 1}
   juiceType: 2
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}

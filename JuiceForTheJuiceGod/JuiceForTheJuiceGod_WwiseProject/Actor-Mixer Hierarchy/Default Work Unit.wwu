@@ -823,12 +823,628 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
-						<Folder Name="FRUIT SCREAMS" ID="{FD83A169-FC60-456E-A42E-8ECC5D75741E}" ShortID="1008191617"/>
+						<Folder Name="FRUIT SCREAMS" ID="{FD83A169-FC60-456E-A42E-8ECC5D75741E}" ShortID="1008191617">
+							<ChildrenList>
+								<RandomSequenceContainer Name="SCREAMS" ID="{134D68FC-9149-4E08-9904-4C4F1A982DE0}" ShortID="460339196">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{51C8B4F5-7140-43F8-8487-82077E313930}" ShortID="594917574">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="CUP_FULLNESS" ID="{605CA569-D14B-418D-BC9E-038C6EF755EC}" WorkUnitID="{1FE9F8E2-0D9B-49A0-BDF2-30BDD9945CC8}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{7EA27184-91ED-4DD4-87B4-06FFD939A07F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>30.03663</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>50.55045</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="scream 7" ID="{4C3639BC-0BA1-4CCC-BD65-CC8AC062EAE6}" ShortID="131219624">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CCCB718D-03E7-47C0-9BD2-A0B0DB8496E4}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="scream 7" ID="{B6376BE3-F23E-4298-9D8E-CF866D697867}">
+													<Language>SFX</Language>
+													<AudioFile>scream 7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="737758218"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="scream 7" ID="{B6376BE3-F23E-4298-9D8E-CF866D697867}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="scream 2" ID="{660328B2-0782-4F84-9C35-6F7148CC09E0}" ShortID="429178673">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{99798278-D59A-408F-8685-B2C5F5A10C81}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="scream 2" ID="{0E788EA3-CA15-4F7C-9561-8F60562FAF88}">
+													<Language>SFX</Language>
+													<AudioFile>scream 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="12688955"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="scream 2" ID="{0E788EA3-CA15-4F7C-9561-8F60562FAF88}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="scream 3" ID="{B392C303-F27E-433D-9AE0-C6DFA434486E}" ShortID="178885075">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{BA96EE3C-8D94-4E74-A165-B4BA228E168A}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="scream 3" ID="{BB7E136B-9C1B-4160-A001-6466B458F497}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0584277456647399"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.07879768786127"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.07879768786127"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>scream 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="677987550"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="scream 3" ID="{BB7E136B-9C1B-4160-A001-6466B458F497}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="scream5" ID="{813E8B69-B49B-4EF4-9572-74EF7DE161D1}" ShortID="546849164">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FC5CB3E8-6D4B-4F0B-BEA6-94DEE951DC1D}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="scream5" ID="{C4466E59-AB44-4685-8D70-5DC3256BA2BA}">
+													<Language>SFX</Language>
+													<AudioFile>scream5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="178771599"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="scream5" ID="{C4466E59-AB44-4685-8D70-5DC3256BA2BA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="scream 4" ID="{F67BDD60-E5E6-4E48-9CA3-C3593DE5CC93}" ShortID="663178295">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{775FFC55-BB2B-427E-A8DB-617276DADDDC}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="scream 4" ID="{ECD858A6-75A4-47BA-9148-5CD328E39B6F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0657109826589596"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0898497109826589"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0455953757225434"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>scream 4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="526944446"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="scream 4" ID="{ECD858A6-75A4-47BA-9148-5CD328E39B6F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="scream 6" ID="{855A82DA-07A6-4CF9-B805-22804AA9A901}" ShortID="529902556">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FA9D7CE1-566A-493E-B1AB-504D70DD5C5A}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="scream 6" ID="{274AEA72-21EF-45A0-9E0D-D68B6463224A}">
+													<Language>SFX</Language>
+													<AudioFile>scream 6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="79908683"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="scream 6" ID="{274AEA72-21EF-45A0-9E0D-D68B6463224A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="screams" ID="{802F31D8-B4EB-4328-8FC4-665BEE430831}" ShortID="184497735">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F43F3FA2-807B-4586-AC7D-B649B7FC11C1}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="screams" ID="{A73BCE45-DF81-4D27-A88E-DB6647D52690}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0403776493256262"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.997017341040461"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00931791907514451"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.35731021194605"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>screams.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="53626642"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="screams" ID="{A73BCE45-DF81-4D27-A88E-DB6647D52690}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="yee_falscream_forrest1" ID="{3E6DF986-5115-4BA8-8DE2-5A8F4FD1A7C8}" ShortID="43082567">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="yee_falscream_forrest1" ID="{D1F371CE-91BA-4313-B8E6-0469AFC5FCD7}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0265536156659196"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.109164864404336"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.958880565713761"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>yee_falscream_forrest1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="132753025"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="yee_falscream_forrest1" ID="{D1F371CE-91BA-4313-B8E6-0469AFC5FCD7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="yee_falscream_forrest2" ID="{6CD04B37-A620-4543-A4A9-AD5C90F554E8}" ShortID="129072459">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="yee_falscream_forrest2" ID="{82D8A402-43F8-4136-A2DF-EFCCC48AB2D9}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0442560261098659"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.321593789731692"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.13000386667191"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>yee_falscream_forrest2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="261353177"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="yee_falscream_forrest2" ID="{82D8A402-43F8-4136-A2DF-EFCCC48AB2D9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="yee_falscream_forrest3" ID="{7DBE6961-F882-4416-96D1-87A6FEAB96FF}" ShortID="393088158">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="yee_falscream_forrest3" ID="{F134744E-A518-4F4D-9123-E41E81894714}">
+													<Language>SFX</Language>
+													<AudioFile>yee_falscream_forrest3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1003093495"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="yee_falscream_forrest3" ID="{F134744E-A518-4F4D-9123-E41E81894714}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="yee_moan_forrest1" ID="{1C34C838-5BFF-453D-928B-FABF91F58812}" ShortID="901087977">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="yee_moan_forrest1" ID="{2A4F8554-21DB-4C67-B540-6D9CE01ECD57}">
+													<Language>SFX</Language>
+													<AudioFile>yee_moan_forrest1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="967849865"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="yee_moan_forrest1" ID="{2A4F8554-21DB-4C67-B540-6D9CE01ECD57}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="yee_moan_forrest2" ID="{B1CF53BC-6661-4912-9108-1E28C2E928AA}" ShortID="558419620">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="yee_moan_forrest2" ID="{F58B107C-C8AA-48D9-8AC8-8029FC4E064F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.177024104439464"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.306841781028404"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.65222497476833"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>yee_moan_forrest2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1001881080"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="yee_moan_forrest2" ID="{F58B107C-C8AA-48D9-8AC8-8029FC4E064F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="yee_moan_forrest3" ID="{0C8F2712-15E6-4CEF-917A-38E5560847C5}" ShortID="174535692">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="yee_moan_forrest3" ID="{02FB9322-5AC8-4BF1-8D32-3BFD2CF0B02A}">
+													<Language>SFX</Language>
+													<AudioFile>yee_moan_forrest3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="684417681"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="yee_moan_forrest3" ID="{02FB9322-5AC8-4BF1-8D32-3BFD2CF0B02A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="yee_scream_forrest1" ID="{9C6F61FC-E94D-4198-A9A8-A4B9CD8D9ABD}" ShortID="889613280">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="yee_scream_forrest1" ID="{71DED201-C3D0-4436-9512-EDC640CAE545}">
+													<Language>SFX</Language>
+													<AudioFile>yee_scream_forrest1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="553960487"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="yee_scream_forrest1" ID="{71DED201-C3D0-4436-9512-EDC640CAE545}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="yee_scream_forrest2" ID="{6497CA92-5E13-4806-8B8B-F09ED84FA6EE}" ShortID="986404504">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="yee_scream_forrest2" ID="{75F4F7FC-8653-4449-9439-A3DF2C38279E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0442560261098659"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.141619283551571"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.02378940400823"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>yee_scream_forrest2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="174375810"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="yee_scream_forrest2" ID="{75F4F7FC-8653-4449-9439-A3DF2C38279E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="yee_scream_forrest3" ID="{1D147E92-6F52-4821-91EC-39BC48E9B86A}" ShortID="364420087">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="yee_scream_forrest3" ID="{F78F25C3-AAAA-480C-81F7-F60C2BCC237C}">
+													<Language>SFX</Language>
+													<AudioFile>yee_scream_forrest3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="112058874"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="yee_scream_forrest3" ID="{F78F25C3-AAAA-480C-81F7-F60C2BCC237C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
-				<RandomSequenceContainer Name="SCREAMS" ID="{134D68FC-9149-4E08-9904-4C4F1A982DE0}" ShortID="460339196">
+				<BlendContainer Name="SCREAMS BLEND" ID="{C69D911A-D9F4-4009-9259-BC635696D2B8}" ShortID="464884430">
 					<PropertyList>
-						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{F5560D38-DDCE-45F4-B929-8172763AB307}" ShortID="391022329">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="CUP_FULLNESS" ID="{605CA569-D14B-418D-BC9E-038C6EF755EC}" WorkUnitID="{1FE9F8E2-0D9B-49A0-BDF2-30BDD9945CC8}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{2F2E7E51-48B3-4619-91E1-40F308FB03FF}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>50</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>84.0659340659341</XPos>
+												<YPos>-3.33299405645679</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -839,14 +1455,12 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="scream 7" ID="{4C3639BC-0BA1-4CCC-BD65-CC8AC062EAE6}" ShortID="131219624">
+						<Sound Name="scream 7" ID="{E609E727-B4D6-498C-81FE-8926F31FAC44}" ShortID="526929872">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{CCCB718D-03E7-47C0-9BD2-A0B0DB8496E4}"/>
-										</ModifierInfo>
-									</ModifierList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -858,7 +1472,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="scream 7" ID="{B6376BE3-F23E-4298-9D8E-CF866D697867}">
+								<AudioFileSource Name="scream 7" ID="{2D7366A7-94B6-405A-85EA-956E07135030}">
 									<Language>SFX</Language>
 									<AudioFile>scream 7.wav</AudioFile>
 									<MediaIDList>
@@ -868,17 +1482,15 @@
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="scream 7" ID="{B6376BE3-F23E-4298-9D8E-CF866D697867}" Platform="Linked"/>
+								<ActiveSource Name="scream 7" ID="{2D7366A7-94B6-405A-85EA-956E07135030}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="scream 2" ID="{660328B2-0782-4F84-9C35-6F7148CC09E0}" ShortID="429178673">
+						<Sound Name="scream 2" ID="{11D5299B-5B1E-43FA-8BAC-38C19276BE9E}" ShortID="90491744">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{99798278-D59A-408F-8685-B2C5F5A10C81}"/>
-										</ModifierInfo>
-									</ModifierList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -895,7 +1507,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="scream 2" ID="{0E788EA3-CA15-4F7C-9561-8F60562FAF88}">
+								<AudioFileSource Name="scream 2" ID="{C12A06AF-0527-44C3-8909-F8CAC4022752}">
 									<Language>SFX</Language>
 									<AudioFile>scream 2.wav</AudioFile>
 									<MediaIDList>
@@ -905,17 +1517,15 @@
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="scream 2" ID="{0E788EA3-CA15-4F7C-9561-8F60562FAF88}" Platform="Linked"/>
+								<ActiveSource Name="scream 2" ID="{C12A06AF-0527-44C3-8909-F8CAC4022752}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="scream 3" ID="{B392C303-F27E-433D-9AE0-C6DFA434486E}" ShortID="178885075">
+						<Sound Name="scream5" ID="{89FB87D4-98E7-435B-8DF7-FEF7CB9C0181}" ShortID="243750346">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{BA96EE3C-8D94-4E74-A165-B4BA228E168A}"/>
-										</ModifierInfo>
-									</ModifierList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -927,45 +1537,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="scream 3" ID="{BB7E136B-9C1B-4160-A001-6466B458F497}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0584277456647399"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="2.07879768786127"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="2.07879768786127"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>scream 3.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="677987550"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="scream 3" ID="{BB7E136B-9C1B-4160-A001-6466B458F497}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="scream5" ID="{813E8B69-B49B-4EF4-9572-74EF7DE161D1}" ShortID="546849164">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{FC5CB3E8-6D4B-4F0B-BEA6-94DEE951DC1D}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="scream5" ID="{C4466E59-AB44-4685-8D70-5DC3256BA2BA}">
+								<AudioFileSource Name="scream5" ID="{28048078-B9F8-4127-845E-82848024944D}">
 									<Language>SFX</Language>
 									<AudioFile>scream5.wav</AudioFile>
 									<MediaIDList>
@@ -975,22 +1547,15 @@
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="scream5" ID="{C4466E59-AB44-4685-8D70-5DC3256BA2BA}" Platform="Linked"/>
+								<ActiveSource Name="scream5" ID="{28048078-B9F8-4127-845E-82848024944D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="scream 4" ID="{F67BDD60-E5E6-4E48-9CA3-C3593DE5CC93}" ShortID="663178295">
+						<Sound Name="scream 4" ID="{E6FE9CE8-B69F-4F17-A122-F3DC10A8B531}" ShortID="420050060">
 							<PropertyList>
 								<Property Name="Inclusion" Type="bool">
 									<ValueList>
 										<Value>False</Value>
 									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{775FFC55-BB2B-427E-A8DB-617276DADDDC}"/>
-										</ModifierInfo>
-									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -1002,7 +1567,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="scream 4" ID="{ECD858A6-75A4-47BA-9148-5CD328E39B6F}">
+								<AudioFileSource Name="scream 4" ID="{45494DCC-9947-428B-9D87-51E3AFF34B23}">
 									<PropertyList>
 										<Property Name="FadeInDuration" Type="Real64" Value="0.0657109826589596"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.0898497109826589"/>
@@ -1018,17 +1583,15 @@
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="scream 4" ID="{ECD858A6-75A4-47BA-9148-5CD328E39B6F}" Platform="Linked"/>
+								<ActiveSource Name="scream 4" ID="{45494DCC-9947-428B-9D87-51E3AFF34B23}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="scream 6" ID="{855A82DA-07A6-4CF9-B805-22804AA9A901}" ShortID="529902556">
+						<Sound Name="scream 6" ID="{14AAC643-280E-442E-B9A8-A699139BB20B}" ShortID="921577069">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{FA9D7CE1-566A-493E-B1AB-504D70DD5C5A}"/>
-										</ModifierInfo>
-									</ModifierList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -1040,7 +1603,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="scream 6" ID="{274AEA72-21EF-45A0-9E0D-D68B6463224A}">
+								<AudioFileSource Name="scream 6" ID="{F72618C7-4B2D-4626-8A57-C3163E746822}">
 									<Language>SFX</Language>
 									<AudioFile>scream 6.wav</AudioFile>
 									<MediaIDList>
@@ -1050,17 +1613,15 @@
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="scream 6" ID="{274AEA72-21EF-45A0-9E0D-D68B6463224A}" Platform="Linked"/>
+								<ActiveSource Name="scream 6" ID="{F72618C7-4B2D-4626-8A57-C3163E746822}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="screams" ID="{802F31D8-B4EB-4328-8FC4-665BEE430831}" ShortID="184497735">
+						<Sound Name="scream 3" ID="{F8BD71A4-56AE-4AD7-9F25-AE0A507D0D62}" ShortID="22691810">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{F43F3FA2-807B-4586-AC7D-B649B7FC11C1}"/>
-										</ModifierInfo>
-									</ModifierList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -1072,29 +1633,40 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="screams" ID="{A73BCE45-DF81-4D27-A88E-DB6647D52690}">
+								<AudioFileSource Name="scream 3" ID="{54C4279C-3790-4972-B46F-79E3C093FBDD}">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0403776493256262"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.997017341040461"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0584277456647399"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.07879768786127"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.00931791907514451"/>
-										<Property Name="TrimEnd" Type="Real64" Value="1.35731021194605"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.07879768786127"/>
 									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>screams.wav</AudioFile>
+									<AudioFile>scream 3.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="53626642"/>
+										<MediaID ID="677987550"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="screams" ID="{A73BCE45-DF81-4D27-A88E-DB6647D52690}" Platform="Linked"/>
+								<ActiveSource Name="scream 3" ID="{54C4279C-3790-4972-B46F-79E3C093FBDD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
-				</RandomSequenceContainer>
+					<BlendTrackList>
+						<BlendTrack Name="New Blend Track" ID="{73879055-4474-4F67-9ADA-2FE526221E6B}" ShortID="886921085">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="CUP_FULLNESS" ID="{605CA569-D14B-418D-BC9E-038C6EF755EC}" WorkUnitID="{1FE9F8E2-0D9B-49A0-BDF2-30BDD9945CC8}"/>
+								</Reference>
+							</ReferenceList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
