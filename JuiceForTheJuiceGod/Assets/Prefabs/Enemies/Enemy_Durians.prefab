@@ -74,6 +74,7 @@ MonoBehaviour:
   juiceColor: {r: 0.69803923, g: 1, b: 0, a: 1}
   juiceType: 4
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
+  hitParticleSystem: {fileID: 656673997304137025, guid: 07afaca25da8c6440a15bafa55a2972d, type: 3}
   timeInJump: 1.5
   timeBetweenJumps: 6
 --- !u!1 &5202870514932256342

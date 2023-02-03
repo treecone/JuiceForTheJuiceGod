@@ -80,6 +80,14 @@ public class JS_Durians : JS_EnemyBase
         {
             playerAttributes.durability -= damage;
             Debug.Log(gameObject.name + gameObject.GetInstanceID() + " dealt damage!");
+
+            //Particle System 
+            GameObject hitParticle = Instantiate(hitParticleSystem);
+            hitParticle.transform.position = playerRef.transform.GetChild(0).transform.position;
+            //hitParticle.transform.SetParent(playerRef.transform);
+            hitParticle.transform.LookAt(gameObject.transform.position);
+            hitParticle.transform.Rotate(new Vector3(0, 180, 0));
+
             StartCoroutine(EnemyTimeOut());
         }
     }
