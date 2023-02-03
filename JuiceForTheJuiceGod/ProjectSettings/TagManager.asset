@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Ground
+    uniqueID: 1012764869
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Shadow
+    uniqueID: 367976439
+    locked: 0
+  - name: Sprites
+    uniqueID: 1028916153
+    locked: 0
+  - name: UI
+    uniqueID: 1386755297
     locked: 0

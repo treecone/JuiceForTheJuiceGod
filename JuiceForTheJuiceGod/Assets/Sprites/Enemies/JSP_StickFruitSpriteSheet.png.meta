@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: 8270d6e47d6388045bc61bbaa60e13de
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1024
+        width: 380
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37744f2a990908b4bae6e00eec660e3e
+      internalID: -516681097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1024
+        width: 381
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5cf321e45d6424bb2bf69ceeb8b6ed
+      internalID: 1684624394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 381
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0baf742eaf1b6940b9ef23ba31f5dd2
+      internalID: -1199178557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 521
+        width: 381
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6a9366570516f4a9f1cfe98d1f4ce5
+      internalID: -873407543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 519
+        width: 381
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5af7021a910e6e4fbbbc4268b3ae22b
+      internalID: -447907889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 520
+        width: 380
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c141d212de04f489591e0ad674ff25
+      internalID: 729554912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 530
+        width: 381
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e00bd8fc1d1e4d44beef031e9399dea
+      internalID: -1581753749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 18
+        width: 380
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404180de68fb8b74a889afa75a7964e3
+      internalID: 1812490277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 18
+        width: 381
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98e77706e360a54ba1610cf24c13662
+      internalID: -1247255593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 18
+        width: 381
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbaad3f6aa28e04f90585ed1b08d1dd
+      internalID: 578683070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSP_StickFruitSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1023
+        width: 378
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5592995f5fc95d438baedbf22860b7e
+      internalID: 858241585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      JSP_StickFruitSpriteSheet_3: -1733908078
+      JSP_StickFruitSpriteSheet_16: 1245137585
+      JSP_StickFruitSpriteSheet_2: 1684624394
+      JSP_StickFruitSpriteSheet_6: -936221356
+      JSP_StickFruitSpriteSheet_22: 1162464641
+      JSP_StickFruitSpriteSheet_9: 802789287
+      JSP_StickFruitSpriteSheet_28: 1483845805
+      JSP_StickFruitSpriteSheet_4: -1199178557
+      JSP_StickFruitSpriteSheet_7: 1115057782
+      JSP_StickFruitSpriteSheet_18: -1470540061
+      JSP_StickFruitSpriteSheet_26: 1597494224
+      JSP_StickFruitSpriteSheet_11: -873407543
+      JSP_StickFruitSpriteSheet_17: -1581753749
+      JSP_StickFruitSpriteSheet_19: 1600961862
+      JSP_StickFruitSpriteSheet_21: -772557852
+      JSP_StickFruitSpriteSheet_23: 655541209
+      JSP_StickFruitSpriteSheet_13: -447907889
+      JSP_StickFruitSpriteSheet_20: 1601399475
+      JSP_StickFruitSpriteSheet_27: -1247255593
+      JSP_StickFruitSpriteSheet_14: -1407583350
+      JSP_StickFruitSpriteSheet_8: -217869685
+      JSP_StickFruitSpriteSheet_5: -906565378
+      JSP_StickFruitSpriteSheet_0: -516681097
+      JSP_StickFruitSpriteSheet_30: 1780570813
+      JSP_StickFruitSpriteSheet_10: 269723594
+      JSP_StickFruitSpriteSheet_15: 729554912
+      JSP_StickFruitSpriteSheet_12: 576008254
+      JSP_StickFruitSpriteSheet_29: 578683070
+      JSP_StickFruitSpriteSheet_1: 858241585
+      JSP_StickFruitSpriteSheet_24: -779030871
+      JSP_StickFruitSpriteSheet_25: 1812490277
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
