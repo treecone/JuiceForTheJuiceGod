@@ -275,6 +275,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5202870513916933280}
     m_Modifications:
+    - target: {fileID: 954887046978336834, guid: f09923835ce06ec4faec7b8753178b5e, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 5202870513916933280}
     - target: {fileID: 1900497010216995851, guid: f09923835ce06ec4faec7b8753178b5e, type: 3}
       propertyPath: m_Name
       value: EnemySpawnParticle
@@ -289,7 +293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6661589082803877404, guid: f09923835ce06ec4faec7b8753178b5e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6661589082803877404, guid: f09923835ce06ec4faec7b8753178b5e, type: 3}
       propertyPath: m_LocalPosition.z
