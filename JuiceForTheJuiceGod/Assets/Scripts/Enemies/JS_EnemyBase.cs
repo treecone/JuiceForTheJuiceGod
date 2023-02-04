@@ -98,9 +98,11 @@ public class JS_EnemyBase : MonoBehaviour
         {
             if(!outOfBoundsLock)
             {
-                dir *= -1;
-                dir += dirToSpawner;
-                dir.Normalize();
+                /*                dir *= -1;
+                                dir += dirToSpawner;
+                                dir.Normalize();*/
+
+                Destroy(gameObject);
                 outOfBoundsLock = true;
             }
         }
