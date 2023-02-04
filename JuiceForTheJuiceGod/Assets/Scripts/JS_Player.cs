@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.HID;
+using UnityEngine.UIElements.Experimental;
 
 public enum JUICE_TYPES
 {
@@ -50,6 +51,11 @@ public class JS_Player : MonoBehaviour
     private Vector3 ogCameraOffset;
     private GameObject mainCamera;
 
+    [SerializeField]
+    private Sprite[] playerSprites;
+    private JS_EnemySpawner spawner;
+
+
     [Space]
     [Header("Attributes that change with fullness")]
     [SerializeField]
@@ -62,6 +68,14 @@ public class JS_Player : MonoBehaviour
     private Vector2 dragDelta;
     [SerializeField]
     private Vector2 viewDelta;
+    [SerializeField]
+    private Vector2 leakDelta;
+    [SerializeField]
+    private Vector2 particleLeakDelta;
+    [SerializeField]
+    private Vector2 hammerFallSpeedDelta;
+    [SerializeField]
+    private Vector2 hammerRecoverySpeedDelta;
 
 
     // Start is called before the first frame update
@@ -81,6 +95,7 @@ public class JS_Player : MonoBehaviour
         nearbyJuices = new List<GameObject>();
 
         absorbLock = false;
+        spawner = GameObject.Find("EnemySpawner").GetComponent<JS_EnemySpawner>();
 
         //Camera 
         mainCamera = GameObject.Find("MainCamera");
@@ -93,6 +108,8 @@ public class JS_Player : MonoBehaviour
         Smashing();
         Movement();
         UpdateAttributesWithFullness();
+        Leaking();
+        KeepInBounds();
 
         gameObject.transform.position = new Vector3(transform.position.x, attributes.height, transform.position.z);
         mainCamera.GetComponent<JS_CameraScript>().cameraOffset = ogCameraOffset * attributes.vision;
@@ -119,7 +136,7 @@ public class JS_Player : MonoBehaviour
             Vector3 currentGroundPos = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
             if(hammerYInWorldSpace > 0.05f)
             {
-                hammer.transform.Translate(Vector3.down * attributes.hammerFallSpeed);
+                hammer.transform.Translate(Vector3.down * attributes.hammerFallSpeed * Time.deltaTime);
             }
             else
             {
@@ -128,6 +145,7 @@ public class JS_Player : MonoBehaviour
                 {
                     StartCoroutine(invincibilityTimer());
                     Combat();
+                    gameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().sprite = playerSprites[0];
 
                     //Get all nearby juices
                     nearbyJuices.Clear();
@@ -175,6 +193,7 @@ public class JS_Player : MonoBehaviour
                 if (hammerYInWorldSpace > 0.2f)
                 {
                     smashLock = false;
+                    gameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().sprite = playerSprites[1];
                 }
             }
 
@@ -194,13 +213,22 @@ public class JS_Player : MonoBehaviour
     void Combat()
     {
         //Function called once when smash
+        int amountOfEnemiesHit = 0;
         foreach(Transform child in enemySpawner)
         {
             if((child.position - hammer.transform.position).sqrMagnitude < attributes.damageRadiusSquared)
             {
                 //Debug.Log("Dealing Damage to " + child.gameObject.name + child.gameObject.GetInstanceID());
                 child.gameObject.GetComponent<JS_EnemyBase>().Death();
+                amountOfEnemiesHit++;
             }
+        }
+
+        if(amountOfEnemiesHit == 0)
+        {
+            //Missed all enemies, lose juice
+            Debug.Log("Missed enemies, leaking: " + attributes.smashCost);
+            Leaking(attributes.smashCost);
         }
     }
 
@@ -256,7 +284,7 @@ public class JS_Player : MonoBehaviour
             juiceStored[(int)nearbyJuices[i].GetComponent<JS_Juice>().GetJuiceType()] += yoinked;
         }
 
-        attributes.juicefulness += amountToYoinkTotal;
+        attributes.JuiceFulness += amountToYoinkTotal;
 
         //Change UI
 
@@ -264,13 +292,40 @@ public class JS_Player : MonoBehaviour
 
     void UpdateAttributesWithFullness()
     {
-        attributes.height = Mathf.Lerp(heightDelta.x, heightDelta.y, attributes.juicefulness/100);
-        attributes.speed = Mathf.Lerp(speedDelta.x, speedDelta.y, attributes.juicefulness / 100);
-        attributes.smashCost = Mathf.Lerp(smashCostDelta.x, smashCostDelta.y, attributes.juicefulness / 100);
-        rb.drag = Mathf.Lerp(dragDelta.x, dragDelta.y, attributes.juicefulness / 100);
-        attributes.vision = Mathf.Lerp(viewDelta.x, viewDelta.y, attributes.juicefulness / 100);
+        attributes.height = Mathf.Lerp(heightDelta.x, heightDelta.y, attributes.JuiceFulness/100);
+        attributes.speed = Mathf.Lerp(speedDelta.x, speedDelta.y, attributes.JuiceFulness / 100);
+        attributes.smashCost = Mathf.Lerp(smashCostDelta.x, smashCostDelta.y, attributes.JuiceFulness / 100);
+        rb.drag = Mathf.Lerp(dragDelta.x, dragDelta.y, attributes.JuiceFulness / 100);
+        attributes.vision = Mathf.Lerp(viewDelta.x, viewDelta.y, attributes.JuiceFulness / 100);
+        attributes.hammerFallSpeed = Mathf.Lerp(hammerFallSpeedDelta.x, hammerFallSpeedDelta.y, attributes.JuiceFulness / 100);
+        attributes.hammerRecoverySpeed = Mathf.Lerp(hammerRecoverySpeedDelta.x, hammerRecoverySpeedDelta.y, attributes.JuiceFulness / 100);
 
-        CupFullness.SetGlobalValue(attributes.juicefulness);
+
+        CupFullness.SetGlobalValue(attributes.JuiceFulness);
+    }
+
+    void Leaking(float amountToLeak = 0)
+    {
+
+        if(amountToLeak <= 0)
+        {
+            //Leak from durability
+            amountToLeak = Mathf.Lerp(leakDelta.x, leakDelta.y, attributes.Durability / 100);
+        }
+        attributes.JuiceFulness -= amountToLeak;
+        var emission = gameObject.transform.GetChild(0).GetChild(1).GetComponent<ParticleSystem>().emission;
+        emission.rateOverTime = Mathf.Lerp(particleLeakDelta.x, particleLeakDelta.y, attributes.Durability / 100);
+    }
+
+    protected void KeepInBounds()
+    {
+        Vector3 dirToSpawner = (spawner.gameObject.transform.position - transform.position);
+
+        if (dirToSpawner.sqrMagnitude >= spawner.enemyDistanceAllowedSqr)
+        {
+            rb.AddForce(dirToSpawner * attributes.speed * 15 * Time.deltaTime);
+            Debug.Log("Out of bounds!");
+        }
     }
 
     void OnDrawGizmos()

@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class JS_Juice : MonoBehaviour
 {
-    [SerializeField]
-    private float juice;
-    [SerializeField]
-    private float maxJuice;
+    public float juice;
+    public float maxJuice;
     [SerializeField]
     private float maxScale;
 

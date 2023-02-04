@@ -38,7 +38,7 @@ public class JS_CanvasScript : MonoBehaviour
     void UpdateFaces ()
     {
         //get closest 20 
-        int playerDurability =  playerRef.GetComponent<JS_PlayerAttributes>().durability;
+        int playerDurability =  playerRef.GetComponent<JS_PlayerAttributes>().Durability;
 
         if (playerDurability == 100) playerDurability = 99;
         Image cupFaceImage = gameObject.transform.Find("CupIcon").GetComponent<Image>();
@@ -48,6 +48,6 @@ public class JS_CanvasScript : MonoBehaviour
     void UpdateJuiceBar()
     {
         GameObject juiceBar = gameObject.transform.Find("JuiceBar").gameObject;
-        juiceBar.transform.GetChild(0).GetComponent<RectTransform>().localPosition = new Vector3(Mathf.Lerp(juiceBarInsideLimits.x, juiceBarInsideLimits.y, playerRef.GetComponent<JS_PlayerAttributes>().juicefulness / 100), 0, 0);
+        juiceBar.transform.GetChild(0).GetComponent<RectTransform>().localPosition = new Vector3(Mathf.Lerp(juiceBarInsideLimits.x, juiceBarInsideLimits.y, playerRef.GetComponent<JS_PlayerAttributes>().JuiceFulness / 100), 0, 0);
     }
 }

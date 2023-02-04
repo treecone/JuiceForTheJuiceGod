@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class JS_EnemyBase : MonoBehaviour
@@ -31,6 +32,8 @@ public class JS_EnemyBase : MonoBehaviour
     [SerializeField]
     protected GameObject juicePrefab;
     protected JS_EnemySpawner spawner;
+    [SerializeField]
+    protected int juiceToSpawn;
     [SerializeField]
     protected GameObject hitParticleSystem;
     protected GameObject canvasRef;
@@ -123,7 +126,7 @@ public class JS_EnemyBase : MonoBehaviour
             //If the player hammer is currently down
             if ((playerRef.transform.Find("Hammer").position - gameObject.transform.position).sqrMagnitude <= damageDistanceSquared)
             {
-                playerAttributes.durability -= damage;
+                playerAttributes.Durability -= damage;
                 Debug.Log(gameObject.name + gameObject.GetInstanceID() + " dealt damage!");
 
                 //Particle System 
@@ -152,6 +155,7 @@ public class JS_EnemyBase : MonoBehaviour
         juice.transform.position = new Vector3(gameObject.transform.position.x, 0.05f, gameObject.transform.position.z);
         juice.GetComponent<SpriteRenderer>().color = juiceColor;
         juice.GetComponent<JS_Juice>().SetJuiceType(juiceType);
+        juice.GetComponent<JS_Juice>().maxJuice = juiceToSpawn;
         juice.transform.SetParent(GameObject.Find("AllJuices").transform);
 
         FruitSquish.Post(gameObject);

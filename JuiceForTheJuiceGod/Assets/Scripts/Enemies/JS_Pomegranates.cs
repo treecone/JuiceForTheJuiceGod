@@ -1,13 +1,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class JS_Pomegranates : JS_EnemyBase
 {
     public bool childFruit;
     [SerializeField]
     private GameObject pomPrefab;
+    [SerializeField]
+    private int amountOfLilMansToSpawn;
 
     public bool fruitInvincibility;
 
@@ -38,6 +42,7 @@ public class JS_Pomegranates : JS_EnemyBase
             GameObject juice = Instantiate(juicePrefab) as GameObject;
             juice.transform.position = new Vector3(gameObject.transform.position.x, 0.05f, gameObject.transform.position.z);
             juice.GetComponent<SpriteRenderer>().color = juiceColor;
+            juice.GetComponent<JS_Juice>().maxJuice = juiceToSpawn;
             juice.GetComponent<JS_Juice>().SetJuiceType(juiceType);
             juice.transform.SetParent(GameObject.Find("AllJuices").transform);
 
@@ -57,28 +62,22 @@ public class JS_Pomegranates : JS_EnemyBase
             FruitSquish.Post(gameObject);
 
             GameObject enemySpawner = GameObject.Find("EnemySpawner");
-            Vector2 perp = Vector2.Perpendicular(new Vector2(dir.x, dir.z));
 
-            //Parent fruit that splits 
-            GameObject childFruit1 = Instantiate(pomPrefab) as GameObject;
-            childFruit1.transform.position = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
-            childFruit1.GetComponent<JS_Pomegranates>().childFruit = true;
-            childFruit1.GetComponent<JS_Pomegranates>().fruitInvincibility = true;
-            childFruit1.GetComponent<JS_Pomegranates>().StartCoroutine(EnemyTimeOut());
-            childFruit1.GetComponent<JS_Pomegranates>().SetDirection(new Vector3(perp.x, 0, perp.y));
-            childFruit1.transform.SetParent(enemySpawner.transform);
-            childFruit1.GetComponent<JS_EnemyBase>().SetSpawner(enemySpawner.GetComponent<JS_EnemySpawner>());
-            childFruit1.transform.localScale *= 0.5f;
+            for(int i = 0; i < amountOfLilMansToSpawn; i++)
+            {
+                Vector3 newDir = new Vector3(Random.Range(-1, 1), 0, Random.Range(-1, 1));
 
-            GameObject childFruit2 = Instantiate(pomPrefab) as GameObject;
-            childFruit2.transform.position = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
-            childFruit2.GetComponent<JS_Pomegranates>().childFruit = true;
-            childFruit2.GetComponent<JS_Pomegranates>().fruitInvincibility = true;
-            childFruit2.GetComponent<JS_Pomegranates>().StartCoroutine(EnemyTimeOut());
-            childFruit2.GetComponent<JS_Pomegranates>().SetDirection(new Vector3(perp.x, 0, perp.y) * -1);
-            childFruit2.transform.SetParent(enemySpawner.transform);
-            childFruit2.GetComponent<JS_EnemyBase>().SetSpawner(enemySpawner.GetComponent<JS_EnemySpawner>());
-            childFruit2.transform.localScale *= 0.5f;
+                //Parent fruit that splits 
+                GameObject childFruit = Instantiate(pomPrefab) as GameObject;
+                childFruit.transform.position = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
+                childFruit.GetComponent<JS_Pomegranates>().childFruit = true;
+                childFruit.GetComponent<JS_Pomegranates>().fruitInvincibility = true;
+                childFruit.GetComponent<JS_Pomegranates>().StartCoroutine(EnemyTimeOut());
+                childFruit.GetComponent<JS_Pomegranates>().SetDirection(newDir);
+                childFruit.transform.SetParent(enemySpawner.transform);
+                childFruit.GetComponent<JS_EnemyBase>().SetSpawner(enemySpawner.GetComponent<JS_EnemySpawner>());
+                childFruit.transform.localScale *= 0.5f;
+            }
 
             Destroy(gameObject);
         }

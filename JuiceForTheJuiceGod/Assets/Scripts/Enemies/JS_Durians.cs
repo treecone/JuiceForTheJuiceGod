@@ -78,7 +78,7 @@ public class JS_Durians : JS_EnemyBase
 
         if ((playerRef.transform.Find("Hammer").position - gameObject.transform.position).sqrMagnitude <= damageDistanceSquared)
         {
-            playerAttributes.durability -= damage;
+            playerAttributes.Durability -= damage;
             Debug.Log(gameObject.name + gameObject.GetInstanceID() + " dealt damage!");
 
             //Particle System 

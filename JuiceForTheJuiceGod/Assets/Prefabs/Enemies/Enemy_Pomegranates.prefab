@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1028916153
-  m_SortingLayer: -2
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 266930571, guid: 066b69e2476cb104f9bc6abcfd3fa8e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -176,7 +176,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 367976439
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.25490198}
@@ -262,10 +262,12 @@ MonoBehaviour:
   damageDistanceSquared: 2
   timeBetweenDamage: 2
   pointsForDeath: 0
-  juiceColor: {r: 0, g: 1, b: 0.92549026, a: 1}
+  juiceColor: {r: 0.4811321, g: 0.0047111507, b: 0, a: 1}
   juiceType: 5
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
+  juiceToSpawn: 25
   hitParticleSystem: {fileID: 656673997304137025, guid: 07afaca25da8c6440a15bafa55a2972d, type: 3}
   childFruit: 0
   pomPrefab: {fileID: 5202870513916933283}
+  amountOfLilMansToSpawn: 6
   fruitInvincibility: 0

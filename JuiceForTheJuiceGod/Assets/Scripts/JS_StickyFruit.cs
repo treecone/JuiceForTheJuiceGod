@@ -62,11 +62,12 @@ public class JS_StickyFruit : JS_EnemyBase
         GameObject juice = Instantiate(juicePrefab) as GameObject;
         juice.transform.position = new Vector3(gameObject.transform.position.x, 0.05f, gameObject.transform.position.z);
         juice.GetComponent<SpriteRenderer>().color = juiceColor;
+        juice.GetComponent<JS_Juice>().maxJuice = juiceToSpawn;
         juice.GetComponent<JS_Juice>().SetJuiceType(juiceType);
         juice.transform.SetParent(GameObject.Find("AllJuices").transform);
 
         //Healing here
-        GameObject.Find("Player").GetComponent<JS_PlayerAttributes>().durability += healthRecovered;
+        GameObject.Find("Player").GetComponent<JS_PlayerAttributes>().Durability += healthRecovered;
         Debug.Log("Player healed for: " + healthRecovered);
 
         FruitSquish.Post(gameObject);

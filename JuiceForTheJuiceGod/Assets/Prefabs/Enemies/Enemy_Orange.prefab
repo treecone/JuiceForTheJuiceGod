@@ -73,9 +73,10 @@ MonoBehaviour:
   damageDistanceSquared: 2
   timeBetweenDamage: 2
   pointsForDeath: 0
-  juiceColor: {r: 1, g: 0.4890508, b: 0, a: 1}
+  juiceColor: {r: 0.8773585, g: 0.43007773, b: 0, a: 1}
   juiceType: 0
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
+  juiceToSpawn: 25
   hitParticleSystem: {fileID: 656673997304137025, guid: 07afaca25da8c6440a15bafa55a2972d, type: 3}
 --- !u!1 &7911377082408315618
 GameObject:
@@ -148,7 +149,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 367976439
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.25490198}
@@ -233,7 +234,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1028916153
-  m_SortingLayer: -2
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 473352964, guid: c1e482cadd23ae24da8a6ef056fd13a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
