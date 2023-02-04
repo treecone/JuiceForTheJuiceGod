@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.HID;
+using UnityEngine.UI;
 using UnityEngine.UIElements.Experimental;
 
 public enum JUICE_TYPES
@@ -37,6 +38,9 @@ public class JS_Player : MonoBehaviour
     private JS_PlayerAttributes attributes;
     private Rigidbody rb;
 
+    [SerializeField]
+    private Color[] juiceColors;
+
     private GameObject hammer;
     //Input from the spacebar to tell player to smash
     private bool holdingSpace;
@@ -50,6 +54,7 @@ public class JS_Player : MonoBehaviour
     private bool absorbLock;
     private Vector3 ogCameraOffset;
     private GameObject mainCamera;
+    private GameObject mainCanvas;
 
     [SerializeField]
     private Sprite[] playerSprites;
@@ -87,6 +92,7 @@ public class JS_Player : MonoBehaviour
 
         enemySpawner = GameObject.Find("EnemySpawner").transform;
         allJuices = GameObject.Find("AllJuices").transform;
+        mainCanvas = GameObject.Find("MainCanvas");
 
         attributes.invincibility = true;
         smashLock = false;
@@ -110,6 +116,7 @@ public class JS_Player : MonoBehaviour
         UpdateAttributesWithFullness();
         Leaking();
         KeepInBounds();
+        UpdateJuiceColors();
 
         gameObject.transform.position = new Vector3(transform.position.x, attributes.height, transform.position.z);
         mainCamera.GetComponent<JS_CameraScript>().cameraOffset = ogCameraOffset * attributes.vision;
@@ -315,6 +322,29 @@ public class JS_Player : MonoBehaviour
         attributes.JuiceFulness -= amountToLeak;
         var emission = gameObject.transform.GetChild(0).GetChild(1).GetComponent<ParticleSystem>().emission;
         emission.rateOverTime = Mathf.Lerp(particleLeakDelta.x, particleLeakDelta.y, attributes.Durability / 100);
+    }
+
+    void UpdateJuiceColors()
+    {
+        float amount = 0;
+        int biggestJuice = 0;
+        for(int i = 0; i < juiceStored.Length; i++)
+        {
+            if (juiceStored[i] > amount)
+            {
+                biggestJuice = i;
+                amount = juiceStored[i];
+            }
+        }
+
+        Color juiceColor = Color.Lerp(gameObject.transform.Find("Hammer").Find("PlayerSprite").GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().color, juiceColors[biggestJuice], 0.1f);
+
+        gameObject.transform.Find("Hammer").Find("PlayerSprite").GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().color = juiceColor;
+        gameObject.transform.Find("Hammer").Find("LeakingParticle").GetComponent<ParticleSystem>().startColor = juiceColor;
+        gameObject.transform.Find("Hammer").Find("PlayerSprite").GetChild(0).GetChild(0).transform.localPosition = new Vector3(0, Mathf.Lerp(-1.5f, 0, attributes.JuiceFulness/100), 0);
+        mainCanvas.transform.Find("Mask").transform.GetChild(0).GetComponent<Image>().color = juiceColor;
+        mainCanvas.transform.Find("Mask").transform.GetChild(0).GetComponent<RectTransform>().localPosition = new Vector3(0, Mathf.Lerp(-200f, 5, attributes.JuiceFulness / 100), 0);
+
     }
 
     protected void KeepInBounds()
