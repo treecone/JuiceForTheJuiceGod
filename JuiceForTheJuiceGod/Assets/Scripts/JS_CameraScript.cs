@@ -10,15 +10,11 @@ public class JS_CameraScript : MonoBehaviour
     public float cameraSpeed;
     public bool followPlayer;
 
-    private bool useFixedUpdate;
-
-    // Start is called before the first frame update
     void Start()
     {
         if (cameraTarget == null)
             Debug.LogWarning("Main Camera does not have a target to follow!");
 
-        useFixedUpdate = GameObject.Find("Player").GetComponent<JS_Player>().usePhysics;
     }
 
     void CameraUpdate()
@@ -30,16 +26,8 @@ public class JS_CameraScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (!useFixedUpdate)
-            CameraUpdate();
-    }
-
     private void FixedUpdate()
     {
-        if (useFixedUpdate)
             CameraUpdate();
     }
 }

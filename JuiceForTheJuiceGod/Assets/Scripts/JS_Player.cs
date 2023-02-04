@@ -20,8 +20,6 @@ public enum JUICE_TYPES
 
 public class JS_Player : MonoBehaviour
 {
-    public bool usePhysics;
-
     public AK.Wwise.Event SuckSound;
     public AK.Wwise.Event StopSuckSound;
     public AK.Wwise.RTPC CupFullness;
@@ -141,13 +139,13 @@ public class JS_Player : MonoBehaviour
             //Holding Space
 
             Vector3 currentGroundPos = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
-            if(hammerYInWorldSpace > 0.05f)
+            if(hammerYInWorldSpace > 0.8f)
             {
                 hammer.transform.Translate(Vector3.down * attributes.hammerFallSpeed * Time.deltaTime);
             }
             else
             {
-                hammer.transform.position = currentGroundPos;
+                //hammer.transform.position = currentGroundPos;
                 if(!smashLock)
                 {
                     StartCoroutine(invincibilityTimer());
@@ -234,8 +232,14 @@ public class JS_Player : MonoBehaviour
         if(amountOfEnemiesHit == 0)
         {
             //Missed all enemies, lose juice
+            Vector3 currentGroundPos = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
+            hammer.transform.position = currentGroundPos;
             Debug.Log("Missed enemies, leaking: " + attributes.smashCost);
             Leaking(attributes.smashCost);
+        }
+        else
+        {
+            gameObject.GetComponent<JS_TimeStop>().StopTime(0.01f, 10, 0.1f * amountOfEnemiesHit);
         }
     }
 
@@ -243,23 +247,13 @@ public class JS_Player : MonoBehaviour
     {
         if (holdingSpace)
         {
-            if(usePhysics)
-                rb.velocity = Vector3.zero;
-
-            return;
+            rb.velocity = Vector3.zero;
         }
 
         Vector2 inputMovement = movementRefrence.action.ReadValue<Vector2>();
         Vector3 movementVector = new Vector3(inputMovement.x, 0, inputMovement.y);
 
-        if(usePhysics)
-        {
-            rb.AddForce(movementVector * attributes.speed);
-        }
-        else
-        {
-            gameObject.transform.Translate(movementVector * attributes.speed * Time.deltaTime);
-        }
+        rb.AddForce(movementVector * attributes.speed);
     }
 
     IEnumerator invincibilityTimer()
