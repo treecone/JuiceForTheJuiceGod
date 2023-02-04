@@ -9,18 +9,65 @@ public class JS_EnemySpawner : MonoBehaviour
     public float spawnRate;
     public float xzSize;
 
+    public List<SpawnerLevel> levelList;
+    private int onLevel = 0;
+    public float timer;
+    public float spawnTimer; 
+
     public float enemyDistanceAllowedSqr;
     private float enemyDistanceAllowed;
 
     void Start()
     {
-        InvokeRepeating("SpawnRandomly", 2f, spawnRate);
+        //InvokeRepeating("SpawnRandomly", 2f, spawnRate);
         enemyDistanceAllowed = Mathf.Sqrt(enemyDistanceAllowedSqr);
+        onLevel = 0;
     }
 
     void Update()
     {
-        
+        timer += Time.deltaTime;
+        spawnTimer += Time.deltaTime;
+
+        Spawn();
+    }
+
+    void Spawn()
+    {
+        if(spawnTimer > levelList[onLevel].timeBetweenSpawns)
+        {
+            //Spawn enemy
+            spawnTimer = 0;
+
+            float rand = Random.Range(0, 100);
+            int typeToSpawn = -1;
+
+            //Pick right type of enemy
+            float odds = 0;
+            for(int i = 0; i < 6; i++)
+            {
+                odds += levelList[onLevel].enemySpawnRates[i];
+                if (rand <= odds)
+                {
+                    typeToSpawn = i;
+                    break;
+                }
+            }
+
+            Debug.Log(rand + "'" + odds + "'" + typeToSpawn);
+
+            Vector3 spawnLocation = new Vector3(Random.Range(-xzSize, xzSize), 0, Random.Range(-xzSize, xzSize));
+            GameObject enemy = Instantiate(enemyPrefabs[typeToSpawn], spawnLocation, Quaternion.identity) as GameObject;
+            enemy.GetComponent<JS_EnemyBase>().SetSpawner(this);
+            enemy.transform.SetParent(this.transform);
+
+            //Update level
+            if (timer > levelList[onLevel].timeToDeactivate && onLevel < levelList.Count)
+            {
+                onLevel++;
+                Debug.Log("NEW LEVEL OF DIFFICULTY");
+            }
+        }
     }
 
     void SpawnRandomly()
