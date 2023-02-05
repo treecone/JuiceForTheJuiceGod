@@ -69,8 +69,8 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3ed14e175fab13642b02b9ac7167b8f5, type: 2}
-  speed: 2
-  damage: 1
+  speed: 4
+  damage: 5
   damageDistanceSquared: 2
   timeBetweenDamage: 2
   pointsForDeath: 15
