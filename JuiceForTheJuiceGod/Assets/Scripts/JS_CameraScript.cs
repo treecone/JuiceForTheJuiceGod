@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class JS_CameraScript : MonoBehaviour
 {
+
+
     [Header("Camera Settings")]
     public GameObject cameraTarget;
     public Vector3 cameraOffset;
@@ -16,7 +18,6 @@ public class JS_CameraScript : MonoBehaviour
     {
         if (cameraTarget == null)
             Debug.LogWarning("Main Camera does not have a target to follow!");
-
     }
 
     void CameraUpdate()

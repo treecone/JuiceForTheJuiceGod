@@ -1413,3 +1413,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d95f7f9b112d74e9b1716e7189e609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4b3d7f56771db464e9f8fba6dfcb01e8, type: 2}
+  clickEventLow:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 27a6004346246244f9a050876d767189, type: 2}

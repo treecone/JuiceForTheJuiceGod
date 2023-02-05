@@ -535,6 +535,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2082747140}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &606533192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,9 +645,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Artist: Aya Aziz
 
-    Composer: Sean Smeed
+    Composer/Audio Designer: Sean Smeed
 
-    Composer: Forrest Yang
+    Composer:
+    Forrest Yang
+
 
 '
   m_isRightToLeft: 0
@@ -700,7 +714,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -138.88762, y: 65.26074, z: -152.47168, w: -152.27507}
+  m_margin: {x: -138.88762, y: 65.26074, z: -223.20972, w: -152.27507}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1399,6 +1413,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2082747140}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1404925477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1633,7 +1659,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -138.88762, y: 65.26074, z: -152.47168, w: -152.27507}
+  m_margin: {x: -174.02025, y: 65.26074, z: -152.47168, w: -152.27507}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1698,3 +1724,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d95f7f9b112d74e9b1716e7189e609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4b3d7f56771db464e9f8fba6dfcb01e8, type: 2}
+  clickStopEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 97f35129fcdf6fe40b3eb5f1e25e2919, type: 2}
+  clickEventLow:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 27a6004346246244f9a050876d767189, type: 2}

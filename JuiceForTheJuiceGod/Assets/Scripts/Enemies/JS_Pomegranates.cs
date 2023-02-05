@@ -46,7 +46,6 @@ public class JS_Pomegranates : JS_EnemyBase
             juice.GetComponent<JS_Juice>().SetJuiceType(juiceType);
             juice.transform.SetParent(GameObject.Find("AllJuices").transform);
 
-            FruitSquish.Post(gameObject);
 
             var main = juice.GetComponent<ParticleSystem>().main;
             main.startColor = juiceColor;
@@ -59,7 +58,6 @@ public class JS_Pomegranates : JS_EnemyBase
         }
         else
         {
-            FruitSquish.Post(gameObject);
 
             GameObject enemySpawner = GameObject.Find("EnemySpawner");
 

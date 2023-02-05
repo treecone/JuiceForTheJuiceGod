@@ -319,6 +319,181 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Main_Menu_Loop" ID="{408E9AC0-D928-47D2-87F5-F6A17D5C44D6}">
+					<ChildrenList>
+						<Action Name="" ID="{9BBFF89A-9A84-4C43-BBDB-697C19E8F24B}" ShortID="24434789">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main Menu Loop" ID="{253D6C89-1C80-463E-A5FF-41D0D6B96E6C}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HitGround" ID="{E33BF558-1F04-4C4D-95B1-8FF745A9B0D4}">
+					<ChildrenList>
+						<Action Name="" ID="{AB213A3B-68AD-42CB-8A49-3D0F16C74399}" ShortID="58141594">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.055"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CUP GRUNTS" ID="{6A3C57E1-CD16-4926-A8E3-482EB303E770}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E6900821-07A1-4835-85F5-E5F6FE8D8006}" ShortID="249922864">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CUP IMPACT" ID="{91359E87-6C63-42E8-AF13-10938F314D6F}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SLOWMOIMPACT" ID="{FEA39B9D-BACE-4B1B-AB78-463F01613EDF}">
+					<ChildrenList>
+						<Action Name="" ID="{45192303-C2D0-4AE9-A21A-A4E6A126E8DF}" ShortID="685192687">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.01"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="subdropslowmo" ID="{C3C79703-FE25-40E4-8A12-AA594C1B587C}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3FC0BD61-0B9B-423D-90DC-472CAA255265}" ShortID="361258183">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="020123jeuzmaintheme_2_kick-St" ID="{423568D3-CDCC-47B7-A46A-D3FC74833993}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GlassCrackBlend" ID="{92385F2A-7613-4283-93C9-45063831D218}">
+					<ChildrenList>
+						<Action Name="" ID="{412D7AE5-1A0D-4889-9725-7E0B5A927216}" ShortID="402574012">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GlassCrackBlendContainer" ID="{7BC78471-F1E8-4366-9D11-16F6663D9570}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MUSIC_SWITCH_CONTAINER" ID="{082CE493-A282-4582-B346-796337384193}">
+					<ChildrenList>
+						<Action Name="" ID="{1CADC8A5-059A-4AFF-97F4-F7382DF88419}" ShortID="214316092">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IN GAME MUSIC PLAYLIST" ID="{1232A65F-28DC-41EA-B8F0-CC3854A2807D}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{14D17A33-05DE-4DF3-B043-92A11FBE4BA7}" ShortID="40218159">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Devotion Container" ID="{165F5553-CE9F-41FE-BC1B-5E5FC20086AC}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Trigger_DEATH" ID="{07E5511B-D885-4726-841C-BD0EDCC7FCD6}">
+					<ChildrenList>
+						<Action Name="" ID="{34E11C07-583B-480A-886D-79BA61457450}" ShortID="661262994">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DEATH" ID="{536625F3-B4F2-451D-A1BB-9ABC2A46682D}" WorkUnitID="{C1569A72-2CA7-40AB-ACCB-C75106C76F47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CC0CC3DF-39F9-4C37-AF33-626776A1800F}" ShortID="81851191">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DEATH STINGER" ID="{3B2CBDC8-9BCE-4D0E-AB60-7F68E230BBB8}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{837DEA91-AF07-48DD-8286-7361F58B9CB6}" ShortID="380763641">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DEAD" ID="{FDD044B9-CE0A-4D0B-BD96-DFDECE683A4C}" WorkUnitID="{644C129F-E4C3-4805-B594-198BE1B67410}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5E8B6701-BDD3-4C6E-9DF3-9CED66B9D48C}" ShortID="413148750">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Breaking glass sound effect" ID="{18778D95-5676-45A9-A756-C59AF2A834D6}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_DEATH_STINGER" ID="{0A61C45F-0E5C-436E-8664-0E7003829B3A}">
+					<ChildrenList>
+						<Action Name="" ID="{52BF1BBA-7747-4D16-82FE-DCABF2B44D3D}" ShortID="222484300">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DEATH STINGER" ID="{3B2CBDC8-9BCE-4D0E-AB60-7F68E230BBB8}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Clicks" ID="{97DE5DC2-F226-4FF2-A746-1E4C678F7464}">
+					<ChildrenList>
+						<Action Name="" ID="{5585CA96-4203-445F-8AFF-97CC3C2450DF}" ShortID="108169320">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clicks" ID="{95B238B7-A2D3-401C-90B4-77EEB50F2579}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Main_Menu_Segment" ID="{A67EA250-6DB5-4E4F-BF85-E1D9980F741E}">
+					<ChildrenList>
+						<Action Name="" ID="{569DFBF8-0D14-48B3-A68A-6FFB40CCC3E7}" ShortID="447042112">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main Menu Segment" ID="{9CA0B851-7DC7-4F14-BE28-FD6E3D471B5A}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Main_Menu_Loop_dog" ID="{11C05F34-1DB1-4E5B-A70F-4292FBCB1CF8}">
+					<ChildrenList>
+						<Action Name="" ID="{53140EE7-6021-4737-A3DD-1493EBE2F35F}" ShortID="171299826">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main Menu Loop" ID="{253D6C89-1C80-463E-A5FF-41D0D6B96E6C}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

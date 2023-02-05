@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{644C129F-E4C3-4805-B594-198BE1B67410}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{644C129F-E4C3-4805-B594-198BE1B67410}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{644C129F-E4C3-4805-B594-198BE1B67410}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="GAME_MUSIC_STATES" ID="{DC8A5416-3ECE-4F8D-B51E-E3FFCBD65F37}">
+					<ChildrenList>
+						<State Name="None" ID="{F4A28C8A-ECD9-48E7-98BE-FEBD3D21FD03}"/>
+						<State Name="NORMAL" ID="{DF782370-968D-4F21-B268-7056C9E9F5A2}"/>
+						<State Name="DEVOTION" ID="{4F4B3992-27C6-473D-AA9A-DB4C7EBFA61F}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="MORTALITY" ID="{FD24CCAC-0F0B-4BD9-B097-DAECECE0028E}">
+					<ChildrenList>
+						<State Name="None" ID="{90A61FD7-3125-46DB-8974-38B4689E4CC8}"/>
+						<State Name="LIVING" ID="{AC41EC32-64AD-46F0-8067-1FA2898131AF}"/>
+						<State Name="DEAD" ID="{FDD044B9-CE0A-4D0B-BD96-DFDECE683A4C}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

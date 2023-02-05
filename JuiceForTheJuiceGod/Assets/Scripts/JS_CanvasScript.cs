@@ -13,6 +13,8 @@ public class JS_CanvasScript : MonoBehaviour
     [SerializeField]
     private Vector2 juiceBarInsideLimits;
 
+    public AK.Wwise.RTPC HealthRtpc;
+
     public int pointsTotal;
     public int fruitsSmashed;
     // Start is called before the first frame update
@@ -35,14 +37,15 @@ public class JS_CanvasScript : MonoBehaviour
         GameObject.Find("TimeText").GetComponent<TextMeshProUGUI>().text = "Time Elapsed: " + (int)Time.realtimeSinceStartup;
     }
 
-    void UpdateFaces ()
+    void UpdateFaces()
     {
         //get closest 20 
-        int playerDurability =  playerRef.GetComponent<JS_PlayerAttributes>().Durability;
+        int playerDurability = playerRef.GetComponent<JS_PlayerAttributes>().Durability;
 
         if (playerDurability == 100) playerDurability = 99;
         Image cupFaceImage = gameObject.transform.Find("CupIcon").GetComponent<Image>();
-        cupFaceImage.sprite = cupFaces[playerDurability/20];
+        cupFaceImage.sprite = cupFaces[playerDurability / 20];
+        HealthRtpc.SetGlobalValue(playerDurability);
     }
 
     void UpdateJuiceBar()

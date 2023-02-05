@@ -9,14 +9,49 @@
 							<ObjectRef Name="Play_SCREAMS_BLEND" ID="{3B6C3C75-B864-4848-B4EB-259A117ECB4F}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_SCREAMSRTPC" ID="{3BC6B8D1-8489-43B9-B9DD-1D450C64B31C}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Trigger_DEATH" ID="{07E5511B-D885-4726-841C-BD0EDCC7FCD6}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Main Menu Segment" ID="{9CA0B851-7DC7-4F14-BE28-FD6E3D471B5A}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MUSIC_SWITCH_CONTAINER" ID="{082CE493-A282-4582-B346-796337384193}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SLOWMOIMPACT" ID="{FEA39B9D-BACE-4B1B-AB78-463F01613EDF}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_GlassCrackBlend" ID="{92385F2A-7613-4283-93C9-45063831D218}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}"/>
+							<Position X="4" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="CUP_FULLNESS" ID="{605CA569-D14B-418D-BC9E-038C6EF755EC}"/>
+							<GameParameterRef Name="SLOWMO" ID="{C6BDFD5B-E4E7-400B-9DB7-3588EFEDE32B}"/>
 							<Value>100</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="CUP_FULLNESS" ID="{605CA569-D14B-418D-BC9E-038C6EF755EC}"/>
+							<Value>49</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="HEALTH" ID="{EF433D8B-65D2-4972-BE9E-0062F94D38AA}"/>
+							<Value>1</Value>
+						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="LIVING" ID="{AC41EC32-64AD-46F0-8067-1FA2898131AF}"/>
+						<CurrentStateRef Name="DEVOTION" ID="{4F4B3992-27C6-473D-AA9A-DB4C7EBFA61F}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

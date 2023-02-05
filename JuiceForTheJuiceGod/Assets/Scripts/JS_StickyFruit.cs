@@ -70,7 +70,6 @@ public class JS_StickyFruit : JS_EnemyBase
         GameObject.Find("Player").GetComponent<JS_PlayerAttributes>().Durability += healthRecovered;
         Debug.Log("Player healed for: " + healthRecovered);
 
-        FruitSquish.Post(gameObject);
 
         //Points
         canvasRef.GetComponent<JS_CanvasScript>().pointsTotal += pointsForDeath;

@@ -65,10 +65,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   devotionMode: 0
-  FruitSquish:
+  GlassCracks:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3ed14e175fab13642b02b9ac7167b8f5, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: b9ccfc7977f813d4e8eef9ab0ab34e74, type: 2}
   speed: 2
   damage: 1
   damageDistanceSquared: 2

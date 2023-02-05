@@ -26,6 +26,8 @@ public class JS_Player : MonoBehaviour
     public AK.Wwise.RTPC CupFullness;
     public AK.Wwise.Event FirstHitSound;
     public AK.Wwise.Event HitGroundNoEnemy;
+    public AK.Wwise.Event DeathEventSound;
+
 
     [Space]
     [Header("Input")]
@@ -254,13 +256,14 @@ public class JS_Player : MonoBehaviour
             if(hammerYInWorldSpace > 0.01f)
             {
                 rb.velocity = (Vector3.left*2);
-                hammer.transform.position = Vector3.Lerp(hammer.transform.position, new Vector3(gameObject.transform.position.x, -5f, gameObject.transform.position.z), 0.002f);
+                hammer.transform.position = Vector3.Lerp(hammer.transform.position, new Vector3(gameObject.transform.position.x, -5f, gameObject.transform.position.z), 0.0002f);
             }
         }
         else
         {
             gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().Play("JA_DeathAnimation");
             Time.timeScale = 0.2f;
+            DeathEventSound.Post(gameObject);
         }
 
         holdingSpace = true;
@@ -270,7 +273,7 @@ public class JS_Player : MonoBehaviour
 
     IEnumerator WaitForDeath()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("GameOverScene");
     }
 

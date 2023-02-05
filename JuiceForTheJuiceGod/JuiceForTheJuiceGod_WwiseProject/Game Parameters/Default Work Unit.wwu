@@ -4,6 +4,8 @@
 		<WorkUnit Name="Default Work Unit" ID="{1FE9F8E2-0D9B-49A0-BDF2-30BDD9945CC8}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="CUP_FULLNESS" ID="{605CA569-D14B-418D-BC9E-038C6EF755EC}"/>
+				<GameParameter Name="SLOWMO" ID="{C6BDFD5B-E4E7-400B-9DB7-3588EFEDE32B}"/>
+				<GameParameter Name="HEALTH" ID="{EF433D8B-65D2-4972-BE9E-0062F94D38AA}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

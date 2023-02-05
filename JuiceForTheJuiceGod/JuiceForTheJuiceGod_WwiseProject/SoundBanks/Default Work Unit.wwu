@@ -10,11 +10,15 @@
 						<ObjectRef Name="Play_CupSlam" ID="{6A5439E2-7AFA-4169-AAFF-9971840BF1DD}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_013123_jeus4thejuicegod_theme_1" ID="{E8FA7744-6C0C-41B1-9C9F-4E262B543317}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="STOP_FriutSquish" ID="{680C0E4D-5216-41B2-9E2E-BCA239D55DBF}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DEATH_STINGER" ID="{0A61C45F-0E5C-436E-8664-0E7003829B3A}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SCREAMSRTPC" ID="{3BC6B8D1-8489-43B9-B9DD-1D450C64B31C}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{03912BA1-BDB6-455D-847A-0F86F512267B}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MUSIC_SWITCH_CONTAINER" ID="{082CE493-A282-4582-B346-796337384193}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlaceholderTrack" ID="{8B38B9D1-0F84-4588-81C5-ACBEDE9C5842}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RedSquish" ID="{887E3EE1-72BC-4595-A89C-28CE766888A5}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TealSquish" ID="{48287DE9-3DDC-45E3-A3BD-444B0C18875D}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_banana_1_sfx" ID="{9245A551-A053-45FC-B782-3042DB12D11D}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Trigger_DEATH" ID="{07E5511B-D885-4726-841C-BD0EDCC7FCD6}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MasterSquish" ID="{B410732D-41B8-4789-9BB1-6D4A2E5D6EE2}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_GREENSQUISH" ID="{6A3288B2-0170-47B0-9CCB-5006F6088B7C}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_drop" ID="{E146DF43-33E9-48D7-853B-18A208C63963}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
@@ -23,6 +27,8 @@
 						<ObjectRef Name="Play_FruitSquish" ID="{05EFE3B4-DD9A-4D17-8F9B-53634C4B9CAE}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_suck_2" ID="{B086806B-AB93-4D9B-8C96-DAD10B3E9724}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PinkSquish" ID="{DD7A6585-403A-4DD9-8BE8-9AFAF1C859F5}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Main_Menu_Segment" ID="{A67EA250-6DB5-4E4F-BF85-E1D9980F741E}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Main_Menu_Loop_dog" ID="{11C05F34-1DB1-4E5B-A70F-4292FBCB1CF8}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_suck_1" ID="{48D0E41E-1A69-4E80-A2F0-2787A7DAC780}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

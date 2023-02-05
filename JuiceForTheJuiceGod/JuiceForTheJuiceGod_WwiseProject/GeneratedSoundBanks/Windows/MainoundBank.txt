@@ -1,9 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	287092035	Stop_Main_Menu_Loop_dog			\Default Work Unit\Stop_Main_Menu_Loop_dog	
 	289943158	Play_PlaceholderTrack			\Default Work Unit\Play_PlaceholderTrack	
+	326174240	Play_SCREAMS_BLEND			\Default Work Unit\Play_SCREAMS_BLEND	
 	428305283	Play_OrangeSquish			\Default Work Unit\Play_OrangeSquish	
 	618688860	Play_RedSquish			\Default Work Unit\Play_RedSquish	
 	970812453	Play_banana_1_sfx			\Default Work Unit\Play_banana_1_sfx	
 	1254914371	Play_013123_jeus4thejuicegod_theme_1			\Default Work Unit\Play_013123_jeus4thejuicegod_theme_1	
+	1472339087	Play_DEATH_STINGER			\Default Work Unit\Play_DEATH_STINGER	
 	1787510309	Stop_suck_2			\Default Work Unit\Stop_suck_2	
 	1787510310	Stop_suck_1			\Default Work Unit\Stop_suck_1	
 	1970764015	Play_TealSquish			\Default Work Unit\Play_TealSquish	
@@ -13,43 +16,101 @@ Event	ID	Name			Wwise Object Path	Notes
 	2280282337	Play_CupSlam			\Default Work Unit\Play_CupSlam	
 	2730169239	Play_PurpleSquish			\Default Work Unit\Play_PurpleSquish	
 	2770527519	Play_MasterSquish			\Default Work Unit\Play_MasterSquish	
+	2790046261	Play_Clicks			\Default Work Unit\Play_Clicks	
 	2794084497	Play_SCREAMSRTPC			\Default Work Unit\Play_SCREAMSRTPC	
 	2798565183	Play_FruitSquish			\Default Work Unit\Play_FruitSquish	
+	3081553320	Play_HitGround			\Default Work Unit\Play_HitGround	
+	3268445451	Play_SLOWMOIMPACT			\Default Work Unit\Play_SLOWMOIMPACT	
 	3402561057	STOP_FriutSquish			\Default Work Unit\STOP_FriutSquish	
+	3556724153	Stop_Main_Menu_Segment			\Default Work Unit\Stop_Main_Menu_Segment	
+	3668280933	Play_GlassCrackBlend			\Default Work Unit\Play_GlassCrackBlend	
 	3671528721	Play_PinkSquish			\Default Work Unit\Play_PinkSquish	
+	3673481560	Trigger_DEATH			\Default Work Unit\Trigger_DEATH	
 	3970179632	Play_GREENSQUISH			\Default Work Unit\Play_GREENSQUISH	
+	3989661074	Play_Main_Menu_Loop			\Default Work Unit\Play_Main_Menu_Loop	
+	4282641482	Play_MUSIC_SWITCH_CONTAINER			\Default Work Unit\Play_MUSIC_SWITCH_CONTAINER	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1255398048	GAME_MUSIC_STATES			\Default Work Unit\GAME_MUSIC_STATES	
+	3064359628	MORTALITY			\Default Work Unit\MORTALITY	
+
+State	ID	Name	State Group			Notes
+	748895195	None	GAME_MUSIC_STATES			
+	1160234136	NORMAL	GAME_MUSIC_STATES			
+	1599140191	DEVOTION	GAME_MUSIC_STATES			
+	748895195	None	MORTALITY			
+	892771914	LIVING	MORTALITY			
+	2044049779	DEAD	MORTALITY			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	118986399	DEVOTION	GAME_MUSIC_STATES	\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\IN GAME MUSIC PLAYLIST\ARRANGEMENT 3		
+	176350285	DEAD	MORTALITY	\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\IN GAME MUSIC PLAYLIST		
+	308654773	DEVOTION	GAME_MUSIC_STATES	\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\IN GAME MUSIC PLAYLIST\MAIN 1		
+	474670796	LIVING	MORTALITY	\Interactive Music Hierarchy\Default Work Unit\JEUS MAIN MENU STEMS\death stinger container\DEATH STINGER		
+	531947117	DEAD	MORTALITY	\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container		
+	837882893	DEVOTION	GAME_MUSIC_STATES	\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\IN GAME MUSIC PLAYLIST\ARRANGEMENT 2		
+	839330950	DEVOTION	GAME_MUSIC_STATES	\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\IN GAME MUSIC PLAYLIST		
+	1035849292	NORMAL	GAME_MUSIC_STATES	\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container		
+	1045437094	NORMAL	GAME_MUSIC_STATES	\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container\DEVOTION		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2995488532	CUP_FULLNESS			\Default Work Unit\CUP_FULLNESS	
+	3677180323	HEALTH			\Default Work Unit\HEALTH	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	12688955	scream 2	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream 2		474176
-	20626422	020123 jeus4thejuicegod theme sesh 2	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\020123 jeus4thejuicegod theme sesh 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PlaceholderTracks\020123 jeus4thejuicegod theme sesh 2\020123 jeus4thejuicegod theme sesh 2		8673948
-	53626642	screams	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\screams_4913CAA1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\screams		258880
-	79908683	scream 6	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream 6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream 6		370752
-	132753025	yee_falscream_forrest1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\yee_falscream_forrest1_B07FEFEB.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\yee_falscream_forrest1		169212
-	174375810	yee_scream_forrest2	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\yee_scream_forrest2_E9AA26AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\yee_scream_forrest2		180660
-	178771599	scream5	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream5		432192
-	196310345	dash_final	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\dash_final_3C962B23.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test Sounds\dash_final		82428
-	261353177	yee_falscream_forrest2	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\yee_falscream_forrest2_3EC62D94.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\yee_falscream_forrest2		199396
-	264470518	suck 2	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\suck 2_0375C87B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SUCKS\suck 2		599680
-	349970575	012423 brj2023 boss music 2_3	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\012423 brj2023 boss music 2_3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PlaceholderTracks\012423 brj2023 boss music 2_3\012423 brj2023 boss music 2_3		20026432
-	390646825	cupsmash3	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\cupsmash3_1567D427.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP IMPACT\cupsmash3		83932
-	436562420	grunt 4	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 4_D1FA77A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 4		68056
-	451357906	fruitspill2	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\fruitspill2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SQUISHES\fruitspill2		177384
-	467312185	fruitspill3	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\fruitspill3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SQUISHES\fruitspill3		310600
-	526944446	scream 4	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream 4_29883BBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream 4		169484
-	540864188	grunt 1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 1_85FD0251.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 1		52884
-	543854623	cupsmash1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\cupsmash1_D59056C8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP IMPACT\cupsmash1		80296
-	607069172	cupsmash2	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\cupsmash2_DC8DD594.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP IMPACT\cupsmash2		83724
-	640126864	squish 1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\squish 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SQUISHES\squish 1		221760
-	677987550	scream 3	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream 3_10DCF641.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream 3		399192
-	703880753	woosh 1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\woosh 1_11BFACA6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\AIR SWOOPS\woosh 1		54268
-	712122082	grunt 3	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 3_B7E2872B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 3		67984
-	737758218	scream 7	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream 7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream 7		245824
-	794543473	woosh 2	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\woosh 2_64C260C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\AIR SWOOPS\woosh 2		55540
-	845192073	banana 1 sfx	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\banana 1 sfx_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test Sounds\banana 1 sfx		470464
-	1006196699	grunt 2	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 2_1C6425E5.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 2		78156
-	1010988461	fruitspill1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\fruitspill1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SQUISHES\fruitspill1		353784
-	1015502824	suck 1	C:\Users\Admin\Documents\GitHub\JuiceForTheJuiceGod-JuiceJam2\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\suck 1_20AC17CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SUCKS\suck 1		803904
+	12688955	scream 2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream 2		474176
+	20626422	020123 jeus4thejuicegod theme sesh 2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\020123 jeus4thejuicegod theme sesh 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PlaceholderTracks\020123 jeus4thejuicegod theme sesh 2\020123 jeus4thejuicegod theme sesh 2		8673948
+	53626642	screams	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\screams_4913CAA1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\screams		258880
+	79908683	scream 6	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream 6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream 6		370752
+	80791138	click1	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\click1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clicks\click1		45084
+	113392977	glassCrack_glassCrack2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\glassCrack_glassCrack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GLASS CRACKS\GlassCrackBlendContainer\glassCrack_glassCrack2		353784
+	118521272	020123jeuzmaintheme_2_kick-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\020123jeuzmaintheme_2_kick-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container\DEVOTION\020123jeuzmaintheme_2_kick-St		15179360
+	132753025	yee_falscream_forrest1	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\yee_falscream_forrest1_CE216787.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\yee_falscream_forrest1		169212
+	171053375	tamtam_cm-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\tamtam.cm-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container\DEVOTION\tamtam_cm-St		15179360
+	174375810	yee_scream_forrest2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\yee_scream_forrest2_2D2BB9C9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\yee_scream_forrest2		180660
+	178771599	scream5	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream5		432192
+	196310345	dash_final	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\dash_final_3C962B23.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test Sounds\dash_final		82428
+	261353177	yee_falscream_forrest2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\yee_falscream_forrest2_F5A82A75.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\yee_falscream_forrest2		199396
+	264470518	suck 2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\suck 2_0375C87B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SUCKS\suck 2		599680
+	279030884	contrabassoon 1_cm-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\contrabassoon 1.cm-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container\DEVOTION\contrabassoon 1_cm-St		15179360
+	285292276	glassCrack_glasscrack3	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\glassCrack_glasscrack3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GLASS CRACKS\GlassCrackBlendContainer\glassCrack_glasscrack3		353784
+	306465336	ending trombones fade in_cm-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\ending trombones fade in.cm-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main Menu Loop\Main Menu Segment\ending trombones fade in_cm-St		15179360
+	329708003	contrabassoon 2_cm-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\contrabassoon 2.cm-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container\DEVOTION\contrabassoon 2_cm-St		15179360
+	338061072	low piano_cm1-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\low piano.cm1-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main Menu Loop\Main Menu Segment\low piano_cm1-St		15179360
+	345251505	devotion_bell	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\devotion_bell_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container\DEVOTION\devotion_bell		1992996
+	349970575	012423 brj2023 boss music 2_3	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\012423 brj2023 boss music 2_3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PlaceholderTracks\012423 brj2023 boss music 2_3\012423 brj2023 boss music 2_3		20026432
+	390646825	cupsmash3	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\cupsmash3_1567D427.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP IMPACT\cupsmash3		83932
+	436562420	grunt 4	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 4_D1FA77A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 4		68056
+	444731657	click2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\click2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clicks\click2		45084
+	450791299	020323jeuzmainthemefinalhope3	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\020323jeuzmainthemefinalhope3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\IN GAME MUSIC PLAYLIST\ARRANGEMENT 3\020323jeuzmainthemefinalhope3		21168712
+	451357906	fruitspill2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\fruitspill2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SQUISHES\fruitspill2		177384
+	467312185	fruitspill3	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\fruitspill3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SQUISHES\fruitspill3		310600
+	509362275	basscello_cm1-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\basscello.cm1-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main Menu Loop\Main Menu Segment\basscello_cm1-St		15179360
+	509709546	bass drum c3 subhit_cm1-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\bass drum c3 subhit.cm1-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\JEUS MAIN MENU STEMS\death stinger container\DEATH STINGER\bass drum c3 subhit_cm1-St		15179360
+	526944446	scream 4	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream 4_29883BBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream 4		169484
+	540280368	taiko_cm-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\taiko.cm-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container\DEVOTION\taiko_cm-St		15179360
+	540864188	grunt 1	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 1_85FD0251.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 1		52884
+	543854623	cupsmash1	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\cupsmash1_F8A21F58.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP IMPACT\cupsmash1		68964
+	549655005	020123jeuzmaintheme_2_kick-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\020123jeuzmaintheme_2_kick-St_CB952C4A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SLOWMO IMPACT\020123jeuzmaintheme_2_kick-St		345400
+	564851819	020123jeuzmaintheme_2_bass-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\020123jeuzmaintheme_2_bass-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container\DEVOTION\020123jeuzmaintheme_2_bass-St		15179360
+	573010722	glassCrack_glasscrack1	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\glassCrack_glasscrack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GLASS CRACKS\GlassCrackBlendContainer\glassCrack_glasscrack1		353784
+	607069172	cupsmash2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\cupsmash2_DC8DD594.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP IMPACT\cupsmash2		83724
+	640126864	squish 1	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\squish 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SQUISHES\squish 1		221760
+	647942681	020323jeuzmainthemefinalhope2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\020323jeuzmainthemefinalhope2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\IN GAME MUSIC PLAYLIST\ARRANGEMENT 2\020323jeuzmainthemefinalhope2		13199584
+	664532958	devotion_choir	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\devotion_choir_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container\DEVOTION\devotion_choir		1994940
+	677987550	scream 3	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream 3_10DCF641.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream 3		399192
+	703880753	woosh 1	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\woosh 1_11BFACA6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\AIR SWOOPS\woosh 1		54268
+	712122082	grunt 3	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 3_B7E2872B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 3		67984
+	719228893	glassCrack_glassCrack4	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\glassCrack_glassCrack4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GLASS CRACKS\GlassCrackBlendContainer\glassCrack_glassCrack4		353784
+	737758218	scream 7	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\scream 7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SCREAMS\SCREAMS\scream 7		245824
+	794543473	woosh 2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\woosh 2_64C260C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\AIR SWOOPS\woosh 2		55540
+	810202906	subdropslowmo	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\subdropslowmo_F62C3D56.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SLOWMO IMPACT\subdropslowmo		318624
+	830914852	020323jeuzmainthemefinalhope1	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\020323jeuzmainthemefinalhope1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\IN GAME MUSIC PLAYLIST\MAIN 1\020323jeuzmainthemefinalhope1		13219688
+	845192073	banana 1 sfx	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\banana 1 sfx_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test Sounds\banana 1 sfx		470464
+	906686414	Breaking glass sound effect	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\Breaking glass sound effect_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GLASS CRACKS\Breaking glass sound effect		363412
+	980470040	click3	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\click3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clicks\click3		45084
+	1006196699	grunt 2	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\grunt 2_1C6425E5.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CUP GRUNTS\grunt 2		78156
+	1010988461	fruitspill1	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\fruitspill1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FRUIT SQUISHES\fruitspill1		353784
+	1015502824	suck 1	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\suck 1_20AC17CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SUCKS\suck 1		803904
+	1024073252	strings riser commit_cm-St	H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Windows\SFX\strings riser commit.cm-St_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC SWITCH CONTAINER\Devotion Container\DEVOTION\strings riser commit_cm-St		15179360
 

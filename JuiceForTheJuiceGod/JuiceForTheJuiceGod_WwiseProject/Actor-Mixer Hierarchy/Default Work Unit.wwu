@@ -130,7 +130,7 @@
 											<PropertyList>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.0386942445571677"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.454839893568217"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.390592846001599"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>cupsmash1.wav</AudioFile>
@@ -1403,6 +1403,271 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="SLOWMO IMPACT" ID="{2B0F89DE-FB36-4424-9543-F96D4356ED71}" ShortID="732905279">
+							<ChildrenList>
+								<Sound Name="020123jeuzmaintheme_2_kick-St" ID="{423568D3-CDCC-47B7-A46A-D3FC74833993}" ShortID="620087658">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SLOMO BUS" ID="{5578409B-D418-4685-9B84-15D4A097C764}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="020123jeuzmaintheme_2_kick-St" ID="{9F43CB28-9748-4C47-9A6B-42FE894E4F0E}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.2627422165"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="23.985815827816"/>
+												<Property Name="TrimEnd" Type="Real64" Value="25.7844309984912"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>020123jeuzmaintheme_2_kick-St.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="549655005"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="020123jeuzmaintheme_2_kick-St" ID="{9F43CB28-9748-4C47-9A6B-42FE894E4F0E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="subdropslowmo" ID="{C3C79703-FE25-40E4-8A12-AA594C1B587C}" ShortID="472241064">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SLOMO BUS" ID="{5578409B-D418-4685-9B84-15D4A097C764}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="subdropslowmo" ID="{E08ED4FC-FE08-4987-A724-32FC0FC7C761}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0553422660008127"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.195154306423918"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.209718060634659"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>subdropslowmo.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="810202906"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="subdropslowmo" ID="{E08ED4FC-FE08-4987-A724-32FC0FC7C761}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="GLASS CRACKS" ID="{F4F438FF-E2F1-4182-94ED-B4B99FEF3CCB}" ShortID="267346180">
+							<ChildrenList>
+								<BlendContainer Name="GlassCrackBlendContainer" ID="{7BC78471-F1E8-4366-9D11-16F6663D9570}" ShortID="956534055">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="glassCrack_glassCrack4" ID="{15A91140-0D8A-4BEB-823E-50896420CA41}" ShortID="191408390">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="glassCrack_glassCrack4" ID="{927D6D2C-5C6A-4B88-BF05-ECB1FEEA20AF}">
+													<Language>SFX</Language>
+													<AudioFile>glassCrack_glassCrack4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="719228893"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="glassCrack_glassCrack4" ID="{927D6D2C-5C6A-4B88-BF05-ECB1FEEA20AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="glassCrack_glasscrack3" ID="{5A41214D-33A5-46A0-8EFA-1B1A7921F767}" ShortID="563172147">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="glassCrack_glasscrack3" ID="{5A2F6884-8F38-454E-BD72-696900EBF3CB}">
+													<Language>SFX</Language>
+													<AudioFile>glassCrack_glasscrack3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="285292276"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="glassCrack_glasscrack3" ID="{5A2F6884-8F38-454E-BD72-696900EBF3CB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="glassCrack_glassCrack2" ID="{0DFA8B1F-BF6A-4056-AEC4-5022B013195E}" ShortID="5485375">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="glassCrack_glassCrack2" ID="{ADB87239-8035-4015-8E21-9D749021D109}">
+													<Language>SFX</Language>
+													<AudioFile>glassCrack_glassCrack2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="113392977"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="glassCrack_glassCrack2" ID="{ADB87239-8035-4015-8E21-9D749021D109}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="glassCrack_glasscrack1" ID="{D8A47638-669C-41C4-8BAD-A5E3380F79EC}" ShortID="619220393">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="glassCrack_glasscrack1" ID="{8F3F6583-E936-4B67-8788-87B3F8DDD4E3}">
+													<Language>SFX</Language>
+													<AudioFile>glassCrack_glasscrack1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="573010722"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="glassCrack_glasscrack1" ID="{8F3F6583-E936-4B67-8788-87B3F8DDD4E3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="GLASS CRACKS BLEND" ID="{4CC2274B-BAA8-49F5-A4F0-FA6708C56283}" ShortID="126230247">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="HEALTH" ID="{EF433D8B-65D2-4972-BE9E-0062F94D38AA}" WorkUnitID="{1FE9F8E2-0D9B-49A0-BDF2-30BDD9945CC8}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="glassCrack_glassCrack4" ID="{15A91140-0D8A-4BEB-823E-50896420CA41}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>25</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="glassCrack_glasscrack3" ID="{5A41214D-33A5-46A0-8EFA-1B1A7921F767}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>25</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>50</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="glassCrack_glassCrack2" ID="{0DFA8B1F-BF6A-4056-AEC4-5022B013195E}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>50</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>75</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="glassCrack_glasscrack1" ID="{D8A47638-669C-41C4-8BAD-A5E3380F79EC}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>75</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<Sound Name="Breaking glass sound effect" ID="{18778D95-5676-45A9-A756-C59AF2A834D6}" ShortID="590202772">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Breaking glass sound effect" ID="{73F158B8-D315-4D8D-8048-26350F55CA8D}">
+											<Language>SFX</Language>
+											<AudioFile>Breaking glass sound effect.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="906686414"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Breaking glass sound effect" ID="{73F158B8-D315-4D8D-8048-26350F55CA8D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<BlendContainer Name="SCREAMS BLEND" ID="{C69D911A-D9F4-4009-9259-BC635696D2B8}" ShortID="464884430">
@@ -1667,6 +1932,88 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
+				<RandomSequenceContainer Name="Clicks" ID="{95B238B7-A2D3-401C-90B4-77EEB50F2579}" ShortID="1033049553">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="click1" ID="{2A84BC68-9BF3-41D1-9F32-1E62DDEBEC22}" ShortID="648217407">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="click1" ID="{17867A94-CA65-4D38-AF2E-EE033BA9F09C}">
+									<Language>SFX</Language>
+									<AudioFile>click1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="80791138"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="click1" ID="{17867A94-CA65-4D38-AF2E-EE033BA9F09C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="click2" ID="{00EF6DBF-540E-40A6-AAAA-96E7FF98D73D}" ShortID="461631123">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="click2" ID="{5EE2FCBE-B313-4F5C-85E9-39DD2D89C46C}">
+									<Language>SFX</Language>
+									<AudioFile>click2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="444731657"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="click2" ID="{5EE2FCBE-B313-4F5C-85E9-39DD2D89C46C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="click3" ID="{F07ACED1-1505-400B-8F16-D184A17833C7}" ShortID="662095224">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B384AEEB-1190-46AA-8A91-1C56181B8262}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="click3" ID="{615B5386-9620-45F6-95C5-BD8413A45349}">
+									<Language>SFX</Language>
+									<AudioFile>click3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="980470040"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="click3" ID="{615B5386-9620-45F6-95C5-BD8413A45349}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

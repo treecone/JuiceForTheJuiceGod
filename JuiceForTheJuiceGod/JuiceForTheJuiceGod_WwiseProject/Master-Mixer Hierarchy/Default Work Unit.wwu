@@ -34,6 +34,71 @@
 								</DuckItem>
 							</DuckingList>
 						</Bus>
+						<Bus Name="MUSIC BUS" ID="{2B91E27E-E8BD-4FE7-B577-91F01573C623}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{838B1555-8A6A-4499-9125-317A54EF61B6}" ShortID="45029244">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SLOWMO" ID="{C6BDFD5B-E4E7-400B-9DB7-3588EFEDE32B}" WorkUnitID="{1FE9F8E2-0D9B-49A0-BDF2-30BDD9945CC8}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{17CDBCE3-B8F8-4D7E-AA6E-8C91366D0296}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>60</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>10</XPos>
+														<YPos>60</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="SLOMO BUS" ID="{5578409B-D418-4685-9B84-15D4A097C764}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RecoveryTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ObjectLists/>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="MUSIC BUS" ID="{2B91E27E-E8BD-4FE7-B577-91F01573C623}"/>
+									<DuckingParam>
+										<Volume>-3</Volume>
+										<FadeInTime>0.100000001490116</FadeInTime>
+										<FadeOutTime>0.100000001490116</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>

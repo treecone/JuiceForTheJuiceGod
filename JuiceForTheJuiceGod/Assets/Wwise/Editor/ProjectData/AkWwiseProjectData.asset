@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: e4b89a390caa2746ac623cf5b4574949
     GuidInternal: 
-    m_lastTime: -8585260251495919292
+    m_lastTime: -8585260176268111508
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ebae84b39011aa468a911c56181b8262
     GuidInternal: 
-    m_lastTime: -8585260228636178432
+    m_lastTime: -8585260176268296914
     List:
     - name: CUP SFX
       guid: 41b6414ed75c094aad658deb36bc86f0
@@ -88,6 +88,40 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: MUSIC BUS
+      guid: 7ee2912bbde8e74fb57791f01573c623
+      id: 3127962312
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebae84b39011aa468a911c56181b8262
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: MUSIC BUS
+        ObjectType: 2
+        guid: 7ee2912bbde8e74fb57791f01573c623
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MUSIC BUS
+    - name: SLOMO BUS
+      guid: 9b40785518d485469b8415d4a097c764
+      id: 3783896389
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebae84b39011aa468a911c56181b8262
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SLOMO BUS
+        ObjectType: 2
+        guid: 9b40785518d485469b8415d4a097c764
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SLOMO BUS
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -100,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 22bb7963347e4c4382f8e43755c18752
     GuidInternal: 
-    m_lastTime: -8585260228636168461
+    m_lastTime: -8585260145867542729
     List:
     - name: MainoundBank
       guid: c9da966ea913c1418f41aafa0a5446c8
@@ -128,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a12b9103b6bd5d45847a0f86f512267b
     GuidInternal: 
-    m_lastTime: -8585260228636208354
+    m_lastTime: -8585260143292077584
     List:
     - name: Play_013123_jeus4thejuicegod_theme_1
       guid: 4477fae80c6cb1419c9f4e262b543317
@@ -164,6 +198,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.666667
       minDuration: 2.666667
+    - name: Play_Clicks
+      guid: c25dde9726f2f24fa7461e4c678f7464
+      id: 2790046261
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_Clicks
+        ObjectType: 3
+        guid: c25dde9726f2f24fa7461e4c678f7464
+      Path: Events\Default Work Unit\Play_Clicks
+      maxAttenuation: 0
+      maxDuration: 0.255215
+      minDuration: 0.255215
     - name: Play_CupSlam
       guid: e239546afa7a6941aaff9971840bf1dd
       id: 2280282337
@@ -180,7 +231,24 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Play_CupSlam
       maxAttenuation: 0
       maxDuration: 0.564352
-      minDuration: 0.502563
+      minDuration: 0.458473
+    - name: Play_DEATH_STINGER
+      guid: 5fc4610a5c0e6e4386640e7003829b3a
+      id: 1472339087
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_DEATH_STINGER
+        ObjectType: 3
+        guid: 5fc4610a5c0e6e4386640e7003829b3a
+      Path: Events\Default Work Unit\Play_DEATH_STINGER
+      maxAttenuation: 0
+      maxDuration: 11.544117
+      minDuration: 11.544117
     - name: play_drop
       guid: 43df46e1e933d748853b18a208c63963
       id: 2007351433
@@ -215,6 +283,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.125679
       minDuration: 1.683259
+    - name: Play_GlassCrackBlend
+      guid: 2a5f38921376834293c945063831d218
+      id: 3668280933
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_GlassCrackBlend
+        ObjectType: 3
+        guid: 2a5f38921376834293c945063831d218
+      Path: Events\Default Work Unit\Play_GlassCrackBlend
+      maxAttenuation: 0
+      maxDuration: 2.005215
+      minDuration: 2.005215
     - name: Play_GREENSQUISH
       guid: b288326a7001b0479ccb5006f6088b7c
       id: 3970179632
@@ -232,6 +317,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.387992
       minDuration: 1.387992
+    - name: Play_HitGround
+      guid: 58f53be3041f4d4c95b18ff745a9b0d4
+      id: 3081553320
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_HitGround
+        ObjectType: 3
+        guid: 58f53be3041f4d4c95b18ff745a9b0d4
+      Path: Events\Default Work Unit\Play_HitGround
+      maxAttenuation: 0
+      maxDuration: 0.485352
+      minDuration: 0.379473
+    - name: Play_Main_Menu_Loop
+      guid: c09a8e4028d9d24787f5f6a17d5c44d6
+      id: 3989661074
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_Main_Menu_Loop
+        ObjectType: 3
+        guid: c09a8e4028d9d24787f5f6a17d5c44d6
+      Path: Events\Default Work Unit\Play_Main_Menu_Loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_MasterSquish
       guid: 2d7310b4b84189479bb16d4a2e5d6ee2
       id: 2770527519
@@ -249,6 +368,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.559333
       minDuration: 0.972405
+    - name: Play_MUSIC_SWITCH_CONTAINER
+      guid: 93e42c0882a28245b346796337384193
+      id: 4282641482
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_MUSIC_SWITCH_CONTAINER
+        ObjectType: 3
+        guid: 93e42c0882a28245b346796337384193
+      Path: Events\Default Work Unit\Play_MUSIC_SWITCH_CONTAINER
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_OrangeSquish
       guid: df67e9ee9be66840aa3062a5a70daa32
       id: 428305283
@@ -349,8 +485,8 @@ MonoBehaviour:
         guid: 753c6c3b64b84848b4eb259a117ecb4f
       Path: Events\Default Work Unit\Play_SCREAMS_BLEND
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_SCREAMSRTPC
       guid: d1b8c63b8984b943b9dd1d450c64b31c
       id: 2794084497
@@ -368,6 +504,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.469333
       minDuration: 0.882405
+    - name: Play_SLOWMOIMPACT
+      guid: 9d9ba3feceba1b4bab78463f01613edf
+      id: 3268445451
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Play_SLOWMOIMPACT
+        ObjectType: 3
+        guid: 9d9ba3feceba1b4bab78463f01613edf
+      Path: Events\Default Work Unit\Play_SLOWMOIMPACT
+      maxAttenuation: 0
+      maxDuration: 1.815906
+      minDuration: 1.815906
     - name: Play_suck_1
       guid: 1ee4d048691a804ea2f02787a7dac780
       id: 2273358256
@@ -436,6 +589,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_Main_Menu_Loop_dog
+      guid: 345fc011b11d5b4ea70f4292fbcb1cf8
+      id: 287092035
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Stop_Main_Menu_Loop_dog
+        ObjectType: 3
+        guid: 345fc011b11d5b4ea70f4292fbcb1cf8
+      Path: Events\Default Work Unit\Stop_Main_Menu_Loop_dog
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Main_Menu_Segment
+      guid: 50a27ea6b56d4f4ebf85e1d9980f741e
+      id: 3556724153
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Stop_Main_Menu_Segment
+        ObjectType: 3
+        guid: 50a27ea6b56d4f4ebf85e1d9980f741e
+      Path: Events\Default Work Unit\Stop_Main_Menu_Segment
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_suck_1
       guid: de231e1e0495aa4090696237912df554
       id: 1787510310
@@ -470,6 +657,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Trigger_DEATH
+      guid: 1b51e50785d82647841cbd0edcc7fcd6
+      id: 3673481560
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12b9103b6bd5d45847a0f86f512267b
+      - ElementName: Trigger_DEATH
+        ObjectType: 3
+        guid: 1b51e50785d82647841cbd0edcc7fcd6
+      Path: Events\Default Work Unit\Trigger_DEATH
+      maxAttenuation: 0
+      maxDuration: 11.544117
+      minDuration: 11.544117
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -482,7 +686,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: e2f8e91f9b0da049bdf230bdd9945cc8
     GuidInternal: 
-    m_lastTime: -8585260228636208354
+    m_lastTime: -8585260176309423186
     List:
     - name: CUP_FULLNESS
       guid: 69a55c604bd18d41bc9e038c6ef755ec
@@ -498,6 +702,34 @@ MonoBehaviour:
         ObjectType: 13
         guid: 69a55c604bd18d41bc9e038c6ef755ec
       Path: Game Parameters\Default Work Unit\CUP_FULLNESS
+    - name: HEALTH
+      guid: 8b3d43efd2657249be9e0062f94d38aa
+      id: 3677180323
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e2f8e91f9b0da049bdf230bdd9945cc8
+      - ElementName: HEALTH
+        ObjectType: 13
+        guid: 8b3d43efd2657249be9e0062f94d38aa
+      Path: Game Parameters\Default Work Unit\HEALTH
+    - name: SLOWMO
+      guid: 5bfdbdc6e7e40b409db73588efede32b
+      id: 3236148094
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e2f8e91f9b0da049bdf230bdd9945cc8
+      - ElementName: SLOWMO
+        ObjectType: 13
+        guid: 5bfdbdc6e7e40b409db73588efede32b
+      Path: Game Parameters\Default Work Unit\SLOWMO
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -510,8 +742,140 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 9f124c64c3e40548b594198be1b67410
     GuidInternal: 
-    m_lastTime: -8585260228636168461
-    List: []
+    m_lastTime: -8585260176309646028
+    List:
+    - name: GAME_MUSIC_STATES
+      guid: 16548adcce3e8d4fb51ee3ffcbd65f37
+      id: 1255398048
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9f124c64c3e40548b594198be1b67410
+      - ElementName: GAME_MUSIC_STATES
+        ObjectType: 9
+        guid: 16548adcce3e8d4fb51ee3ffcbd65f37
+      Path: States\Default Work Unit\GAME_MUSIC_STATES
+      values:
+      - name: DEVOTION
+        guid: 92394b4fc6273d47aa9adb4c7ebfa61f
+        id: 1599140191
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9f124c64c3e40548b594198be1b67410
+        - ElementName: GAME_MUSIC_STATES
+          ObjectType: 9
+          guid: 16548adcce3e8d4fb51ee3ffcbd65f37
+        - ElementName: DEVOTION
+          ObjectType: 8
+          guid: 92394b4fc6273d47aa9adb4c7ebfa61f
+      - name: None
+        guid: 8a8ca2f4d9ece74898befebd3d21fd03
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9f124c64c3e40548b594198be1b67410
+        - ElementName: GAME_MUSIC_STATES
+          ObjectType: 9
+          guid: 16548adcce3e8d4fb51ee3ffcbd65f37
+        - ElementName: None
+          ObjectType: 8
+          guid: 8a8ca2f4d9ece74898befebd3d21fd03
+      - name: NORMAL
+        guid: 702378df8d96214fb2687056c9e9f5a2
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9f124c64c3e40548b594198be1b67410
+        - ElementName: GAME_MUSIC_STATES
+          ObjectType: 9
+          guid: 16548adcce3e8d4fb51ee3ffcbd65f37
+        - ElementName: NORMAL
+          ObjectType: 8
+          guid: 702378df8d96214fb2687056c9e9f5a2
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: MORTALITY
+      guid: accc24fd0b0fd94bb097daecece0028e
+      id: 3064359628
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9f124c64c3e40548b594198be1b67410
+      - ElementName: MORTALITY
+        ObjectType: 9
+        guid: accc24fd0b0fd94bb097daecece0028e
+      Path: States\Default Work Unit\MORTALITY
+      values:
+      - name: DEAD
+        guid: b944d0fd0ace0b4dbd96dfdece683a4c
+        id: 2044049779
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9f124c64c3e40548b594198be1b67410
+        - ElementName: MORTALITY
+          ObjectType: 9
+          guid: accc24fd0b0fd94bb097daecece0028e
+        - ElementName: DEAD
+          ObjectType: 8
+          guid: b944d0fd0ace0b4dbd96dfdece683a4c
+      - name: LIVING
+        guid: 32ec41acad64f04680671fa2898131af
+        id: 892771914
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9f124c64c3e40548b594198be1b67410
+        - ElementName: MORTALITY
+          ObjectType: 9
+          guid: accc24fd0b0fd94bb097daecece0028e
+        - ElementName: LIVING
+          ObjectType: 8
+          guid: 32ec41acad64f04680671fa2898131af
+      - name: None
+        guid: d71fa6902531db46897438b4689e4cc8
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9f124c64c3e40548b594198be1b67410
+        - ElementName: MORTALITY
+          ObjectType: 9
+          guid: accc24fd0b0fd94bb097daecece0028e
+        - ElementName: None
+          ObjectType: 8
+          guid: d71fa6902531db46897438b4689e4cc8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -524,7 +888,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 500df6c7ea6e0d4ba64cc35bfbe5059c
     GuidInternal: 
-    m_lastTime: -8585260251495929274
+    m_lastTime: -8585260176310736906
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -538,10 +902,24 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 729a56c1a72cab40accbc75106c76f47
     GuidInternal: 
-    m_lastTime: -8585260251495919292
-    List: []
+    m_lastTime: -8585260176311453323
+    List:
+    - name: DEATH
+      guid: f3256653f2b41d45a1bb9abc2a46682d
+      id: 779278001
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 729a56c1a72cab40accbc75106c76f47
+      - ElementName: DEATH
+        ObjectType: 14
+        guid: f3256653f2b41d45a1bb9abc2a46682d
+      Path: Triggers\Default Work Unit\DEATH
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 010000000500000006000000070000002100000022000000230000002500000026000000270000002b0000002c0000002d0000002e0000002f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

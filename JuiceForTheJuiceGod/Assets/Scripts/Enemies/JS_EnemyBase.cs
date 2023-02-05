@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class JS_EnemyBase : MonoBehaviour
@@ -8,7 +7,7 @@ public class JS_EnemyBase : MonoBehaviour
     [SerializeField]
     public bool devotionMode;
 
-    public AK.Wwise.Event FruitSquish;
+    public AK.Wwise.Event GlassCracks;
     protected Rigidbody rb;
     protected GameObject playerRef;
 
@@ -59,7 +58,7 @@ public class JS_EnemyBase : MonoBehaviour
         hostile = true;
         playerAttributes = playerRef.GetComponent<JS_PlayerAttributes>();
         //devotionMode = false;
-        dir = ((new Vector3(playerRef.transform.position.x, 0, playerRef.transform.position.z)- gameObject.transform.position) + new Vector3(Random.Range(-25.0f, 25.0f), 0, Random.Range(-25.0f, 25.0f))).normalized;
+        dir = ((new Vector3(playerRef.transform.position.x, 0, playerRef.transform.position.z) - gameObject.transform.position) + new Vector3(Random.Range(-25.0f, 25.0f), 0, Random.Range(-25.0f, 25.0f))).normalized;
         rb.velocity = dir * speed;
         outOfBoundsLock = false;
         canvasRef = GameObject.Find("MainCanvas");
@@ -81,11 +80,11 @@ public class JS_EnemyBase : MonoBehaviour
         if (!hostile)
             return;
 
-        if(devotionMode)
+        if (devotionMode)
         {
             dir = playerRef.transform.position - transform.position;
             dir.y = 0;
-            dir = dir.normalized;       
+            dir = dir.normalized;
         }
         else
         {
@@ -101,7 +100,7 @@ public class JS_EnemyBase : MonoBehaviour
 
         if (dirToSpawner.sqrMagnitude >= spawner.enemyDistanceAllowedSqr)
         {
-            if(!outOfBoundsLock)
+            if (!outOfBoundsLock)
             {
                 /*                dir *= -1;
                                 dir += dirToSpawner;
@@ -112,7 +111,7 @@ public class JS_EnemyBase : MonoBehaviour
             }
         }
 
-        if(outOfBoundsLock)
+        if (outOfBoundsLock)
         {
             if (dirToSpawner.sqrMagnitude < spawner.enemyDistanceAllowedSqr)
             {
@@ -123,16 +122,17 @@ public class JS_EnemyBase : MonoBehaviour
 
     protected virtual void DealDamage()
     {
-        if(!hostile || playerAttributes.invincibility)
+        if (!hostile || playerAttributes.invincibility)
         {
             return;
         }
 
-        if(playerRef.transform.Find("Hammer").transform.TransformPoint(Vector3.zero).y < 1)
+        if (playerRef.transform.Find("Hammer").transform.TransformPoint(Vector3.zero).y < 1)
         {
             //If the player hammer is currently down
             if ((playerRef.transform.Find("Hammer").position - gameObject.transform.position).sqrMagnitude <= damageDistanceSquared)
             {
+                GlassCracks.Post(gameObject);
                 playerAttributes.Durability -= damage;
                 Debug.Log(gameObject.name + gameObject.GetInstanceID() + " dealt damage!");
 
@@ -152,7 +152,7 @@ public class JS_EnemyBase : MonoBehaviour
         }
     }
 
-    protected IEnumerator EnemyTimeOut ()
+    protected IEnumerator EnemyTimeOut()
     {
         hostile = false;
         rb.velocity *= 0;
@@ -168,9 +168,6 @@ public class JS_EnemyBase : MonoBehaviour
         juice.GetComponent<JS_Juice>().SetJuiceType(juiceType);
         juice.GetComponent<JS_Juice>().maxJuice = juiceToSpawn;
         juice.transform.SetParent(GameObject.Find("AllJuices").transform);
-
-        FruitSquish.Post(gameObject);
-
 
         //Points
         canvasRef.GetComponent<JS_CanvasScript>().pointsTotal += pointsForDeath;
