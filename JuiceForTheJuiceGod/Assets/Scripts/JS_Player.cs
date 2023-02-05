@@ -162,7 +162,7 @@ public class JS_Player : MonoBehaviour
                     //Animation 
                     gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().Play("JA_PlayerRise");
                     stretchAnimationLock = true;
-                    gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().SetBool("StopStrech", false);
+                    gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().SetBool("StopStretch", false);
                 }
                 hammer.transform.Translate(Vector3.down * attributes.hammerFallSpeed * Time.deltaTime);
             }
@@ -211,7 +211,7 @@ public class JS_Player : MonoBehaviour
         {
             //Not Holding Space ---------------------------
             stretchAnimationLock = false;
-            gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().SetBool("StopStrech", true);
+            gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().SetBool("StopStretch", true);
 
 
             if (absorbLock)

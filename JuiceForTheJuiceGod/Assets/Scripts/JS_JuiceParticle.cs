@@ -14,14 +14,11 @@ public class JS_JuiceParticle : MonoBehaviour
     private Transform Target;
     Transform thisTransform;
 
-    private Sprite[] juiceSprites;
-
 
     void Start()
     {
         Target = GameObject.Find("Player").transform.GetChild(0);
         p = GetComponent<ParticleSystem>();
-        gameObject.GetComponent<SpriteRenderer>().sprite = juiceSprites[Random.Range(0, juiceSprites.Length-1)];
     }
 
 
