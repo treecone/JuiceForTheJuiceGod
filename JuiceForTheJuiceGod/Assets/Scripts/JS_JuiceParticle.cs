@@ -15,11 +15,14 @@ public class JS_JuiceParticle : MonoBehaviour
     public float affectDistance;
     Transform thisTransform;
 
+    private Sprite[] juiceSprites;
+
 
     void Start()
     {
         Target = GameObject.Find("Player").transform.GetChild(0);
         p = GetComponent<ParticleSystem>();
+        gameObject.GetComponent<SpriteRenderer>().sprite = juiceSprites[Random.Range(0, juiceSprites.Length)];
     }
 
 

@@ -6,7 +6,7 @@ using UnityEngine;
 public class JS_EnemyBase : MonoBehaviour
 {
     [SerializeField]
-    protected bool devotionMode;
+    public bool devotionMode;
 
     public AK.Wwise.Event FruitSquish;
     protected Rigidbody rb;
@@ -63,6 +63,11 @@ public class JS_EnemyBase : MonoBehaviour
         rb.velocity = dir * speed;
         outOfBoundsLock = false;
         canvasRef = GameObject.Find("MainCanvas");
+
+        if (playerRef.GetComponent<JS_Player>().lastStoredBiggestJuice == 2)
+        {
+            devotionMode = true;
+        }
     }
 
     protected virtual void Update()
