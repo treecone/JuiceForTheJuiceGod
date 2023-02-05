@@ -288,8 +288,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1012764869
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aab77d8c521d41c4188db936cc503437, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -466,8 +466,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1012764869
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4e08548e6812cda429853b60627ba08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -550,8 +550,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1012764869
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3d1f5ee77ff9f714792383bfc3154c1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -679,8 +679,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1012764869
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 74415693e2525b64db4e1c806ff650f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -845,8 +845,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1012764869
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0e7bce4c37c0b544b9ed8e23983d646c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -929,8 +929,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1012764869
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4e08548e6812cda429853b60627ba08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1013,8 +1013,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1012764869
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aab77d8c521d41c4188db936cc503437, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1586,8 +1586,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1012764869
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aab77d8c521d41c4188db936cc503437, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6493,8 +6493,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1012764869
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4e08548e6812cda429853b60627ba08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6669,27 +6669,27 @@ PrefabInstance:
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 5202870513916933283, guid: 83db732fea4ec2b4587e8a45d99aaa3d, type: 3}
+      objectReference: {fileID: 5202870513916933283, guid: 76b0cbb4ad65e834ca4ba4af056c4d3e, type: 3}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 5202870513916933283, guid: a3b963c8124ee8241b3aed2d4c0ef8a7, type: 3}
+      objectReference: {fileID: 5202870513916933283, guid: c45f049ebd4f3e0419961a500a434bb0, type: 3}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 5202870513916933283, guid: 76b0cbb4ad65e834ca4ba4af056c4d3e, type: 3}
+      objectReference: {fileID: 5202870513916933283, guid: 83db732fea4ec2b4587e8a45d99aaa3d, type: 3}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyPrefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 5202870513916933283, guid: 4f6ee6d03b330da4985b9c2bc2cbde19, type: 3}
+      objectReference: {fileID: 5202870513916933283, guid: 2eebf42510aac3a47a182020421349b8, type: 3}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyPrefabs.Array.data[4]
       value: 
-      objectReference: {fileID: 5202870513916933283, guid: 2eebf42510aac3a47a182020421349b8, type: 3}
+      objectReference: {fileID: 5202870513916933283, guid: 4f6ee6d03b330da4985b9c2bc2cbde19, type: 3}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyPrefabs.Array.data[5]
       value: 
-      objectReference: {fileID: 5202870513916933283, guid: c45f049ebd4f3e0419961a500a434bb0, type: 3}
+      objectReference: {fileID: 5202870513916933283, guid: a3b963c8124ee8241b3aed2d4c0ef8a7, type: 3}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyDistanceSquareWidthSqr
       value: 2000
@@ -6811,6 +6811,10 @@ PrefabInstance:
     - target: {fileID: 943615160, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: juiceFulness
       value: 43.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 943615160, guid: d93c29bf420079741b8098d03da19255, type: 3}
+      propertyPath: invincibilityTime
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 120577871826091695, guid: d93c29bf420079741b8098d03da19255, type: 3}
       propertyPath: m_SortingLayer
