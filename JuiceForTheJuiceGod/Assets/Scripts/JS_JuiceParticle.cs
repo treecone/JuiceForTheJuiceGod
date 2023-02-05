@@ -12,7 +12,6 @@ public class JS_JuiceParticle : MonoBehaviour
     private ParticleSystem p;
     private ParticleSystem.Particle[] particles;
     private Transform Target;
-    public float affectDistance;
     Transform thisTransform;
 
     private Sprite[] juiceSprites;
@@ -22,7 +21,7 @@ public class JS_JuiceParticle : MonoBehaviour
     {
         Target = GameObject.Find("Player").transform.GetChild(0);
         p = GetComponent<ParticleSystem>();
-        gameObject.GetComponent<SpriteRenderer>().sprite = juiceSprites[Random.Range(0, juiceSprites.Length)];
+        gameObject.GetComponent<SpriteRenderer>().sprite = juiceSprites[Random.Range(0, juiceSprites.Length-1)];
     }
 
 

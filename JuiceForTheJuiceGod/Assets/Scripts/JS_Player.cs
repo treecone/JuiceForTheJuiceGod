@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.HID;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements.Experimental;
 
@@ -61,6 +62,8 @@ public class JS_Player : MonoBehaviour
     private Sprite[] playerSprites;
     private JS_EnemySpawner spawner;
 
+    private bool stretchAnimationLock = false;
+
 
     [Space]
     [Header("Attributes that change with fullness")]
@@ -107,17 +110,13 @@ public class JS_Player : MonoBehaviour
         //Camera 
         mainCamera = GameObject.Find("MainCamera");
         ogCameraOffset = mainCamera.GetComponent<JS_CameraScript>().cameraOffset;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Smashing();
-        Movement();
-        UpdateAttributesWithFullness();
-        Leaking();
-        KeepInBounds();
-        UpdateJuiceColors();
+        
 
         gameObject.transform.position = new Vector3(transform.position.x, attributes.height, transform.position.z);
         mainCamera.GetComponent<JS_CameraScript>().cameraOffset = ogCameraOffset * attributes.vision;
@@ -125,6 +124,15 @@ public class JS_Player : MonoBehaviour
         if(attributes.Durability <= 0)
         {
             Death();
+        }
+        else
+        {
+            Smashing();
+            Movement();
+            UpdateAttributesWithFullness();
+            Leaking();
+            KeepInBounds();
+            UpdateJuiceColors();
         }
     }
 
@@ -147,8 +155,15 @@ public class JS_Player : MonoBehaviour
             //Holding Space
 
             Vector3 currentGroundPos = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
-            if(hammerYInWorldSpace > 0.8f)
+            if(hammerYInWorldSpace > 0.05f)
             {
+                if(!stretchAnimationLock)
+                {
+                    //Animation 
+                    gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().Play("JA_PlayerRise");
+                    stretchAnimationLock = true;
+                    gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().SetBool("StopStrech", false);
+                }
                 hammer.transform.Translate(Vector3.down * attributes.hammerFallSpeed * Time.deltaTime);
             }
             else
@@ -159,6 +174,9 @@ public class JS_Player : MonoBehaviour
                     StartCoroutine(invincibilityTimer());
                     Combat();
                     gameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().sprite = playerSprites[0];
+
+                    //Animation 
+                    gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().Play("JA_PlayerSquash");
 
                     //Get all nearby juices
                     nearbyJuices.Clear();
@@ -192,8 +210,11 @@ public class JS_Player : MonoBehaviour
         else
         {
             //Not Holding Space ---------------------------
+            stretchAnimationLock = false;
+            gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().SetBool("StopStrech", true);
 
-            if(absorbLock)
+
+            if (absorbLock)
             {
                 StopSuckSound.Post(gameObject);
                 absorbLock = false;
@@ -225,11 +246,32 @@ public class JS_Player : MonoBehaviour
 
     void Death()
     {
-        gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z), 0.1f);
-        if(gameObject.transform.position.y <= 0.2f)
-        {
+        float hammerYInWorldSpace = hammer.transform.TransformPoint(Vector3.zero).y;
 
+
+        if (gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("JA_DeathAnimation"))
+        {
+            if(hammerYInWorldSpace > 0.01f)
+            {
+                rb.velocity = (Vector3.left*2);
+                hammer.transform.position = Vector3.Lerp(hammer.transform.position, new Vector3(gameObject.transform.position.x, -5f, gameObject.transform.position.z), 0.002f);
+            }
         }
+        else
+        {
+            gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().Play("JA_DeathAnimation");
+            Time.timeScale = 0.2f;
+        }
+
+        holdingSpace = true;
+
+        StartCoroutine(WaitForDeath());
+    }
+
+    IEnumerator WaitForDeath()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("GameOverScene");
     }
 
     void Combat()

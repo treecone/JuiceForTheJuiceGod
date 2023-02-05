@@ -59,7 +59,7 @@ public class JS_EnemyBase : MonoBehaviour
         hostile = true;
         playerAttributes = playerRef.GetComponent<JS_PlayerAttributes>();
         //devotionMode = false;
-        dir = new Vector3(Random.Range(-5.0f, 5.0f), 0, Random.Range(-5.0f, 5.0f)).normalized;
+        dir = ((new Vector3(playerRef.transform.position.x, 0, playerRef.transform.position.z)- gameObject.transform.position) + new Vector3(Random.Range(-25.0f, 25.0f), 0, Random.Range(-25.0f, 25.0f))).normalized;
         rb.velocity = dir * speed;
         outOfBoundsLock = false;
         canvasRef = GameObject.Find("MainCanvas");
@@ -143,6 +143,10 @@ public class JS_EnemyBase : MonoBehaviour
                 hitParticle.transform.LookAt(gameObject.transform.position);
                 hitParticle.transform.Rotate(new Vector3(0, 180, 0));
 
+                GameObject.Find("MainCamera").GetComponent<JS_CameraScript>().ScreenShake(hitParticle.transform.forward, 1.5f);
+                Debug.DrawRay(gameObject.transform.position, hitParticle.transform.forward, Color.red);
+
+                rb.AddForce((new Vector3(playerRef.transform.position.x, 0, playerRef.transform.position.z) - gameObject.transform.position) * -300);
                 StartCoroutine(EnemyTimeOut());
             }
         }

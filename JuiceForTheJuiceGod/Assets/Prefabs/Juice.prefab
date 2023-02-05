@@ -103,6 +103,16 @@ MonoBehaviour:
   juice: 100
   maxJuice: 100
   maxScale: 5
+  minScale: 4
+  allSprites:
+  - {fileID: 1336564596, guid: 482173e4dd42b3f4a8f7a4b1e974e8b1, type: 3}
+  - {fileID: 928740569, guid: 482173e4dd42b3f4a8f7a4b1e974e8b1, type: 3}
+  - {fileID: -1628390898, guid: 482173e4dd42b3f4a8f7a4b1e974e8b1, type: 3}
+  - {fileID: -716977590, guid: 482173e4dd42b3f4a8f7a4b1e974e8b1, type: 3}
+  - {fileID: 1970844114, guid: 482173e4dd42b3f4a8f7a4b1e974e8b1, type: 3}
+  - {fileID: -1688032211, guid: 482173e4dd42b3f4a8f7a4b1e974e8b1, type: 3}
+  - {fileID: 5523254, guid: 482173e4dd42b3f4a8f7a4b1e974e8b1, type: 3}
+  - {fileID: -1306873432, guid: 482173e4dd42b3f4a8f7a4b1e974e8b1, type: 3}
 --- !u!198 &2199168483469071123
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4894,4 +4904,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de0a8f5f8cbb4643a9bc15542b944b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  affectDistance: 100

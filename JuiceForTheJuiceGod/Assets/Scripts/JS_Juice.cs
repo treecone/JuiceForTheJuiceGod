@@ -8,6 +8,11 @@ public class JS_Juice : MonoBehaviour
     public float maxJuice;
     [SerializeField]
     private float maxScale;
+    [SerializeField]
+    private float minScale;
+
+    [SerializeField]
+    private Sprite[] allSprites; 
 
     private Renderer juiceRenderer;
     private JUICE_TYPES juiceType;
@@ -16,8 +21,9 @@ public class JS_Juice : MonoBehaviour
     {
         juiceRenderer = GetComponent<Renderer>();
         juice = maxJuice;
+        gameObject.GetComponent<SpriteRenderer>().sprite = allSprites[Random.Range(0, allSprites.Length-1)];
         //Randomize this a bit?
-        gameObject.transform.localScale = new Vector3(maxScale, maxScale, maxScale);
+        gameObject.transform.localScale = new Vector3(Mathf.Lerp(minScale, maxScale, juice/100), Mathf.Lerp(minScale, maxScale, juice / 100), Mathf.Lerp(minScale, maxScale, juice / 100));
     }
 
     public void SetJuiceType(JUICE_TYPES type) { this.juiceType = type; }
@@ -34,8 +40,6 @@ public class JS_Juice : MonoBehaviour
         {
             if(juiceRenderer != null)
                 juiceRenderer.material.SetFloat("_Capacity", Mathf.Lerp(0, 1.1f, (juice / maxJuice)));
-            float newScale = Mathf.Lerp(maxScale-1, maxScale, juice / maxJuice);
-            gameObject.transform.localScale = new Vector3(newScale, newScale, newScale);
             juice -= amountToRetreve;
 
             //Debug.Log("Slurping: " + amountToRetreve);
