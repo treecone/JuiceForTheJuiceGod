@@ -6,6 +6,8 @@ public class JS_TimeStop : MonoBehaviour
 {
     private float speed;
     private bool restoreTime;
+    public AK.Wwise.Event Sqwart;
+    public AK.Wwise.RTPC SlowMo;
 
     private void Start()
     {
@@ -14,6 +16,7 @@ public class JS_TimeStop : MonoBehaviour
 
     public void Update()
     {
+        SlowMo.SetGlobalValue(Time.timeScale * 100);
         if(restoreTime)
         {
             if(Time.timeScale < 1f)
@@ -27,6 +30,7 @@ public class JS_TimeStop : MonoBehaviour
 
                 Vector3 currentGroundPos = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
                 gameObject.transform.Find("Hammer").transform.position = currentGroundPos;
+                Sqwart.Post(gameObject);
             }
         }
     }

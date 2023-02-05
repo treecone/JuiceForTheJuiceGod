@@ -9,6 +9,7 @@ public class JS_EnemyBase : MonoBehaviour
     public bool devotionMode;
 
     public AK.Wwise.Event FruitSquish;
+    public AK.Wwise.Event GlassCracks;
     protected Rigidbody rb;
     protected GameObject playerRef;
 
@@ -133,6 +134,7 @@ public class JS_EnemyBase : MonoBehaviour
             //If the player hammer is currently down
             if ((playerRef.transform.Find("Hammer").position - gameObject.transform.position).sqrMagnitude <= damageDistanceSquared)
             {
+                GlassCracks.Post(gameObject);
                 playerAttributes.Durability -= damage;
                 Debug.Log(gameObject.name + gameObject.GetInstanceID() + " dealt damage!");
 

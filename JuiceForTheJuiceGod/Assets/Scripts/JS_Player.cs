@@ -300,7 +300,7 @@ public class JS_Player : MonoBehaviour
         else
         {
             FirstHitSound.Post(gameObject);
-            gameObject.GetComponent<JS_TimeStop>().StopTime(0.01f, 10, 0.1f * amountOfEnemiesHit);
+            gameObject.GetComponent<JS_TimeStop>().StopTime(0.01f, 10, 0.4f * amountOfEnemiesHit);
         }
     }
 
@@ -398,6 +398,8 @@ public class JS_Player : MonoBehaviour
             lastStoredBiggestJuice = biggestJuice;
             if (biggestJuice == 2)
             {
+                AkSoundEngine.SetState("GAME_MUSIC_STATES", "DEVOTION");
+                Debug.Log("setting devotion mode");
                 //Enable Devotion mode
                 foreach (Transform child in enemySpawner)
                 {
@@ -406,6 +408,8 @@ public class JS_Player : MonoBehaviour
             }
             else
             {
+
+                AkSoundEngine.SetState("GAME_MUSIC_STATES", "NORMAL");
                 //Enable Devotion mode
                 foreach (Transform child in enemySpawner)
                 {
