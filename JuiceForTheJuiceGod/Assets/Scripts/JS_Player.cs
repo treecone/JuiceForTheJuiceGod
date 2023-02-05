@@ -23,6 +23,8 @@ public class JS_Player : MonoBehaviour
     public AK.Wwise.Event SuckSound;
     public AK.Wwise.Event StopSuckSound;
     public AK.Wwise.RTPC CupFullness;
+    public AK.Wwise.Event FirstHitSound;
+    public AK.Wwise.Event HitGroundNoEnemy;
 
     [Space]
     [Header("Input")]
@@ -32,6 +34,7 @@ public class JS_Player : MonoBehaviour
     private InputActionReference smashRefrence;
     [SerializeField]
     private float[] juiceStored;
+    public int lastStoredBiggestJuice;
 
     private JS_PlayerAttributes attributes;
     private Rigidbody rb;
@@ -118,6 +121,11 @@ public class JS_Player : MonoBehaviour
 
         gameObject.transform.position = new Vector3(transform.position.x, attributes.height, transform.position.z);
         mainCamera.GetComponent<JS_CameraScript>().cameraOffset = ogCameraOffset * attributes.vision;
+
+        if(attributes.Durability <= 0)
+        {
+            Death();
+        }
     }
 
     void Smashing()
@@ -215,6 +223,15 @@ public class JS_Player : MonoBehaviour
         }
     }
 
+    void Death()
+    {
+        gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z), 0.1f);
+        if(gameObject.transform.position.y <= 0.2f)
+        {
+
+        }
+    }
+
     void Combat()
     {
         //Function called once when smash
@@ -236,9 +253,11 @@ public class JS_Player : MonoBehaviour
             hammer.transform.position = currentGroundPos;
             Debug.Log("Missed enemies, leaking: " + attributes.smashCost);
             Leaking(attributes.smashCost);
+            HitGroundNoEnemy.Post(gameObject);
         }
         else
         {
+            FirstHitSound.Post(gameObject);
             gameObject.GetComponent<JS_TimeStop>().StopTime(0.01f, 10, 0.1f * amountOfEnemiesHit);
         }
     }
@@ -330,6 +349,29 @@ public class JS_Player : MonoBehaviour
                 amount = juiceStored[i];
             }
         }
+
+        //New biggest juice stored
+        if(lastStoredBiggestJuice != biggestJuice)
+        {
+            lastStoredBiggestJuice = biggestJuice;
+            if (biggestJuice == 2)
+            {
+                //Enable Devotion mode
+                foreach (Transform child in enemySpawner)
+                {
+                    child.GetComponent<JS_EnemyBase>().devotionMode = true;
+                }
+            }
+            else
+            {
+                //Enable Devotion mode
+                foreach (Transform child in enemySpawner)
+                {
+                    child.GetComponent<JS_EnemyBase>().devotionMode = false;
+                }
+            }
+        }
+        
 
         Color juiceColor = Color.Lerp(gameObject.transform.Find("Hammer").Find("PlayerSprite").GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().color, juiceColors[biggestJuice], 0.1f);
 

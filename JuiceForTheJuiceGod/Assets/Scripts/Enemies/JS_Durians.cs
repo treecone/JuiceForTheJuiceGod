@@ -43,6 +43,13 @@ public class JS_Durians : JS_EnemyBase
                 FruitJump();
             }
         }
+        else
+        {
+            if (gameObject.transform.position.y > 0)
+            {
+                gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z), 0.1f);
+            }
+        }
     }
 
     protected override void Movement()
@@ -56,10 +63,8 @@ public class JS_Durians : JS_EnemyBase
             dir.y = 0;
             dir = dir.normalized;
         }
-        else
-        {
-            KeepInBounds();
-        }
+
+        KeepInBounds();
 
         rb.AddForce(dir * speed);
     }

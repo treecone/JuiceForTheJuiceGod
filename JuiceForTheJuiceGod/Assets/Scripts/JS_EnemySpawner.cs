@@ -11,8 +11,8 @@ public class JS_EnemySpawner : MonoBehaviour
 
     public List<SpawnerLevel> levelList;
     private int onLevel = 0;
-    public float timer;
-    public float spawnTimer; 
+    private float timer;
+    private float spawnTimer; 
 
     public float enemyDistanceAllowedSqr;
     private float enemyDistanceAllowed;
@@ -54,7 +54,7 @@ public class JS_EnemySpawner : MonoBehaviour
                 }
             }
 
-            Debug.Log(rand + "'" + odds + "'" + typeToSpawn);
+            //Debug.Log(rand + "'" + odds + "'" + typeToSpawn);
 
             Vector3 spawnLocation = new Vector3(Random.Range(-xzSize, xzSize), 0, Random.Range(-xzSize, xzSize));
             GameObject enemy = Instantiate(enemyPrefabs[typeToSpawn], spawnLocation, Quaternion.identity) as GameObject;
