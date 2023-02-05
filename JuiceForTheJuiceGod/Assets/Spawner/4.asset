@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c328d83fd2a85074fa14c62aedcff1f1, type: 3}
-  m_Name: 3
+  m_Name: 4
   m_EditorClassIdentifier: 
-  timeToDeactivate: 45
-  timeBetweenSpawns: 2
+  timeToDeactivate: 60
+  timeBetweenSpawns: 1
   enemySpawnRates:
-  - 20
+  - 10
   - 20
   - 40
   - 10
   - 10
-  - 0
+  - 10

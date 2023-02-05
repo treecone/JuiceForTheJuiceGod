@@ -6639,16 +6639,20 @@ PrefabInstance:
       value: EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
+      propertyPath: xzSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: spawnRate
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: levelList.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyDistanceAllowedSqr
-      value: 500
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyPrefabs.Array.size
@@ -6666,6 +6670,10 @@ PrefabInstance:
       propertyPath: levelList.Array.data[2]
       value: 
       objectReference: {fileID: 11400000, guid: 1981191ccdd246748a0353db711dcecb, type: 2}
+    - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
+      propertyPath: levelList.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2226f6c4fc3a0c40b7e119152161bf8, type: 2}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyPrefabs.Array.data[0]
       value: 
@@ -6685,11 +6693,11 @@ PrefabInstance:
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyPrefabs.Array.data[4]
       value: 
-      objectReference: {fileID: 5202870513916933283, guid: 4f6ee6d03b330da4985b9c2bc2cbde19, type: 3}
+      objectReference: {fileID: 5202870513916933283, guid: a3b963c8124ee8241b3aed2d4c0ef8a7, type: 3}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyPrefabs.Array.data[5]
       value: 
-      objectReference: {fileID: 5202870513916933283, guid: a3b963c8124ee8241b3aed2d4c0ef8a7, type: 3}
+      objectReference: {fileID: 5202870513916933283, guid: 4f6ee6d03b330da4985b9c2bc2cbde19, type: 3}
     - target: {fileID: 99081450861754170, guid: 4641d36e29f8b5f4a979bf3548555cd8, type: 3}
       propertyPath: enemyDistanceSquareWidthSqr
       value: 2000
