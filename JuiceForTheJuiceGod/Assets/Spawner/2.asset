@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   timeToDeactivate: 45
-  timeBetweenSpawns: 4
+  timeBetweenSpawns: 1.5
   enemySpawnRates:
-  - 40
-  - 40
-  - 20
-  - 0
-  - 0
+  - 30
+  - 30
+  - 15
+  - 15
+  - 10
   - 0

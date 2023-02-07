@@ -123,7 +123,7 @@ public class JS_Player : MonoBehaviour
         gameObject.transform.position = new Vector3(transform.position.x, attributes.height, transform.position.z);
         mainCamera.GetComponent<JS_CameraScript>().cameraOffset = ogCameraOffset * attributes.vision;
 
-        if(attributes.Durability <= 0)
+        if(attributes.Durability <= 0|| attributes.JuiceFulness <= 0)
         {
             Death();
         }

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c328d83fd2a85074fa14c62aedcff1f1, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  timeToDeactivate: 60
-  timeBetweenSpawns: 1
+  timeToDeactivate: 1000
+  timeBetweenSpawns: 0.5
   enemySpawnRates:
+  - 0
   - 10
-  - 20
   - 40
   - 10
-  - 10
-  - 10
+  - 20
+  - 20

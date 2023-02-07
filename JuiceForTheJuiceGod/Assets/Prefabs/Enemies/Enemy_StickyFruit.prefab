@@ -69,7 +69,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b9ccfc7977f813d4e8eef9ab0ab34e74, type: 2}
-  speed: 2
+  speed: 4
   damage: 1
   damageDistanceSquared: 1
   timeBetweenDamage: 2
@@ -77,11 +77,11 @@ MonoBehaviour:
   juiceColor: {r: 0.9339623, g: 0.72268444, b: 0, a: 1}
   juiceType: 3
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
-  juiceToSpawn: 25
+  juiceToSpawn: 40
   hitParticleSystem: {fileID: 656673997304137025, guid: 07afaca25da8c6440a15bafa55a2972d, type: 3}
   rotateSpeed: 1
   rotateStrength: 1
-  healthRecovered: 5
+  healthRecovered: 10
   rotationCutoffAngle: 25
 --- !u!1 &7760309106333969535
 GameObject:

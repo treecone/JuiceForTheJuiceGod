@@ -77,7 +77,7 @@ MonoBehaviour:
   juiceColor: {r: 0.8773585, g: 0.43007773, b: 0, a: 1}
   juiceType: 0
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
-  juiceToSpawn: 25
+  juiceToSpawn: 20
   hitParticleSystem: {fileID: 656673997304137025, guid: 07afaca25da8c6440a15bafa55a2972d, type: 3}
 --- !u!1 &7911377082408315618
 GameObject:

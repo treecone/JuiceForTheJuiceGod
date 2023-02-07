@@ -17,6 +17,10 @@ public class MenuScript : MonoBehaviour
 
     public void PlayGame ()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
+    public void CreditsButton ()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void PlayAgain ()

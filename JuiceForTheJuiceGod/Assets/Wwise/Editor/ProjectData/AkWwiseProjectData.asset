@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: e4b89a390caa2746ac623cf5b4574949
     GuidInternal: 
-    m_lastTime: -8585260176268111508
+    m_lastTime: -8585260104254775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ebae84b39011aa468a911c56181b8262
     GuidInternal: 
-    m_lastTime: -8585260176268296914
+    m_lastTime: -8585260104254775808
     List:
     - name: CUP SFX
       guid: 41b6414ed75c094aad658deb36bc86f0
@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 22bb7963347e4c4382f8e43755c18752
     GuidInternal: 
-    m_lastTime: -8585260145867542729
+    m_lastTime: -8585260073854775808
     List:
     - name: MainoundBank
       guid: c9da966ea913c1418f41aafa0a5446c8
@@ -162,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a12b9103b6bd5d45847a0f86f512267b
     GuidInternal: 
-    m_lastTime: -8585260143292077584
+    m_lastTime: -8585260071274775808
     List:
     - name: Play_013123_jeus4thejuicegod_theme_1
       guid: 4477fae80c6cb1419c9f4e262b543317
@@ -686,7 +686,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: e2f8e91f9b0da049bdf230bdd9945cc8
     GuidInternal: 
-    m_lastTime: -8585260176309423186
+    m_lastTime: -8585260104294775808
     List:
     - name: CUP_FULLNESS
       guid: 69a55c604bd18d41bc9e038c6ef755ec
@@ -742,7 +742,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 9f124c64c3e40548b594198be1b67410
     GuidInternal: 
-    m_lastTime: -8585260176309646028
+    m_lastTime: -8585260104294775808
     List:
     - name: GAME_MUSIC_STATES
       guid: 16548adcce3e8d4fb51ee3ffcbd65f37
@@ -888,7 +888,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 500df6c7ea6e0d4ba64cc35bfbe5059c
     GuidInternal: 
-    m_lastTime: -8585260176310736906
+    m_lastTime: -8585260104294775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -902,7 +902,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 729a56c1a72cab40accbc75106c76f47
     GuidInternal: 
-    m_lastTime: -8585260176311453323
+    m_lastTime: -8585260104294775808
     List:
     - name: DEATH
       guid: f3256653f2b41d45a1bb9abc2a46682d
@@ -919,7 +919,7 @@ MonoBehaviour:
         guid: f3256653f2b41d45a1bb9abc2a46682d
       Path: Triggers\Default Work Unit\DEATH
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000002100000022000000230000002500000026000000270000002b0000002c0000002d0000002e0000002f000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

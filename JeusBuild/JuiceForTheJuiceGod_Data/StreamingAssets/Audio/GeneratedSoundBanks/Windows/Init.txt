@@ -1,0 +1,26 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1255398048	GAME_MUSIC_STATES			\Default Work Unit\GAME_MUSIC_STATES	
+	3064359628	MORTALITY			\Default Work Unit\MORTALITY	
+
+State	ID	Name	State Group			Notes
+	748895195	None	GAME_MUSIC_STATES			
+	1160234136	NORMAL	GAME_MUSIC_STATES			
+	1599140191	DEVOTION	GAME_MUSIC_STATES			
+	748895195	None	MORTALITY			
+	892771914	LIVING	MORTALITY			
+	2044049779	DEAD	MORTALITY			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3236148094	SLOWMO			\Default Work Unit\SLOWMO	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	698063984	CUP VOX			\Default Work Unit\Master Audio Bus\CUP VOX	
+	814668642	CUP SFX			\Default Work Unit\Master Audio Bus\CUP SFX	
+	3127962312	MUSIC BUS			\Default Work Unit\Master Audio Bus\MUSIC BUS	
+	3783896389	SLOMO BUS			\Default Work Unit\Master Audio Bus\SLOMO BUS	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
