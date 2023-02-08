@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="114138346" Language="SFX" Hash="2175593402">
+		<SoundBank Id="114138346" Language="SFX" Hash="4209280294">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainoundBank</ObjectPath>
 			<ShortName>MainoundBank</ShortName>
 			<Path>MainoundBank.bnk</Path>
@@ -116,7 +116,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3668280933" Name="Play_GlassCrackBlend" ObjectPath="\Events\Default Work Unit\Play_GlassCrackBlend" DurationType="OneShot" DurationMin="2.005215" DurationMax="2.005215">
+				<Event Id="3668280933" Name="Play_GlassCrackBlend" ObjectPath="\Events\Default Work Unit\Play_GlassCrackBlend" DurationType="OneShot" DurationMin="2.105215" DurationMax="2.105215">
 					<IncludedMemoryFiles>
 						<File Id="113392977" Language="SFX">
 							<ShortName>glassCrack_glassCrack2.wav</ShortName>
@@ -208,7 +208,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2770527519" Name="Play_MasterSquish" ObjectPath="\Events\Default Work Unit\Play_MasterSquish" DurationType="OneShot" DurationMin="0.972405" DurationMax="2.559333">
+				<Event Id="2770527519" Name="Play_MasterSquish" ObjectPath="\Events\Default Work Unit\Play_MasterSquish" DurationType="OneShot" DurationMin="1.000545" DurationMax="2.559333">
 					<IncludedMemoryFiles>
 						<File Id="12688955" Language="SFX">
 							<ShortName>scream 2.wav</ShortName>
@@ -461,7 +461,10 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="453560624" Name="Stop_all_Cat" ObjectPath="\Events\Default Work Unit\Stop_all_Cat" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1872556798" Name="Stop_Devotion_Container" ObjectPath="\Events\Default Work Unit\Stop_Devotion_Container" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3402561057" Name="STOP_FriutSquish" ObjectPath="\Events\Default Work Unit\STOP_FriutSquish" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="241091083" Name="Stop_IN_GAME_MUSIC_PLAYLIST" ObjectPath="\Events\Default Work Unit\Stop_IN_GAME_MUSIC_PLAYLIST" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="287092035" Name="Stop_Main_Menu_Loop_dog" ObjectPath="\Events\Default Work Unit\Stop_Main_Menu_Loop_dog" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3556724153" Name="Stop_Main_Menu_Segment" ObjectPath="\Events\Default Work Unit\Stop_Main_Menu_Segment" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1787510310" Name="Stop_suck_1" ObjectPath="\Events\Default Work Unit\Stop_suck_1" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
@@ -481,6 +484,10 @@
 							<Path>SFX\Breaking glass sound effect_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="241091083" Name="Stop_IN_GAME_MUSIC_PLAYLIST" ObjectPath="\Events\Default Work Unit\Stop_IN_GAME_MUSIC_PLAYLIST"/>
+						<ActionPostEventEntry Id="1872556798" Name="Stop_Devotion_Container" ObjectPath="\Events\Default Work Unit\Stop_Devotion_Container"/>
+					</ActionPostEvent>
 					<ActionSetState>
 						<ActionSetStateEntry Id="2044049779" Name="DEAD" ObjectPath="\States\Default Work Unit\MORTALITY\DEAD"/>
 					</ActionSetState>

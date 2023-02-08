@@ -140,6 +140,12 @@ public class AkInitializer : UnityEngine.MonoBehaviour
 			AkSoundEngineController.Instance.LateUpdate();
 	}
 
+	public void Death()
+	{
+        if (ms_Instance == this)
+            AkSoundEngineController.Instance.Terminate();
+    }
+
 #region WwiseMigration
 #if UNITY_EDITOR
 #pragma warning disable 0414 // private field assigned but not used.

@@ -10,6 +10,7 @@ public class JS_Durians : JS_EnemyBase
     private float timeBetweenJumps;
 
     private float fruitY;
+    [SerializeField]
     private float durianTimer = 0;
     private bool jumpNow;
     private float playerHeight;
@@ -25,30 +26,23 @@ public class JS_Durians : JS_EnemyBase
     {
         base.Update();
 
-        if(devotionMode)
+        gameObject.transform.position = new Vector3(transform.position.x, fruitY, transform.position.z);
+
+
+        //Jumping -----------------------
+        durianTimer += Time.deltaTime;
+
+        if (durianTimer >= timeBetweenJumps)
         {
-            durianTimer += Time.deltaTime;
-            gameObject.transform.position = new Vector3(transform.position.x, fruitY, transform.position.z);
-
-            if (durianTimer >= timeBetweenJumps && hostile)
-            {
-                durianTimer = 0.1f;
-                transform.Translate(Vector3.up * 0.1f);
-                jumpNow = true;
-                playerHeight = playerRef.transform.position.y;
-            }
-
-            if (jumpNow)
-            {
-                FruitJump();
-            }
+            durianTimer = 0.1f;
+            transform.Translate(Vector3.up * 0.15f);
+            jumpNow = true;
+            playerHeight = playerRef.transform.position.y;
         }
-        else
+
+        if (jumpNow)
         {
-            if (gameObject.transform.position.y > 0)
-            {
-                gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z), 0.1f);
-            }
+            FruitJump();
         }
     }
 
@@ -83,15 +77,20 @@ public class JS_Durians : JS_EnemyBase
 
         if ((playerRef.transform.Find("Hammer").position - gameObject.transform.position).sqrMagnitude <= damageDistanceSquared)
         {
+            GlassCracks.Post(gameObject);
             playerAttributes.Durability -= damage;
             Debug.Log(gameObject.name + gameObject.GetInstanceID() + " dealt damage!");
 
             //Particle System 
             GameObject hitParticle = Instantiate(hitParticleSystem);
             hitParticle.transform.position = playerRef.transform.GetChild(0).transform.position;
-            //hitParticle.transform.SetParent(playerRef.transform);
             hitParticle.transform.LookAt(gameObject.transform.position);
             hitParticle.transform.Rotate(new Vector3(0, 180, 0));
+
+            GameObject.Find("MainCamera").GetComponent<JS_CameraScript>().ScreenShake(hitParticle.transform.forward, 1.5f);
+            Debug.DrawRay(gameObject.transform.position, hitParticle.transform.forward, Color.red);
+
+            rb.AddForce((new Vector3(playerRef.transform.position.x, 0, playerRef.transform.position.z) - gameObject.transform.position) * -300);
 
             StartCoroutine(EnemyTimeOut());
         }

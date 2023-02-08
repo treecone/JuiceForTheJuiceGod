@@ -71,8 +71,12 @@ public class JS_EnemyBase : MonoBehaviour
 
     protected virtual void Update()
     {
-        Movement();
         DealDamage();
+    }
+
+    protected void FixedUpdate()
+    {
+        Movement();
     }
 
     protected virtual void Movement()
@@ -133,13 +137,12 @@ public class JS_EnemyBase : MonoBehaviour
             if ((playerRef.transform.Find("Hammer").position - gameObject.transform.position).sqrMagnitude <= damageDistanceSquared)
             {
                 GlassCracks.Post(gameObject);
-                playerAttributes.Durability -= damage;
+                playerAttributes.Durability -= damage * 2;
                 Debug.Log(gameObject.name + gameObject.GetInstanceID() + " dealt damage!");
 
                 //Particle System 
                 GameObject hitParticle = Instantiate(hitParticleSystem);
                 hitParticle.transform.position = playerRef.transform.GetChild(0).transform.position;
-                //hitParticle.transform.SetParent(playerRef.transform);
                 hitParticle.transform.LookAt(gameObject.transform.position);
                 hitParticle.transform.Rotate(new Vector3(0, 180, 0));
 

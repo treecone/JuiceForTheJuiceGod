@@ -34,7 +34,7 @@ public class JS_CanvasScript : MonoBehaviour
     void UpdateScoreAndTime()
     {
         GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>().text = "Points Total :" + pointsTotal + "<br>Fruits Smashed: " + fruitsSmashed;
-        GameObject.Find("TimeText").GetComponent<TextMeshProUGUI>().text = "Time Elapsed: " + (int)Time.realtimeSinceStartup;
+        GameObject.Find("TimeText").GetComponent<TextMeshProUGUI>().text = "Time Elapsed: " + (int)Time.timeSinceLevelLoad;
     }
 
     void UpdateFaces()

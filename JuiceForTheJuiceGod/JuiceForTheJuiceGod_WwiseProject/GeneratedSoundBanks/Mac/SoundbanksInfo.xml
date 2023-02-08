@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>H:\Projects\JuiceForTheJuiceGod\JuiceForTheJuiceGod\JuiceForTheJuiceGod_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="114138346" Language="SFX" Hash="559916112">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainoundBank</ObjectPath>
+			<ShortName>MainoundBank</ShortName>
+			<Path>MainoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1254914371" Name="Play_013123_jeus4thejuicegod_theme_1" ObjectPath="\Events\Default Work Unit\Play_013123_jeus4thejuicegod_theme_1" DurationType="OneShot" DurationMin="45.176479" DurationMax="45.176479">
+					<IncludedMemoryFiles>
+						<File Id="20626422" Language="SFX">
+							<ShortName>020123 jeus4thejuicegod theme sesh 2.wav</ShortName>
+							<Path>SFX\020123 jeus4thejuicegod theme sesh 2_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="970812453" Name="Play_banana_1_sfx" ObjectPath="\Events\Default Work Unit\Play_banana_1_sfx" DurationType="OneShot" DurationMin="2.666667" DurationMax="2.666667">
+					<IncludedMemoryFiles>
+						<File Id="845192073" Language="SFX">
+							<ShortName>banana 1 sfx.wav</ShortName>
+							<Path>SFX\banana 1 sfx_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2790046261" Name="Play_Clicks" ObjectPath="\Events\Default Work Unit\Play_Clicks" DurationType="OneShot" DurationMin="0.255215" DurationMax="0.255215">
+					<IncludedMemoryFiles>
+						<File Id="80791138" Language="SFX">
+							<ShortName>click1.wav</ShortName>
+							<Path>SFX\click1_10C4C929.wem</Path>
+						</File>
+						<File Id="444731657" Language="SFX">
+							<ShortName>click2.wav</ShortName>
+							<Path>SFX\click2_10C4C929.wem</Path>
+						</File>
+						<File Id="980470040" Language="SFX">
+							<ShortName>click3.wav</ShortName>
+							<Path>SFX\click3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2280282337" Name="Play_CupSlam" ObjectPath="\Events\Default Work Unit\Play_CupSlam" DurationType="OneShot" DurationMin="0.458473" DurationMax="0.564352">
+					<IncludedMemoryFiles>
+						<File Id="390646825" Language="SFX">
+							<ShortName>cupsmash3.wav</ShortName>
+							<Path>SFX\cupsmash3_1567D427.wem</Path>
+						</File>
+						<File Id="436562420" Language="SFX">
+							<ShortName>grunt 4.wav</ShortName>
+							<Path>SFX\grunt 4_D1FA77A0.wem</Path>
+						</File>
+						<File Id="540864188" Language="SFX">
+							<ShortName>grunt 1.wav</ShortName>
+							<Path>SFX\grunt 1_85FD0251.wem</Path>
+						</File>
+						<File Id="543854623" Language="SFX">
+							<ShortName>cupsmash1.wav</ShortName>
+							<Path>SFX\cupsmash1_F8A21F58.wem</Path>
+						</File>
+						<File Id="607069172" Language="SFX">
+							<ShortName>cupsmash2.wav</ShortName>
+							<Path>SFX\cupsmash2_DC8DD594.wem</Path>
+						</File>
+						<File Id="703880753" Language="SFX">
+							<ShortName>woosh 1.wav</ShortName>
+							<Path>SFX\woosh 1_11BFACA6.wem</Path>
+						</File>
+						<File Id="712122082" Language="SFX">
+							<ShortName>grunt 3.wav</ShortName>
+							<Path>SFX\grunt 3_B7E2872B.wem</Path>
+						</File>
+						<File Id="794543473" Language="SFX">
+							<ShortName>woosh 2.wav</ShortName>
+							<Path>SFX\woosh 2_64C260C1.wem</Path>
+						</File>
+						<File Id="1006196699" Language="SFX">
+							<ShortName>grunt 2.wav</ShortName>
+							<Path>SFX\grunt 2_1C6425E5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1472339087" Name="Play_DEATH_STINGER" ObjectPath="\Events\Default Work Unit\Play_DEATH_STINGER" DurationType="OneShot" DurationMin="11.544117" DurationMax="11.544117">
+					<IncludedMemoryFiles>
+						<File Id="509709546" Language="SFX">
+							<ShortName>bass drum c3 subhit.cm1-St.wav</ShortName>
+							<Path>SFX\bass drum c3 subhit.cm1-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="830914852" Language="SFX">
+							<ShortName>020323jeuzmainthemefinalhope1.wav</ShortName>
+							<Path>SFX\020323jeuzmainthemefinalhope1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2007351433" Name="play_drop" ObjectPath="\Events\Default Work Unit\play_drop" DurationType="OneShot" DurationMin="0.46692" DurationMax="0.46692">
+					<IncludedMemoryFiles>
+						<File Id="196310345" Language="SFX">
+							<ShortName>dash_final.wav</ShortName>
+							<Path>SFX\dash_final_3C962B23.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2798565183" Name="Play_FruitSquish" ObjectPath="\Events\Default Work Unit\Play_FruitSquish" DurationType="OneShot" DurationMin="1.683259" DurationMax="2.125679">
+					<IncludedMemoryFiles>
+						<File Id="1010988461" Language="SFX">
+							<ShortName>fruitspill1.wav</ShortName>
+							<Path>SFX\fruitspill1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3668280933" Name="Play_GlassCrackBlend" ObjectPath="\Events\Default Work Unit\Play_GlassCrackBlend" DurationType="OneShot" DurationMin="2.105215" DurationMax="2.105215">
+					<IncludedMemoryFiles>
+						<File Id="113392977" Language="SFX">
+							<ShortName>glassCrack_glassCrack2.wav</ShortName>
+							<Path>SFX\glassCrack_glassCrack2_10C4C929.wem</Path>
+						</File>
+						<File Id="285292276" Language="SFX">
+							<ShortName>glassCrack_glasscrack3.wav</ShortName>
+							<Path>SFX\glassCrack_glasscrack3_10C4C929.wem</Path>
+						</File>
+						<File Id="573010722" Language="SFX">
+							<ShortName>glassCrack_glasscrack1.wav</ShortName>
+							<Path>SFX\glassCrack_glasscrack1_10C4C929.wem</Path>
+						</File>
+						<File Id="719228893" Language="SFX">
+							<ShortName>glassCrack_glassCrack4.wav</ShortName>
+							<Path>SFX\glassCrack_glassCrack4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3970179632" Name="Play_GREENSQUISH" ObjectPath="\Events\Default Work Unit\Play_GREENSQUISH" DurationType="OneShot" DurationMin="1.387992" DurationMax="1.387992">
+					<IncludedMemoryFiles>
+						<File Id="53626642" Language="SFX">
+							<ShortName>screams.wav</ShortName>
+							<Path>SFX\screams_4913CAA1.wem</Path>
+						</File>
+						<File Id="451357906" Language="SFX">
+							<ShortName>fruitspill2.wav</ShortName>
+							<Path>SFX\fruitspill2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3081553320" Name="Play_HitGround" ObjectPath="\Events\Default Work Unit\Play_HitGround" DurationType="OneShot" DurationMin="0.379473" DurationMax="0.485352">
+					<IncludedMemoryFiles>
+						<File Id="390646825" Language="SFX">
+							<ShortName>cupsmash3.wav</ShortName>
+							<Path>SFX\cupsmash3_1567D427.wem</Path>
+						</File>
+						<File Id="436562420" Language="SFX">
+							<ShortName>grunt 4.wav</ShortName>
+							<Path>SFX\grunt 4_D1FA77A0.wem</Path>
+						</File>
+						<File Id="540864188" Language="SFX">
+							<ShortName>grunt 1.wav</ShortName>
+							<Path>SFX\grunt 1_85FD0251.wem</Path>
+						</File>
+						<File Id="543854623" Language="SFX">
+							<ShortName>cupsmash1.wav</ShortName>
+							<Path>SFX\cupsmash1_F8A21F58.wem</Path>
+						</File>
+						<File Id="607069172" Language="SFX">
+							<ShortName>cupsmash2.wav</ShortName>
+							<Path>SFX\cupsmash2_DC8DD594.wem</Path>
+						</File>
+						<File Id="712122082" Language="SFX">
+							<ShortName>grunt 3.wav</ShortName>
+							<Path>SFX\grunt 3_B7E2872B.wem</Path>
+						</File>
+						<File Id="1006196699" Language="SFX">
+							<ShortName>grunt 2.wav</ShortName>
+							<Path>SFX\grunt 2_1C6425E5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3989661074" Name="Play_Main_Menu_Loop" ObjectPath="\Events\Default Work Unit\Play_Main_Menu_Loop" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="171053375" Language="SFX">
+							<ShortName>tamtam.cm-St.wav</ShortName>
+							<Path>SFX\tamtam.cm-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="306465336" Language="SFX">
+							<ShortName>ending trombones fade in.cm-St.wav</ShortName>
+							<Path>SFX\ending trombones fade in.cm-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="338061072" Language="SFX">
+							<ShortName>low piano.cm1-St.wav</ShortName>
+							<Path>SFX\low piano.cm1-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="509362275" Language="SFX">
+							<ShortName>basscello.cm1-St.wav</ShortName>
+							<Path>SFX\basscello.cm1-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="509709546" Language="SFX">
+							<ShortName>bass drum c3 subhit.cm1-St.wav</ShortName>
+							<Path>SFX\bass drum c3 subhit.cm1-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="540280368" Language="SFX">
+							<ShortName>taiko.cm-St.wav</ShortName>
+							<Path>SFX\taiko.cm-St_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2770527519" Name="Play_MasterSquish" ObjectPath="\Events\Default Work Unit\Play_MasterSquish" DurationType="OneShot" DurationMin="1.000545" DurationMax="2.559333">
+					<IncludedMemoryFiles>
+						<File Id="12688955" Language="SFX">
+							<ShortName>scream 2.wav</ShortName>
+							<Path>SFX\scream 2_10C4C929.wem</Path>
+						</File>
+						<File Id="53626642" Language="SFX">
+							<ShortName>screams.wav</ShortName>
+							<Path>SFX\screams_4913CAA1.wem</Path>
+						</File>
+						<File Id="79908683" Language="SFX">
+							<ShortName>scream 6.wav</ShortName>
+							<Path>SFX\scream 6_10C4C929.wem</Path>
+						</File>
+						<File Id="132753025" Language="SFX">
+							<ShortName>yee_falscream_forrest1.wav</ShortName>
+							<Path>SFX\yee_falscream_forrest1_CE216787.wem</Path>
+						</File>
+						<File Id="174375810" Language="SFX">
+							<ShortName>yee_scream_forrest2.wav</ShortName>
+							<Path>SFX\yee_scream_forrest2_2D2BB9C9.wem</Path>
+						</File>
+						<File Id="178771599" Language="SFX">
+							<ShortName>scream5.wav</ShortName>
+							<Path>SFX\scream5_10C4C929.wem</Path>
+						</File>
+						<File Id="261353177" Language="SFX">
+							<ShortName>yee_falscream_forrest2.wav</ShortName>
+							<Path>SFX\yee_falscream_forrest2_F5A82A75.wem</Path>
+						</File>
+						<File Id="451357906" Language="SFX">
+							<ShortName>fruitspill2.wav</ShortName>
+							<Path>SFX\fruitspill2_10C4C929.wem</Path>
+						</File>
+						<File Id="467312185" Language="SFX">
+							<ShortName>fruitspill3.wav</ShortName>
+							<Path>SFX\fruitspill3_10C4C929.wem</Path>
+						</File>
+						<File Id="526944446" Language="SFX">
+							<ShortName>scream 4.wav</ShortName>
+							<Path>SFX\scream 4_29883BBB.wem</Path>
+						</File>
+						<File Id="640126864" Language="SFX">
+							<ShortName>squish 1.wav</ShortName>
+							<Path>SFX\squish 1_10C4C929.wem</Path>
+						</File>
+						<File Id="677987550" Language="SFX">
+							<ShortName>scream 3.wav</ShortName>
+							<Path>SFX\scream 3_10DCF641.wem</Path>
+						</File>
+						<File Id="737758218" Language="SFX">
+							<ShortName>scream 7.wav</ShortName>
+							<Path>SFX\scream 7_10C4C929.wem</Path>
+						</File>
+						<File Id="1010988461" Language="SFX">
+							<ShortName>fruitspill1.wav</ShortName>
+							<Path>SFX\fruitspill1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4282641482" Name="Play_MUSIC_SWITCH_CONTAINER" ObjectPath="\Events\Default Work Unit\Play_MUSIC_SWITCH_CONTAINER" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="118521272" Language="SFX">
+							<ShortName>020123jeuzmaintheme_2_kick-St.wav</ShortName>
+							<Path>SFX\020123jeuzmaintheme_2_kick-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="171053375" Language="SFX">
+							<ShortName>tamtam.cm-St.wav</ShortName>
+							<Path>SFX\tamtam.cm-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="279030884" Language="SFX">
+							<ShortName>contrabassoon 1.cm-St.wav</ShortName>
+							<Path>SFX\contrabassoon 1.cm-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="329708003" Language="SFX">
+							<ShortName>contrabassoon 2.cm-St.wav</ShortName>
+							<Path>SFX\contrabassoon 2.cm-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="345251505" Language="SFX">
+							<ShortName>devotion_bell.wav</ShortName>
+							<Path>SFX\devotion_bell_D79FB2B7.wem</Path>
+						</File>
+						<File Id="450791299" Language="SFX">
+							<ShortName>020323jeuzmainthemefinalhope3.wav</ShortName>
+							<Path>SFX\020323jeuzmainthemefinalhope3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="540280368" Language="SFX">
+							<ShortName>taiko.cm-St.wav</ShortName>
+							<Path>SFX\taiko.cm-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="564851819" Language="SFX">
+							<ShortName>020123jeuzmaintheme_2_bass-St.wav</ShortName>
+							<Path>SFX\020123jeuzmaintheme_2_bass-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="647942681" Language="SFX">
+							<ShortName>020323jeuzmainthemefinalhope2.wav</ShortName>
+							<Path>SFX\020323jeuzmainthemefinalhope2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="664532958" Language="SFX">
+							<ShortName>devotion_choir.wav</ShortName>
+							<Path>SFX\devotion_choir_D79FB2B7.wem</Path>
+						</File>
+						<File Id="830914852" Language="SFX">
+							<ShortName>020323jeuzmainthemefinalhope1.wav</ShortName>
+							<Path>SFX\020323jeuzmainthemefinalhope1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1024073252" Language="SFX">
+							<ShortName>strings riser commit.cm-St.wav</ShortName>
+							<Path>SFX\strings riser commit.cm-St_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="428305283" Name="Play_OrangeSquish" ObjectPath="\Events\Default Work Unit\Play_OrangeSquish" DurationType="OneShot" DurationMin="2.178797" DurationMax="2.178797">
+					<IncludedMemoryFiles>
+						<File Id="467312185" Language="SFX">
+							<ShortName>fruitspill3.wav</ShortName>
+							<Path>SFX\fruitspill3_10C4C929.wem</Path>
+						</File>
+						<File Id="677987550" Language="SFX">
+							<ShortName>scream 3.wav</ShortName>
+							<Path>SFX\scream 3_10DCF641.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3671528721" Name="Play_PinkSquish" ObjectPath="\Events\Default Work Unit\Play_PinkSquish" DurationType="OneShot" DurationMin="1.990667" DurationMax="1.990667">
+					<IncludedMemoryFiles>
+						<File Id="79908683" Language="SFX">
+							<ShortName>scream 6.wav</ShortName>
+							<Path>SFX\scream 6_10C4C929.wem</Path>
+						</File>
+						<File Id="640126864" Language="SFX">
+							<ShortName>squish 1.wav</ShortName>
+							<Path>SFX\squish 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="289943158" Name="Play_PlaceholderTrack" ObjectPath="\Events\Default Work Unit\Play_PlaceholderTrack" DurationType="OneShot" DurationMin="104.304001" DurationMax="104.304001">
+					<IncludedMemoryFiles>
+						<File Id="349970575" Language="SFX">
+							<ShortName>012423 brj2023 boss music 2_3.wav</ShortName>
+							<Path>SFX\012423 brj2023 boss music 2_3_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2730169239" Name="Play_PurpleSquish" ObjectPath="\Events\Default Work Unit\Play_PurpleSquish" DurationType="OneShot" DurationMin="1.237627" DurationMax="1.237627">
+					<IncludedMemoryFiles>
+						<File Id="467312185" Language="SFX">
+							<ShortName>fruitspill3.wav</ShortName>
+							<Path>SFX\fruitspill3_10C4C929.wem</Path>
+						</File>
+						<File Id="526944446" Language="SFX">
+							<ShortName>scream 4.wav</ShortName>
+							<Path>SFX\scream 4_29883BBB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="618688860" Name="Play_RedSquish" ObjectPath="\Events\Default Work Unit\Play_RedSquish" DurationType="OneShot" DurationMin="2.469333" DurationMax="2.469333">
+					<IncludedMemoryFiles>
+						<File Id="12688955" Language="SFX">
+							<ShortName>scream 2.wav</ShortName>
+							<Path>SFX\scream 2_10C4C929.wem</Path>
+						</File>
+						<File Id="640126864" Language="SFX">
+							<ShortName>squish 1.wav</ShortName>
+							<Path>SFX\squish 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="326174240" Name="Play_SCREAMS_BLEND" ObjectPath="\Events\Default Work Unit\Play_SCREAMS_BLEND" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2794084497" Name="Play_SCREAMSRTPC" ObjectPath="\Events\Default Work Unit\Play_SCREAMSRTPC" DurationType="OneShot" DurationMin="0.882405" DurationMax="2.469333">
+					<IncludedMemoryFiles>
+						<File Id="12688955" Language="SFX">
+							<ShortName>scream 2.wav</ShortName>
+							<Path>SFX\scream 2_10C4C929.wem</Path>
+						</File>
+						<File Id="53626642" Language="SFX">
+							<ShortName>screams.wav</ShortName>
+							<Path>SFX\screams_4913CAA1.wem</Path>
+						</File>
+						<File Id="79908683" Language="SFX">
+							<ShortName>scream 6.wav</ShortName>
+							<Path>SFX\scream 6_10C4C929.wem</Path>
+						</File>
+						<File Id="132753025" Language="SFX">
+							<ShortName>yee_falscream_forrest1.wav</ShortName>
+							<Path>SFX\yee_falscream_forrest1_CE216787.wem</Path>
+						</File>
+						<File Id="174375810" Language="SFX">
+							<ShortName>yee_scream_forrest2.wav</ShortName>
+							<Path>SFX\yee_scream_forrest2_2D2BB9C9.wem</Path>
+						</File>
+						<File Id="178771599" Language="SFX">
+							<ShortName>scream5.wav</ShortName>
+							<Path>SFX\scream5_10C4C929.wem</Path>
+						</File>
+						<File Id="261353177" Language="SFX">
+							<ShortName>yee_falscream_forrest2.wav</ShortName>
+							<Path>SFX\yee_falscream_forrest2_F5A82A75.wem</Path>
+						</File>
+						<File Id="526944446" Language="SFX">
+							<ShortName>scream 4.wav</ShortName>
+							<Path>SFX\scream 4_29883BBB.wem</Path>
+						</File>
+						<File Id="677987550" Language="SFX">
+							<ShortName>scream 3.wav</ShortName>
+							<Path>SFX\scream 3_10DCF641.wem</Path>
+						</File>
+						<File Id="737758218" Language="SFX">
+							<ShortName>scream 7.wav</ShortName>
+							<Path>SFX\scream 7_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3268445451" Name="Play_SLOWMOIMPACT" ObjectPath="\Events\Default Work Unit\Play_SLOWMOIMPACT" DurationType="OneShot" DurationMin="1.815906" DurationMax="1.815906">
+					<IncludedMemoryFiles>
+						<File Id="549655005" Language="SFX">
+							<ShortName>020123jeuzmaintheme_2_kick-St.wav</ShortName>
+							<Path>SFX\020123jeuzmaintheme_2_kick-St_CB952C4A.wem</Path>
+						</File>
+						<File Id="810202906" Language="SFX">
+							<ShortName>subdropslowmo.wav</ShortName>
+							<Path>SFX\subdropslowmo_F62C3D56.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2273358256" Name="Play_suck_1" ObjectPath="\Events\Default Work Unit\Play_suck_1" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1015502824" Language="SFX">
+							<ShortName>suck 1.wav</ShortName>
+							<Path>SFX\suck 1_20AC17CB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2273358259" Name="Play_suck_2" ObjectPath="\Events\Default Work Unit\Play_suck_2" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="264470518" Language="SFX">
+							<ShortName>suck 2.wav</ShortName>
+							<Path>SFX\suck 2_0375C87B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1970764015" Name="Play_TealSquish" ObjectPath="\Events\Default Work Unit\Play_TealSquish" DurationType="OneShot" DurationMin="2.350667" DurationMax="2.350667">
+					<IncludedMemoryFiles>
+						<File Id="178771599" Language="SFX">
+							<ShortName>scream5.wav</ShortName>
+							<Path>SFX\scream5_10C4C929.wem</Path>
+						</File>
+						<File Id="1010988461" Language="SFX">
+							<ShortName>fruitspill1.wav</ShortName>
+							<Path>SFX\fruitspill1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1872556798" Name="Stop_Devotion_Container" ObjectPath="\Events\Default Work Unit\Stop_Devotion_Container" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3402561057" Name="STOP_FriutSquish" ObjectPath="\Events\Default Work Unit\STOP_FriutSquish" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="241091083" Name="Stop_IN_GAME_MUSIC_PLAYLIST" ObjectPath="\Events\Default Work Unit\Stop_IN_GAME_MUSIC_PLAYLIST" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="287092035" Name="Stop_Main_Menu_Loop_dog" ObjectPath="\Events\Default Work Unit\Stop_Main_Menu_Loop_dog" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3556724153" Name="Stop_Main_Menu_Segment" ObjectPath="\Events\Default Work Unit\Stop_Main_Menu_Segment" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1787510310" Name="Stop_suck_1" ObjectPath="\Events\Default Work Unit\Stop_suck_1" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1787510309" Name="Stop_suck_2" ObjectPath="\Events\Default Work Unit\Stop_suck_2" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3673481560" Name="Trigger_DEATH" ObjectPath="\Events\Default Work Unit\Trigger_DEATH" DurationType="OneShot" DurationMin="11.544117" DurationMax="11.544117">
+					<IncludedMemoryFiles>
+						<File Id="509709546" Language="SFX">
+							<ShortName>bass drum c3 subhit.cm1-St.wav</ShortName>
+							<Path>SFX\bass drum c3 subhit.cm1-St_D79FB2B7.wem</Path>
+						</File>
+						<File Id="830914852" Language="SFX">
+							<ShortName>020323jeuzmainthemefinalhope1.wav</ShortName>
+							<Path>SFX\020323jeuzmainthemefinalhope1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="906686414" Language="SFX">
+							<ShortName>Breaking glass sound effect.wav</ShortName>
+							<Path>SFX\Breaking glass sound effect_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="241091083" Name="Stop_IN_GAME_MUSIC_PLAYLIST" ObjectPath="\Events\Default Work Unit\Stop_IN_GAME_MUSIC_PLAYLIST"/>
+						<ActionPostEventEntry Id="1872556798" Name="Stop_Devotion_Container" ObjectPath="\Events\Default Work Unit\Stop_Devotion_Container"/>
+					</ActionPostEvent>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2044049779" Name="DEAD" ObjectPath="\States\Default Work Unit\MORTALITY\DEAD"/>
+					</ActionSetState>
+					<ActionTrigger>
+						<ActionTriggerEntry Id="779278001" Name="DEATH" ObjectPath="\Triggers\Default Work Unit\DEATH"/>
+					</ActionTrigger>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="2995488532" Name="CUP_FULLNESS" ObjectPath="\Game Parameters\Default Work Unit\CUP_FULLNESS"/>
+				<GameParameter Id="3677180323" Name="HEALTH" ObjectPath="\Game Parameters\Default Work Unit\HEALTH"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2044049779" Name="DEAD" ObjectPath="\States\Default Work Unit\MORTALITY\DEAD" GUID="{FDD044B9-CE0A-4D0B-BD96-DFDECE683A4C}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+			<Triggers>
+				<Trigger Id="779278001" Name="DEATH" ObjectPath="\Triggers\Default Work Unit\DEATH"/>
+			</Triggers>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2163916100">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="3236148094" Name="SLOWMO" ObjectPath="\Game Parameters\Default Work Unit\SLOWMO"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

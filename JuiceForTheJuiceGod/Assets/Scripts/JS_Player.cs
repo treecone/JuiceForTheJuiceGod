@@ -27,6 +27,9 @@ public class JS_Player : MonoBehaviour
     public AK.Wwise.Event FirstHitSound;
     public AK.Wwise.Event HitGroundNoEnemy;
     public AK.Wwise.Event DeathEventSound;
+    public AK.Wwise.Event Sqwert;
+    public AK.Wwise.Event GlassBreak;
+
 
 
     [Space]
@@ -65,6 +68,8 @@ public class JS_Player : MonoBehaviour
     private JS_EnemySpawner spawner;
 
     private bool stretchAnimationLock = false;
+    [SerializeField]
+    private bool absorbing = false;
 
 
     [Space]
@@ -123,18 +128,26 @@ public class JS_Player : MonoBehaviour
         gameObject.transform.position = new Vector3(transform.position.x, attributes.height, transform.position.z);
         mainCamera.GetComponent<JS_CameraScript>().cameraOffset = ogCameraOffset * attributes.vision;
 
-        if(attributes.Durability <= 0|| attributes.JuiceFulness <= 0)
+        if(attributes.JuiceFulness <= 0 || attributes.Durability <= 0)
         {
+            attributes.invincibility = true;
             Death();
         }
         else
         {
             Smashing();
-            Movement();
             UpdateAttributesWithFullness();
             Leaking();
             KeepInBounds();
             UpdateJuiceColors();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (attributes.JuiceFulness > 0)
+        {
+            Movement();
         }
     }
 
@@ -205,6 +218,7 @@ public class JS_Player : MonoBehaviour
 
                 if (!attributes.invincibility && nearbyJuices.Count > 0)
                 {
+                    absorbing = true;
                     AbsorbJuice();
                 }
             }
@@ -215,6 +229,7 @@ public class JS_Player : MonoBehaviour
             stretchAnimationLock = false;
             gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().SetBool("StopStretch", true);
 
+            absorbing = false;
 
             if (absorbLock)
             {
@@ -238,8 +253,11 @@ public class JS_Player : MonoBehaviour
                 //Reset juice on ground
                 foreach (GameObject j in nearbyJuices)
                 {
-                    var emission = j.GetComponent<ParticleSystem>().emission;
-                    emission.rateOverTime = 0f;
+                    if(j != null)
+                    {
+                        var emission = j.GetComponent<ParticleSystem>().emission;
+                        emission.rateOverTime = 0f;
+                    }
                 }
                 nearbyJuices.Clear();
             }
@@ -249,13 +267,13 @@ public class JS_Player : MonoBehaviour
     void Death()
     {
         float hammerYInWorldSpace = hammer.transform.TransformPoint(Vector3.zero).y;
-
+        attributes.invincibility = true;
 
         if (gameObject.transform.GetChild(0).GetChild(0).GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("JA_DeathAnimation"))
         {
             if(hammerYInWorldSpace > 0.01f)
             {
-                rb.velocity = (Vector3.left*2);
+                rb.velocity = (Vector3.left*4);
                 hammer.transform.position = Vector3.Lerp(hammer.transform.position, new Vector3(gameObject.transform.position.x, -5f, gameObject.transform.position.z), 0.0002f);
             }
         }
@@ -273,7 +291,7 @@ public class JS_Player : MonoBehaviour
 
     IEnumerator WaitForDeath()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.14f);
         SceneManager.LoadScene("GameOverScene");
     }
 
@@ -298,12 +316,20 @@ public class JS_Player : MonoBehaviour
             hammer.transform.position = currentGroundPos;
             Debug.Log("Missed enemies, leaking: " + attributes.smashCost);
             Leaking(attributes.smashCost);
+            attributes.Durability -= 10;
+            GlassBreak.Post(gameObject);
+
             HitGroundNoEnemy.Post(gameObject);
+        }
+        else if(amountOfEnemiesHit >= 3)
+        {
+            FirstHitSound.Post(gameObject);
+            gameObject.GetComponent<JS_TimeStop>().StopTime(0.05f, 10, 0.2f * amountOfEnemiesHit);
         }
         else
         {
-            FirstHitSound.Post(gameObject);
-            gameObject.GetComponent<JS_TimeStop>().StopTime(0.01f, 10, 0.1f * amountOfEnemiesHit);
+            HitGroundNoEnemy.Post(gameObject);
+            Sqwert.Post(gameObject);
         }
     }
 
@@ -338,7 +364,10 @@ public class JS_Player : MonoBehaviour
         float amountToYoinkTotal = 0;
         for(int i = 0; i < nearbyJuices.Count; i++)
         {
-            float yoinked = nearbyJuices[i].GetComponent<JS_Juice>().RetreveJuice(attributes.absorbtionSpeed);
+            if (nearbyJuices[i] == null)
+                continue;
+
+            float yoinked = nearbyJuices[i].GetComponent<JS_Juice>().RetreveJuice(attributes.absorbtionSpeed * Time.deltaTime);
 
             if (yoinked == 0)
             {
@@ -372,10 +401,13 @@ public class JS_Player : MonoBehaviour
     void Leaking(float amountToLeak = 0)
     {
 
+        if (absorbing)
+            return;
+
         if(amountToLeak <= 0)
         {
             //Leak from durability
-            amountToLeak = Mathf.Lerp(leakDelta.x, leakDelta.y, attributes.Durability / 100);
+            amountToLeak = Mathf.Lerp(leakDelta.x, leakDelta.y, (attributes.Durability / 100)) * Time.deltaTime;
         }
         attributes.JuiceFulness -= amountToLeak;
         var emission = gameObject.transform.GetChild(0).GetChild(1).GetComponent<ParticleSystem>().emission;
@@ -401,6 +433,7 @@ public class JS_Player : MonoBehaviour
             lastStoredBiggestJuice = biggestJuice;
             if (biggestJuice == 2)
             {
+                AkSoundEngine.SetState("GAME_MUSIC_STATES", "DEVOTION");
                 //Enable Devotion mode
                 foreach (Transform child in enemySpawner)
                 {
@@ -409,7 +442,8 @@ public class JS_Player : MonoBehaviour
             }
             else
             {
-                //Enable Devotion mode
+                //Disable Devotion mode
+                AkSoundEngine.SetState("GAME_MUSIC_STATES", "NORMAL");
                 foreach (Transform child in enemySpawner)
                 {
                     child.GetComponent<JS_EnemyBase>().devotionMode = false;

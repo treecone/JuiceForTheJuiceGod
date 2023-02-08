@@ -59,7 +59,7 @@ public class JS_EnemySpawner : MonoBehaviour
             //Debug.Log(rand + "'" + odds + "'" + typeToSpawn);
 
             Vector3 spawnLocation = new Vector3(Random.Range(-5, 5), 0, Random.Range(-5, 5)).normalized;
-            spawnLocation = new Vector3(playerRef.transform.position.x, 0, playerRef.transform.position.z) + spawnLocation * spawnDistance;
+            spawnLocation = new Vector3(playerRef.transform.position.x, 0, playerRef.transform.position.z) + (spawnLocation * spawnDistance);
             GameObject enemy = Instantiate(enemyPrefabs[typeToSpawn], spawnLocation, Quaternion.identity) as GameObject;
             enemy.GetComponent<JS_EnemyBase>().SetSpawner(this);
             enemy.transform.SetParent(this.transform);

@@ -421,7 +421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 254.24}
+  m_AnchoredPosition: {x: 0, y: 302}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &207636035
@@ -446,8 +446,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jeus
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
-  m_sharedMaterial: {fileID: -4643539872474624105, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
+  m_sharedMaterial: {fileID: 3687431645540504260, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -632,7 +632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -18}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571453947
@@ -655,15 +655,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'W,A,S,D to Move
-
-    Space to Slam and Drink
-
-
-'
+  m_text: "W,A,S,D to Move\nSpace to Slam \nHold Space to Drink\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
-  m_sharedMaterial: {fileID: -4643539872474624105, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
+  m_sharedMaterial: {fileID: 3687431645540504260, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -687,8 +682,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 37.16
+  m_fontSizeBase: 37.16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -723,7 +718,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -103.35272, y: -79.79047, z: -120.82764, w: 51.62915}
+  m_margin: {x: -103.35272, y: -89.38757, z: -120.82764, w: 51.62915}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -918,7 +913,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -44.2}
+  m_AnchoredPosition: {x: 0, y: -320}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &641754343
@@ -943,11 +938,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Their Juice is Your Life...
 
+    Miss and Pay the Price...
+
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
-  m_sharedMaterial: {fileID: -4643539872474624105, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
+  m_sharedMaterial: {fileID: 3687431645540504260, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1455,8 +1452,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
-  m_sharedMaterial: {fileID: -4643539872474624105, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
+  m_sharedMaterial: {fileID: 3687431645540504260, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1590,8 +1587,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Begin
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
-  m_sharedMaterial: {fileID: -4643539872474624105, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
+  m_sharedMaterial: {fileID: 3687431645540504260, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1725,8 +1722,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
-  m_sharedMaterial: {fileID: -4643539872474624105, guid: c44aefc457e82f84791f87eb6a33966b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
+  m_sharedMaterial: {fileID: 3687431645540504260, guid: 4d5ebd9f4d96201469957b010eab41b4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1887,6 +1884,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2082747140}
         m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
         m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2082747140}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

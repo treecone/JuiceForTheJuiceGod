@@ -1448,6 +1448,13 @@
 							</ObjectLists>
 						</MusicSegment>
 						<MusicPlaylistContainer Name="death stinger container" ID="{E3D88549-5ED7-4A23-AA11-0B3833025B72}" ShortID="494461663">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{273582BC-8FC0-40C1-BD83-611AD0B17317}"/>
@@ -1785,6 +1792,12 @@
 				</Folder>
 				<MusicSwitchContainer Name="MUSIC SWITCH CONTAINER" ID="{02A625FB-8126-4830-A108-5C6CBE0A63CA}" ShortID="47628296">
 					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Tempo" Type="Real64" Value="170"/>
 					</PropertyList>
 					<ReferenceList>
@@ -1798,8 +1811,19 @@
 					<ChildrenList>
 						<MusicPlaylistContainer Name="IN GAME MUSIC PLAYLIST" ID="{1232A65F-28DC-41EA-B8F0-CC3854A2807D}" ShortID="903575772">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="170"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1982,6 +2006,18 @@
 								<MusicSegment Name="ARRANGEMENT 2" ID="{64FBD66A-3384-4858-BF3E-1D21B884083B}" ShortID="210074486">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="76327.2108843537"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2278,8 +2314,19 @@
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="Devotion Container" ID="{165F5553-CE9F-41FE-BC1B-5E5FC20086AC}" ShortID="1072476716">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="170"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>2</Value>

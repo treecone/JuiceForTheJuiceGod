@@ -9,6 +9,8 @@ public class MenuScript : MonoBehaviour
     public AK.Wwise.Event clickEvent;
     public AK.Wwise.Event clickStopEvent;
     public AK.Wwise.Event clickEventLow;
+    public AK.Wwise.Event clickStopMainMusic;
+
 
     private void Start()
     {
@@ -25,6 +27,8 @@ public class MenuScript : MonoBehaviour
     }
     public void PlayAgain ()
     {
+        //Destroy(GameObject.Find("WwiseGlobal"));
+        //GameObject.Find("WwiseGlobal").GetComponent<AkInitializer>().Death();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
     public void QuitGame ()
@@ -35,6 +39,7 @@ public class MenuScript : MonoBehaviour
     public void StopSound()
     {
         clickStopEvent.Post(gameObject);
+        clickStopMainMusic.Post(gameObject);
     }
 
     public void PlaySound ()

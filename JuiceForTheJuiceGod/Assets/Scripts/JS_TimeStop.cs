@@ -12,6 +12,7 @@ public class JS_TimeStop : MonoBehaviour
     private void Start()
     {
         restoreTime = false;
+        Time.timeScale = 1.0f;
     }
 
     public void Update()

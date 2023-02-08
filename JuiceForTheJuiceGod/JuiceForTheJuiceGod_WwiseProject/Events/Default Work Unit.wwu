@@ -183,6 +183,7 @@
 						<Action Name="" ID="{72AEA6BE-A742-4890-9866-6D29098B9EA1}" ShortID="847740611">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -279,6 +280,9 @@
 				<Event Name="Play_MasterSquish" ID="{B410732D-41B8-4789-9BB1-6D4A2E5D6EE2}">
 					<ChildrenList>
 						<Action Name="" ID="{61588861-29CB-40CA-8E96-A51A9F0B74EA}" ShortID="520978503">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.105"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="FRUIT SQUISHES" ID="{EE54BF7D-3114-4970-B6A6-3EBEF9CD5CFA}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
@@ -375,6 +379,9 @@
 				<Event Name="Play_GlassCrackBlend" ID="{92385F2A-7613-4283-93C9-45063831D218}">
 					<ChildrenList>
 						<Action Name="" ID="{412D7AE5-1A0D-4889-9725-7E0B5A927216}" ShortID="402574012">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="GlassCrackBlendContainer" ID="{7BC78471-F1E8-4366-9D11-16F6663D9570}" WorkUnitID="{C41BC25B-3135-4276-B821-4B5A94A78085}"/>
@@ -441,6 +448,26 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{D4DEE857-145B-4841-B65E-685F1544A3DF}" ShortID="419179491">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stop_Devotion_Container" ID="{2764D262-B71C-4F58-9870-D4342F71F2C1}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DE514249-54DD-4BE6-81E3-AD6556EA7F32}" ShortID="1059905411">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stop_IN_GAME_MUSIC_PLAYLIST" ID="{8805A235-8A78-4026-B5A9-D477421C4B1B}" WorkUnitID="{03912BA1-BDB6-455D-847A-0F86F512267B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_DEATH_STINGER" ID="{0A61C45F-0E5C-436E-8664-0E7003829B3A}">
@@ -491,6 +518,44 @@
 									<ObjectRef Name="Main Menu Loop" ID="{253D6C89-1C80-463E-A5FF-41D0D6B96E6C}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
 								</Reference>
 							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_IN_GAME_MUSIC_PLAYLIST" ID="{8805A235-8A78-4026-B5A9-D477421C4B1B}">
+					<ChildrenList>
+						<Action Name="" ID="{557A50E6-DC3A-42BA-82C9-9B2E3137C4C2}" ShortID="1025109189">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IN GAME MUSIC PLAYLIST" ID="{1232A65F-28DC-41EA-B8F0-CC3854A2807D}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Devotion_Container" ID="{2764D262-B71C-4F58-9870-D4342F71F2C1}">
+					<ChildrenList>
+						<Action Name="" ID="{E437F5A6-D245-4A97-8DF7-D6448F4542B0}" ShortID="1000386732">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Devotion Container" ID="{165F5553-CE9F-41FE-BC1B-5E5FC20086AC}" WorkUnitID="{96B0AD93-9CF6-4BD3-A955-5618463C454E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_all_Cat" ID="{A5C305DF-7CA8-4FCF-9497-7C0DC4A666EB}">
+					<ChildrenList>
+						<Action Name="" ID="{0E640392-03A9-4207-8F90-736FB2B96AAE}" ShortID="218380050">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>

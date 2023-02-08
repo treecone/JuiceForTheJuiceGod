@@ -37,7 +37,10 @@ namespace AK
         static const AkUniqueID PLAY_SUCK_1 = 2273358256U;
         static const AkUniqueID PLAY_SUCK_2 = 2273358259U;
         static const AkUniqueID PLAY_TEALSQUISH = 1970764015U;
+        static const AkUniqueID STOP_ALL_CAT = 453560624U;
+        static const AkUniqueID STOP_DEVOTION_CONTAINER = 1872556798U;
         static const AkUniqueID STOP_FRIUTSQUISH = 3402561057U;
+        static const AkUniqueID STOP_IN_GAME_MUSIC_PLAYLIST = 241091083U;
         static const AkUniqueID STOP_MAIN_MENU_LOOP_DOG = 287092035U;
         static const AkUniqueID STOP_MAIN_MENU_SEGMENT = 3556724153U;
         static const AkUniqueID STOP_SUCK_1 = 1787510310U;

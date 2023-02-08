@@ -258,15 +258,15 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b9ccfc7977f813d4e8eef9ab0ab34e74, type: 2}
-  speed: 6
-  damage: 2
+  speed: 22
+  damage: 3
   damageDistanceSquared: 2
   timeBetweenDamage: 2
   pointsForDeath: 50
   juiceColor: {r: 0.4811321, g: 0.0047111507, b: 0, a: 1}
   juiceType: 5
   juicePrefab: {fileID: 3496471221120881669, guid: 6793bc4db03dd1c48bb510522416ceba, type: 3}
-  juiceToSpawn: 40
+  juiceToSpawn: 15
   hitParticleSystem: {fileID: 656673997304137025, guid: 07afaca25da8c6440a15bafa55a2972d, type: 3}
   childFruit: 0
   pomPrefab: {fileID: 5202870513916933283}

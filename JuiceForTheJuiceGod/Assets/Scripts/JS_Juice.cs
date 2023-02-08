@@ -11,16 +11,20 @@ public class JS_Juice : MonoBehaviour
     [SerializeField]
     private float minScale;
 
+    public AK.Wwise.Event stopSuck;
+
     [SerializeField]
     private Sprite[] allSprites; 
 
     private Renderer juiceRenderer;
     private JUICE_TYPES juiceType;
+    private GameObject playerRef;
 
     private void Start()
     {
         juiceRenderer = GetComponent<Renderer>();
         juice = maxJuice;
+        playerRef = GameObject.Find("Player");
         gameObject.GetComponent<SpriteRenderer>().sprite = allSprites[Random.Range(0, allSprites.Length-1)];
         //Randomize this a bit?
         gameObject.transform.localScale = new Vector3(Mathf.Lerp(minScale, maxScale, juice/100), Mathf.Lerp(minScale, maxScale, juice / 100), Mathf.Lerp(minScale, maxScale, juice / 100));
@@ -33,6 +37,19 @@ public class JS_Juice : MonoBehaviour
     {
         if(juice <= 0.1f)
         {
+            if (playerRef.GetComponent<JS_Player>().nearbyJuices.Count == 1)
+            {
+                Debug.Log("Stop");
+                stopSuck.Post(playerRef);
+            }
+            else if(playerRef.GetComponent<JS_Player>().nearbyJuices.Count == 2)
+            {
+                if (playerRef.GetComponent<JS_Player>().nearbyJuices[0] == playerRef.GetComponent<JS_Player>().nearbyJuices[1])
+                {
+                    Debug.Log("Stop");
+                    stopSuck.Post(playerRef);
+                }
+            }
             Object.Destroy(gameObject);
         }
 
